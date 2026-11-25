@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """生成本仓库自定义格式的世界文件（供 tools/judge.py run 使用）。
 
-用的参数名对齐题面里的 .in 参数文件，但生成规则是本仓库自行设计的：
-目的是造出“规模与结构像正式数据”的随机世界，用来做差分测试与压力测试，
-而不是复现官方生成器（官方目标值 P* 无法在本地得到）。
+两种用法：
 
-    python tools/gen_world.py --seed 1 --T 40 --out tests/worlds/demo.in
-    python tools/gen_world.py --seed 7 --T 500 --load 3 --out tests/worlds/big.in
+    # 1) 直接给参数（旧用法，快速造小世界）
+    python tools/gen_world.py --seed 1 --T 60 --load 0.8 --out tests/worlds/w1.in
+
+    # 2) 按 OJ 题面里的 .in 参数文件生成（推荐，参数名与官方一致）
+    python tools/gen_world.py --param tests/params/oj.in --seed 20261105 --out tests/worlds/oj.in
+
+生成规则是本仓库自行设计的，目标是让**规模、事件密度、时长分布**接近正式数据，
+不是复刻官方生成器（官方目标值 P* 无法在本地得到）。
 """
 
 from __future__ import annotations
 
 import argparse
+import math
 import os
 import random
 import sys
@@ -21,9 +26,25 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from judge import Huffman  # noqa: E402
 
 
-def main():
+def parse_param_file(path):
+    """解析 OJ 参数文件：每行 `key value`，忽略空行与 # 注释。"""
+    out = {}
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            parts = line.split()
+            if len(parts) < 2:
+                continue
+            out[parts[0]] = parts[1]
+    return out
+
+
+def build_args():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--param", default=None, help="OJ 题面里的 .in 参数文件")
     ap.add_argument("--T", type=int, default=40)
     ap.add_argument("--D", type=int, default=2)
     ap.add_argument("--nodes-per-dc", type=int, default=4)
@@ -43,10 +64,52 @@ def main():
     ap.add_argument("--log-rate", type=float, default=0.2)
     ap.add_argument("--wfs-max", type=int, default=6, help="每 tick 最多到达的工作流数")
     ap.add_argument("--jobs-max", type=int, default=6, help="每个工作流最多作业数")
-    ap.add_argument("--pat-len", type=int, default=6, help="模式串最大长度")
+    ap.add_argument("--pat-len", type=int, default=8, help="模式串最大长度")
     ap.add_argument("--log-len", type=int, default=30, help="单行日志最大符号数")
+    ap.add_argument("--sigma", type=float, default=0.35, help="真实时长的对数正态噪声")
+    ap.add_argument("--bias-lo", type=float, default=0.7)
+    ap.add_argument("--bias-hi", type=float, default=1.8)
+    ap.add_argument("--straggler-p", type=float, default=0.08)
+    ap.add_argument("--deadline-lo", type=float, default=1.3, help="截止 = 到达 + cp × lo~hi")
+    ap.add_argument("--deadline-hi", type=float, default=2.2)
+    ap.add_argument("--deadline-pad-lo", type=int, default=10)
+    ap.add_argument("--deadline-pad-hi", type=int, default=30)
+    ap.add_argument("--p-noise", type=int, default=0, help="噪声模式串个数（权重 1~3）")
+    ap.add_argument("--p-signal", type=int, default=0, help="信号模式串个数（权重大）")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
+
+    if args.param:
+        p = parse_param_file(args.param)
+        g = p.get
+        args.T = int(g("T", args.T))
+        args.D = int(g("D", args.D))
+        args.nodes_per_dc = int(g("nodes_per_dc", args.nodes_per_dc))
+        args.racks_per_dc = int(g("racks_per_dc", args.racks_per_dc))
+        args.mach_lo = int(g("mach_per_rack_lo", args.mach_lo))
+        args.mach_hi = int(g("mach_per_rack_hi", args.mach_hi))
+        args.K = int(g("NT", args.K))
+        args.L = int(g("NL", args.L))
+        args.I = int(g("NI", args.I))
+        args.W = int(g("W", args.W))
+        args.load = float(g("load", args.load))
+        args.audit_rate = float(g("audit_rate", args.audit_rate))
+        args.fail_frac = float(g("fail_frac", args.fail_frac))
+        args.link_events = int(g("link_events", args.link_events))
+        args.quota_events = int(g("quota_events", args.quota_events))
+        args.log_rate = float(g("log_rate", args.log_rate))
+        args.sigma = float(g("sigma", args.sigma))
+        args.bias_lo = float(g("bias_lo", args.bias_lo))
+        args.bias_hi = float(g("bias_hi", args.bias_hi))
+        args.straggler_p = float(g("straggler_p", args.straggler_p))
+        args.p_noise = int(g("p_noise", args.p_noise))
+        args.p_signal = int(g("p_signal", args.p_signal))
+        args.P = args.p_noise + args.p_signal
+    return args
+
+
+def main():
+    args = build_args()
 
     rnd = random.Random(args.seed)
     T = args.T
@@ -54,6 +117,7 @@ def main():
     N = D * args.nodes_per_dc
     per_dc = N // D
     R = D * args.racks_per_dc
+
     mach = []
     for r in range(R):
         for _ in range(rnd.randint(args.mach_lo, args.mach_hi)):
@@ -66,7 +130,6 @@ def main():
     P = args.P
     W = args.W
 
-    # 机房单价
     price = [rnd.randint(2, 6) for _ in range(D)]
 
     rack_dc, rack_node, rack_cap = [], [], []
@@ -76,7 +139,7 @@ def main():
         rack_node.append(dc * per_dc + rnd.randrange(per_dc))
         rack_cap.append(rnd.choice([400, 800, 1600]))
 
-    # 网络：每个机房内部近邻稠密，机房之间用少量骨干链路相连
+    # 网络：机房内部用"枢纽 + 挂载"的两级结构（直径 4~6），机房之间骨干互联
     edges = []
     seen = set()
 
@@ -91,26 +154,22 @@ def main():
 
     for d in range(D):
         base = d * per_dc
-        for i in range(per_dc - 1):
-            add_edge(base + i, base + i + 1, rnd.randint(1, 4))
-        add_edge(base + per_dc - 1, base, rnd.randint(1, 4))
-        extra_local = max(par_dc := per_dc // 2, 2)
-        tries = 0
-        while extra_local > 0 and tries < per_dc * 4:
-            u = base + rnd.randrange(per_dc)
-            v = base + rnd.randrange(per_dc)
-            tries += 1
-            if u != v and (min(u, v), max(u, v)) not in seen:
-                add_edge(u, v, rnd.randint(1, 6))
-                extra_local -= 1
+        nhub = max(4, per_dc // 10)
+        hubs = [base + i for i in range(nhub)]
+        for i in range(nhub):
+            add_edge(hubs[i], hubs[(i + 1) % nhub], rnd.randint(1, 3))
+        add_edge(hubs[0], hubs[nhub // 2], rnd.randint(1, 3))
+        for i in range(nhub, per_dc):
+            add_edge(base + i, hubs[rnd.randrange(nhub)], rnd.randint(1, 2))
     for d in range(D - 1):
-        add_edge(d * per_dc + rnd.randrange(per_dc), (d + 1) * per_dc + rnd.randrange(per_dc),
-                 rnd.randint(5, 15))
+        add_edge(d * per_dc + rnd.randrange(max(1, per_dc // 10)),
+                 (d + 1) * per_dc + rnd.randrange(max(1, per_dc // 10)),
+                 rnd.randint(2, 8))
     if D > 2:
-        add_edge(rnd.randrange(per_dc), (D - 1) * per_dc + rnd.randrange(per_dc), rnd.randint(8, 20))
+        add_edge(rnd.randrange(max(1, per_dc // 10)),
+                 (D - 1) * per_dc + rnd.randrange(max(1, per_dc // 10)), rnd.randint(3, 10))
     E = len(edges)
 
-    # 租户树
     parent = [-1]
     for k in range(1, K):
         parent.append(rnd.randrange(0, k))
@@ -119,23 +178,41 @@ def main():
     sizes = [rnd.randint(10, 120) for _ in range(L)]
     images = []
     for _ in range(I):
-        k = rnd.randint(1, 3)
+        k = rnd.randint(1, 4)
         images.append(sorted(rnd.sample(range(L), k)))
 
     freq = [rnd.randint(1, 100) for _ in range(9)]
     huff = Huffman(freq)
-    patterns = []
-    for _ in range(P):
-        ln = rnd.randint(2, args.pat_len)
+
+    signal_pats = []
+    noise_pats = []
+    for _ in range(args.p_signal):
+        ln = rnd.randint(6, args.pat_len)
         s = "".join(rnd.choice("abcdefgh") for _ in range(ln))
-        patterns.append((s, rnd.randint(1, 50)))
+        signal_pats.append((s, rnd.randint(40, 100)))
+    for _ in range(args.p_noise):
+        ln = rnd.randint(2, 6)
+        s = "".join(rnd.choice("abcdefgh") for _ in range(ln))
+        noise_pats.append((s, rnd.randint(1, 3)))
+    if args.p_noise or args.p_signal:
+        patterns = signal_pats + noise_pats
+    else:
+        patterns = []
+        for _ in range(args.P):
+            ln = rnd.randint(2, args.pat_len)
+            patterns.append(("".join(rnd.choice("abcdefgh") for _ in range(ln)),
+                             rnd.randint(1, 50)))
+    if not patterns:
+        patterns = [("abcd", 5)]
+    P = len(patterns)
 
     B_reg, B_rack, B_net, U_reg, U_net = 60, 200, 40, 2, 1
 
-    # 时间轴：工作流到达
-    events = defaultdict(list)      # tick → [line]
+    tenant_bias = [rnd.uniform(args.bias_lo, args.bias_hi) for _ in range(K)]
+
+    events = defaultdict(list)
     durs = {}
-    wf_jobs_range = []              # (arrive, wid, [jid...])
+    wf_jobs_range = []
     next_jid = [10 ** 8]
 
     def new_jid():
@@ -150,10 +227,7 @@ def main():
             wid = 10 ** 8 + rnd.randint(0, 8 * 10 ** 8)
             o = rnd.randrange(K)
             v = rnd.choice([500, 1000, 1500, 2000, 3000])
-            # 先建 DAG 再按关键路径给截止时间
-            dl = 0
             n = rnd.randint(1, args.jobs_max)
-            e_scale = rnd.uniform(0.7, 1.8)
             jl = []
             ids = []
             for idx in range(n):
@@ -170,15 +244,18 @@ def main():
                 if idx > 0 and rnd.random() < 0.7:
                     k = rnd.randint(1, min(2, idx))
                     preds = rnd.sample(ids, k)
-                line = [jid, c, mm, e, img, src, z_in, z_out, k] + preds
-                jl.append(line)
+                jl.append([jid, c, mm, e, img, src, z_in, z_out, k] + preds)
                 ids.append(jid)
-                durs[jid] = max(1, int(round(e * e_scale * rnd.uniform(0.6, 1.6))))
-            # 估计关键路径（e 之和）
+                # 真实时长：租户偏置 × 对数正态噪声；另有 straggler
+                dur = e * tenant_bias[o] * math.exp(rnd.gauss(0, args.sigma))
+                if rnd.random() < args.straggler_p:
+                    dur *= rnd.uniform(1.5, 4.0)
+                durs[jid] = max(1, int(round(dur)))
+            # 截止时间按关键路径给出
             es = {}
             cp = 0
             for row in jl:
-                jid, _, _, e, _, _, _, _, k = row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8]
+                jid, e, k = row[0], row[3], row[8]
                 best = 0
                 for pid in row[9:9 + k]:
                     pj = es[pid]
@@ -187,11 +264,11 @@ def main():
                 es[jid] = (best, e)
                 if best + e > cp:
                     cp = best + e
-            dl = t + int(cp * rnd.uniform(0.9, 1.6)) + rnd.randint(5, 15)
+            span = cp * rnd.uniform(args.deadline_lo, args.deadline_hi)
+            dl = t + int(span) + rnd.randint(args.deadline_pad_lo, args.deadline_pad_hi)
             events[t].append(("WF %d %d %d %d %d" % (wid, o, v, dl, n), jl))
             wf_jobs_range.append((t, wid, ids))
 
-    # 故障
     n_fail = int(M * args.fail_frac)
     for x in rnd.sample(range(M), n_fail):
         t0 = rnd.randint(2, max(3, T - 5))
@@ -199,21 +276,18 @@ def main():
         if rnd.random() < 0.8:
             events[min(T, t0 + rnd.randint(1, 6))].append(("UP %d" % x, None))
 
-    # 停电
     for _ in range(rnd.randint(0, 2)):
         dc = rnd.randrange(D)
         t0 = rnd.randint(2, max(3, T - 4))
         events[t0].append(("DCDOWN %d" % dc, None))
         events[min(T, t0 + rnd.randint(1, 4))].append(("DCUP %d" % dc, None))
 
-    # 链路
     for _ in range(args.link_events):
         e = rnd.randrange(E)
         t0 = rnd.randint(2, max(3, T - 3))
         events[t0].append(("LDOWN %d" % e, None))
         events[min(T, t0 + rnd.randint(1, 5))].append(("LUP %d" % e, None))
 
-    # 配额
     for _ in range(args.quota_events):
         t0 = rnd.randint(2, max(3, T - 2))
         k = rnd.randrange(K)
@@ -221,47 +295,41 @@ def main():
         if rnd.random() < 0.5:
             events[min(T, t0 + 1)].append(("UNDO 1", None))
 
-    # 日志
     for t in range(1, T + 1):
         for x in range(M):
             if rnd.random() < args.log_rate:
                 ln = rnd.randint(3, args.log_len)
-                syms = []
-                for _ in range(ln):
-                    syms.append(8 if rnd.random() < 0.15 else rnd.randrange(8))
+                syms = [8 if rnd.random() < 0.15 else rnd.randrange(8) for _ in range(ln)]
+                if signal_pats and rnd.random() < 0.25:
+                    pat = rnd.choice(signal_pats)[0]
+                    pos = rnd.randrange(0, max(1, ln - len(pat)))
+                    enc = [ord(ch) - ord("a") for ch in pat]
+                    syms[pos:pos + len(enc)] = enc
                 events[t].append(("LOG %d" % x, syms))
 
-    # 对账题
     queries = defaultdict(list)
-    all_wf = []
     for t in range(1, T + 1):
-        all_wf.extend(w for (a, w, ids) in wf_jobs_range if a == t)
         cnt = 0
-        while rnd.random() < args.audit_rate / 2:
+        while rnd.random() < args.audit_rate and cnt < 8:
             cnt += 1
-            if cnt > 5:
-                break
         for _ in range(cnt):
-            kind = rnd.choice(["BILL", "HEAD", "ROUTE", "ALARM", "SLACK",
-                               "CACHE", "RCACHE"])
+            kind = rnd.choice(["BILL", "HEAD", "ROUTE", "ALARM", "SLACK", "CACHE", "RCACHE"])
             if kind in ("BILL", "HEAD"):
                 queries[t].append("%s %d" % (kind, rnd.randrange(K)))
             elif kind == "ROUTE":
                 queries[t].append("ROUTE %d %d" % (rnd.randrange(R), rnd.randrange(R)))
             elif kind == "ALARM":
                 queries[t].append("ALARM %d" % rnd.randrange(M))
-            elif kind in ("CACHE",):
+            elif kind == "CACHE":
                 queries[t].append("CACHE %d" % rnd.randrange(M))
             elif kind == "RCACHE":
                 queries[t].append("RCACHE %d" % rnd.randrange(R))
             else:
-                recent = [ids for (a, w, ids) in wf_jobs_range if t - 12 <= a <= t]
+                recent = [ids for (a, w, ids) in wf_jobs_range if t - 20 <= a <= t]
                 if recent:
-                    ids = rnd.choice(recent)
-                    queries[t].append("SLACK %d" % rnd.choice(ids))
+                    queries[t].append("SLACK %d" % rnd.choice(rnd.choice(recent)))
 
-    out = []
-    out.append("INIT")
+    out = ["INIT"]
     out.append("%d %d %d %d %d %d %d %d %d %d %d" % (T, D, N, R, M, K, L, I, P, W, E))
     out.append("%d %d %d %d %d" % (B_reg, B_rack, B_net, U_reg, U_net))
     out.append(" ".join(map(str, price)))
@@ -277,17 +345,16 @@ def main():
     for layers in images:
         out.append("%d %s" % (len(layers), " ".join(map(str, layers))))
     out.append(" ".join(map(str, freq)))
-    for (s, w) in patterns:
-        out.append("%s %d" % (s, w))
+    for (s, wgt) in patterns:
+        out.append("%s %d" % (s, wgt))
 
     out.append("EVENTS")
     for t in range(1, T + 1):
         for (line, jl) in events.get(t, []):
             toks = line.split()
             if toks[0] == "LOG":
-                syms = jl
                 bits = []
-                for s in syms:
+                for s in jl:
                     bits.extend(huff.code_of(s))
                 b = len(bits)
                 padded = bits + [0] * ((4 - b % 4) % 4)
@@ -310,7 +377,7 @@ def main():
 
     with open(args.out, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(out) + "\n")
-    print(f"[gen] {args.out}: T={T} D={D} N={N} R={R} M={M} K={K} I={I} E={E} "
+    print(f"[gen] {args.out}: T={T} D={D} N={N} R={R} M={M} K={K} L={L} I={I} P={P} E={E} "
           f"作业 {len(durs)}，事件 {sum(len(v) for v in events.values())}，"
           f"对账 {sum(len(v) for v in queries.values())}")
 
