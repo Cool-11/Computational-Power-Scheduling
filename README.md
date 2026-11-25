@@ -59,6 +59,22 @@ python tools/bench.py --tag 我的版本 --seeds 1-16 --T 60
 
 细节见 `docs/规格表.md`、`docs/实验记录.md`、`docs/开发日志.md`。
 
+### 提交变体
+
+策略只有一个旋钮，改编译宏即可（默认 300）：
+
+```bash
+# 默认（推荐先交这个）
+g++ -std=c++17 -O2 -o build/solver.exe src/main.cpp
+# 更激进：假设正式数据成本更低、平台容量是瓶颈
+g++ -std=c++17 -O2 -DMARGIN_PCT=200 -o build/solver_aggr.exe src/main.cpp
+# 更保守：如果 OJ 反馈利润为负
+g++ -std=c++17 -O2 -DMARGIN_PCT=400 -o build/solver_safe.exe src/main.cpp
+```
+
+三个版本的对账与指令合法性完全相同（只影响"跑哪些工作流"），
+可以安全地用掉几次提交机会做对比。
+
 ## 验收顺序
 
 1. 协议正确：持续读写、每轮刷新、第 T 轮后退出。

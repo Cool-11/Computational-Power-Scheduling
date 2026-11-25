@@ -431,6 +431,7 @@ static std::vector<ll> alarm_win;      // M
 
 // 每机器运行中作业
 static std::vector<std::vector<int>> mach_running;
+static std::vector<std::vector<int>> rack_machines;   // 机架 → 机器列表
 
 // 就绪队列
 static std::vector<int> ready_list;
@@ -512,7 +513,11 @@ static void init_dynamic() {
     alarm_win.assign(M_, 0);
 
     cap_cores = 0;
-    for (int x = 0; x < M_; ++x) cap_cores += mach_cpu[x];
+    rack_machines.assign(R_, std::vector<int>());
+    for (int x = 0; x < M_; ++x) {
+        cap_cores += mach_cpu[x];
+        rack_machines[mach_rack[x]].push_back(x);
+    }
 
 
     out_buf.reserve(1 << 16);
@@ -1068,9 +1073,8 @@ static int pick_in_racks(int ji, const int* racks, int nracks, ll allowed_delay)
     static std::vector<std::pair<ll, std::pair<ll, int>>> cands;
     cands.clear();
     for (int i = 0; i < nracks; ++i) {
-        int r = racks[i];
-        for (int x = 0; x < M_; ++x) {
-            if (mach_rack[x] != r) continue;
+        const std::vector<int>& rms = rack_machines[racks[i]];
+        for (int x : rms) {
             Placement pl;
             if (!eval_machine(ji, x, pl)) continue;
             if (pl.finish < best_finish) best_finish = pl.finish;
