@@ -1,0 +1,19 @@
+# 构建产物
+build/
+*.exe
+*.o
+*.obj
+*.pdb
+
+# 本地测试输出
+tmp/
+out/
+tests/samples/*.out
+tests/samples/*.log
+tools/__pycache__/
+*.pyc
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
