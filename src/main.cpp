@@ -14,6 +14,7 @@
 #include <algorithm>
 #include <queue>
 #include <unordered_map>
+#include <numeric>
 
 #ifdef _WIN32
 #include <io.h>
@@ -291,6 +292,7 @@ struct Job {
     int start = 0;
     int rem = 0;
     int done_rack = -1;
+    int prep = 0;
     std::vector<int> preds;
     std::vector<int> succs;
 };
@@ -305,6 +307,13 @@ struct Wf {
     bool abandoned = false;
     int finish = -1;
     int job_begin = 0, job_end = 0;
+    bool admitted = false;     // 是否已获准投入资源
+    bool demand_released = false;
+    ll demand = 0;             // Σ c*e（未完成作业的工作量）
+    ll cp_pess = 0;            // 悲观关键路径：Σ (e*F + PREP)
+    int peak_cores = 1;        // 同一"层"上并发作业的 CPU 之和（准入时看配额是否够）
+    bool dead = false;         // 已确定无收益，不再投入
+    int running_cnt = 0;
     // SLACK 缓存
     int slack_ver = -1;
     std::vector<int> es, tl;
@@ -411,6 +420,31 @@ static std::vector<std::vector<int>> mach_running;
 
 // 就绪队列
 static std::vector<int> ready_list;
+static std::vector<int> active_wfs;
+static std::vector<int> wf_queue;          // 待准入队列
+static ll cap_cores = 0;                   // 全平台核数
+static ll inflight_demand = 0;             // 已准入未释放的工作量
+#ifndef PREP_GUESS
+#define PREP_GUESS 3      // 每个作业预留的传输/拉取准备时间（用于完成时间预估）
+#endif
+#ifndef PATIENCE
+#define PATIENCE 1000   // 到达后最多等多少个 tick 才准入（超时即放弃）
+#endif
+#ifndef EST_SCALE
+#define EST_SCALE 100     // 准入时对悲观完成时间的折算（%）
+#endif
+#ifndef T_LIMIT
+#define T_LIMIT 1        // 是否把「T 轮后完成收益为 0」纳入止损/跳过判断
+#endif
+#ifndef ADMIT_HORIZON
+#define ADMIT_HORIZON 2   // 在飞工作量预算 = 全平台核数 × ADMIT_HORIZON
+#endif
+#ifndef DUR_NUM
+#define DUR_NUM 2      // 真实时长相对估计时长的放大系数（用于完成时间预估）
+#endif
+#ifndef DUR_DEN
+#define DUR_DEN 1
+#endif
 
 static std::string out_buf;
 
@@ -444,6 +478,9 @@ static void init_dynamic() {
 
     alarm_at.assign((size_t)(T_ + 2) * M_, 0);
     alarm_win.assign(M_, 0);
+
+    cap_cores = 0;
+    for (int x = 0; x < M_; ++x) cap_cores += mach_cpu[x];
 
     out_buf.reserve(1 << 16);
 }
@@ -505,6 +542,8 @@ static void settle_job(int ji, int r) {
     }
     used_cpu[x] -= j.c;
     used_mem[x] -= j.m;
+    Wf& wfj = wfs[j.wf];
+    if (wfj.running_cnt > 0) wfj.running_cnt--;
     j.mach = -1;
 }
 
@@ -542,6 +581,7 @@ static void ensure_slack(int wi) {
         if (j.state == 2) continue;
         int best = 0;
         for (int p : j.preds) {
+            if (p < 0) continue;
             Job& pj = jobs[p];
             if (pj.state == 2) continue;
             int v = wf.es[p - wf.job_begin] + pj.e;
@@ -592,6 +632,12 @@ static int tl_of(int ji) {
 
 static int cur_tick = 0;
 
+// 自适应估计：真实时长/估计时长 的比值，以及平均准备时间
+static double dur_ratio = 1.5;
+static double prep_ewma = 2.0;
+
+static void release_demand(int wi);
+
 static void on_done(int jid) {
     auto it = job_id.find(jid);
     if (it == job_id.end()) return;
@@ -599,6 +645,17 @@ static void on_done(int jid) {
     Job& j = jobs[ji];
     if (j.state != 1) return;
     int x = j.mach;
+#ifdef DEBUG_STATS
+    fprintf(stderr, "DONEDBG t=%d jid=%d\n", cur_tick, j.ext_id);
+#endif
+    {
+        int dur = cur_tick - j.start - j.prep;
+        if (dur < 0) dur = 0;
+        double ratio = j.e > 0 ? (double)dur / (double)j.e : 1.0;
+        if (ratio < 0.3) ratio = 0.3;
+        if (ratio > 5.0) ratio = 5.0;
+        dur_ratio = dur_ratio * 0.85 + ratio * 0.15;
+    }
     settle_job(ji, cur_tick);
     j.state = 2;
     j.done_rack = mach_rack[x];
@@ -611,7 +668,7 @@ static void on_done(int jid) {
             if (sj.rem == 0 && sj.state == 0 && !wf.abandoned) ready_list.push_back(s);
         }
     }
-    if (wf.done_cnt == wf.total) wf.finish = cur_tick;
+    if (wf.done_cnt == wf.total) { wf.finish = cur_tick; release_demand(j.wf); }
 }
 
 static void on_fail(int x) {
@@ -689,12 +746,89 @@ static void on_wf(int wid, int tenant, ll value, int dl, int n) {
         j.preds.resize(k);
         for (int q = 0; q < k; ++q) {
             int pid = (int)io::read_int();
-            int pi = job_id[pid];
+            auto it = job_id.find(pid);
+            if (it == job_id.end()) {          // 题面保证不会发生，防御性处理
+                j.preds[q] = -1;
+                continue;
+            }
+            int pi = it->second;
             j.preds[q] = pi;
             jobs[pi].succs.push_back(base + i);
         }
         job_id[jid] = base + i;
         if (k == 0) ready_list.push_back(base + i);
+    }
+
+    // 估关键路径与工作量；收益不足或已必然超期则标记 dead，否则进准入队列
+    {
+        std::vector<int> esv(n, 0);
+        ll cp = 0, demand = 0;
+        for (int i = 0; i < n; ++i) {
+            Job& j = jobs[base + i];
+            int best = 0;
+            for (int p : j.preds) {
+                if (p < 0) continue;
+                int v = esv[p - base] + jobs[p].e;
+                if (v > best) best = v;
+            }
+            esv[i] = best;
+            if ((ll)best + j.e > cp) cp = (ll)best + j.e;
+            demand += (ll)j.c * j.e;
+        }
+        wf.demand = demand;
+        {
+            std::vector<ll> esv2(n, 0);
+            ll cp2 = 0;
+            ll prepg = (ll)(prep_ewma + 0.5);
+            for (int i = 0; i < n; ++i) {
+                Job& j = jobs[base + i];
+                ll d = (ll)((double)j.e * dur_ratio + 0.5) + prepg;
+                ll best = 0;
+                for (int p : j.preds) {
+                    if (p < 0) continue;
+                    ll pj_d = (ll)((double)jobs[p].e * dur_ratio + 0.5) + prepg;
+                    ll v = esv2[p - base] + pj_d;
+                    if (v > best) best = v;
+                }
+                esv2[i] = best;
+                ll len = best + d;
+                if (len > cp2) cp2 = len;
+            }
+            wf.cp_pess = cp2;
+            // 峰值并发：按最长前驱层号分组累加 c
+            std::vector<int> level(n, 0);
+            int maxlv = 0;
+            for (int i = 0; i < n; ++i) {
+                Job& j = jobs[base + i];
+                int lv = 0;
+                for (int p : j.preds) {
+                    if (p < 0) continue;
+                    int v = level[p - base] + 1;
+                    if (v > lv) lv = v;
+                }
+                level[i] = lv;
+                if (lv > maxlv) maxlv = lv;
+            }
+            std::vector<int> lvsum(maxlv + 1, 0);
+            for (int i = 0; i < n; ++i) lvsum[level[i]] += jobs[base + i].c;
+            int peak = 1;
+            for (int v : lvsum) if (v > peak) peak = v;
+            wf.peak_cores = peak;
+        }
+        ll minp = price[0];
+        for (int d = 1; d < D_; ++d) if (price[d] < minp) minp = price[d];
+        ll cost = demand * minp;
+        ll finish = (ll)cur_tick + wf.cp_pess * EST_SCALE / 100;
+        ll G = std::max<ll>(5, (wf.dl - wf.arrive) / 3);
+        if (finish > (ll)T_) { wf.dead = true; wf.slack_ver = -1; active_wfs.push_back(wi); return; }
+        ll rev = 0;
+        if (finish <= wf.dl) rev = wf.value;
+        else if (finish < (ll)wf.dl + G) rev = wf.value * ((ll)wf.dl + G - finish) / G;
+        wf.admitted = false;
+        wf.dead = !((rev > cost * 3 / 2) && (finish < (ll)wf.dl + G));
+        wf.slack_ver = -1;
+        if (!wf.dead) wf_queue.push_back(wi);
+        active_wfs.push_back(wi);
     }
 }
 
@@ -796,26 +930,46 @@ static void do_run(int ji, int x) {
         rate_[a] += (ll)j.c * p;
         inter_[a] -= (ll)j.c * p * (ll)cur_tick;
     }
+    j.prep = (int)std::max<ll>(rp.t_tr, pull_time);
     j.state = 1;
     j.mach = x;
     j.start = cur_tick;
     mach_running[x].push_back(ji);
+    wfs[j.wf].running_cnt++;
+    prep_ewma = prep_ewma * 0.9 + (double)j.prep * 0.1;
     (void)pull_time;
     (void)rp;
 }
 
 // ---------------------------------------------------------------- 调度
 
-static const int TRY_PER_TICK = 400;
+static const int TRY_PER_TICK = 600;
+#ifdef DEBUG_STATS
+static long long dbg_quota_fail = 0, dbg_nofit = 0, dbg_ok = 0;
+#endif
 
-// 为一个就绪作业选机器；返回 -1 表示本 tick 放不下
+// 为一个就绪作业选机器：先保证完成时间不太差，再在同档里省钱（传输/拉取/单价）
 static int choose_machine(int ji) {
     Job& j = jobs[ji];
     ll cap_free;
-    if (!quota_ok(ji, cap_free)) return -1;
+    if (!quota_ok(ji, cap_free)) {
+#ifdef DEBUG_STATS
+        ++dbg_quota_fail;
+        static int shown = 0;
+        if (cur_tick >= 60 && shown < 3) {
+            ++shown;
+            int tenant = wfs[j.wf].tenant;
+            fprintf(stderr, "QF job=%d c=%d tenant=%d cap_free=%lld path:", j.ext_id, j.c, tenant, (long long)cap_free);
+            for (int a = tenant; a != -1; a = parent_[a])
+                fprintf(stderr, " (%d q=%lld u=%lld)", a, (long long)quota[a], (long long)tused[a]);
+            fprintf(stderr, "\n");
+        }
+#endif
+        return -1;
+    }
 
-    int best_x = -1;
-    ll best_key1 = LLONG_MAX, best_key2 = LLONG_MAX;
+    static std::vector<std::pair<ll, std::pair<ll, int>>> cands;   // (finish, (cost, x))
+    cands.clear();
 
     for (int x = 0; x < M_; ++x) {
         if (!healthy[x]) continue;
@@ -826,37 +980,194 @@ static int choose_machine(int ji) {
 
         RunPrep rp;
         if (!prep_transfer(ji, x, rp)) continue;
-        ll est_cost = 0;
-        int tp = est_pull(x, r, j.img, est_cost);
+        ll pull_cost = 0;
+        int tp = est_pull(x, r, j.img, pull_cost);
         int prep = std::max(rp.t_tr, tp);
         ll finish = (ll)cur_tick + prep + j.e;
-        ll cost = rp.cost_tr + est_cost + p * (ll)j.c * (ll)j.e;
-        if (finish < best_key1 || (finish == best_key1 && cost < best_key2)) {
-            best_key1 = finish;
-            best_key2 = cost;
-            best_x = x;
+        ll cost = rp.cost_tr + pull_cost + p * (ll)j.c * (ll)j.e;
+        cands.push_back({finish, {cost, x}});
+    }
+    if (cands.empty()) {
+#ifdef DEBUG_STATS
+        ++dbg_nofit;
+#endif
+        return -1;
+    }
+#ifdef DEBUG_STATS
+    ++dbg_ok;
+#endif
+
+    ll min_finish = LLONG_MAX;
+    for (auto& c : cands) if (c.first < min_finish) min_finish = c.first;
+    // 允许最多晚 1 tick，换取更低成本
+    ll allowed = min_finish + 1;
+    ll best_cost = LLONG_MAX;
+    int best_x = -1;
+    for (auto& c : cands) {
+        if (c.first > allowed) continue;
+        if (c.second.first < best_cost || (c.second.first == best_cost && c.first < min_finish)) {
+            best_cost = c.second.first;
+            best_x = c.second.second;
+            min_finish = c.first;
         }
     }
     return best_x;
 }
 
+static inline bool wf_runnable(const Wf& wf) {
+    return !wf.abandoned && !wf.dead && wf.admitted && wf.finish == -1;
+}
+
+// 已确定无收益的工作流：杀掉其运行中作业，腾出资源
+static void drop_hopeless() {
+    for (int wi : active_wfs) {
+        Wf& wf = wfs[wi];
+        if (wf.dead || wf.finish != -1) continue;
+        if ((ll)cur_tick - wf.arrive > PATIENCE) { wf.dead = true; continue; }
+        ensure_slack(wi);
+        ll G = std::max<ll>(5, (wf.dl - wf.arrive) / 3);
+        ll limit = (ll)wf.dl + G;
+#if T_LIMIT
+        if (limit > (ll)T_) limit = (ll)T_;
+#endif
+        if ((ll)cur_tick + wf.cp > limit) {          // 用乐观估计决定是否止损
+            wf.dead = true;
+            release_demand(wi);
+            if (wf.running_cnt > 0) {
+                for (int ji = wf.job_begin; ji < wf.job_end; ++ji) {
+                    Job& j = jobs[ji];
+                    if (j.state != 1) continue;
+                    settle_job(ji, cur_tick);
+                    j.state = 0;
+                    out_buf += "KILL ";
+                    out_buf += std::to_string(j.ext_id);
+                    out_buf += '\n';
+                }
+            }
+        }
+    }
+}
+
+struct Cand {
+    ll slack;
+    ll neg_value;
+    int ji;
+};
+
+static std::vector<Cand> cand_buf;
+
+static void release_demand(int wi) {
+    Wf& wf = wfs[wi];
+    if (wf.admitted && !wf.demand_released) {
+        wf.demand_released = true;
+        inflight_demand -= wf.demand;
+        if (inflight_demand < 0) inflight_demand = 0;
+    }
+}
+
+static void admit_wfs() {
+    if (wf_queue.empty()) return;
+    std::vector<std::pair<double, int>> order;
+    order.reserve(wf_queue.size());
+    for (int wi : wf_queue) {
+        Wf& wf = wfs[wi];
+        if (wf.finish != -1 || wf.dead || wf.admitted) continue;
+        double dens = (double)wf.value / (double)std::max<ll>(1, wf.demand);
+        order.push_back({-dens, wi});
+    }
+    std::sort(order.begin(), order.end());
+
+    ll used_now = 0;
+    for (int x = 0; x < M_; ++x) used_now += used_cpu[x];
+    ll est_cores = 0;                    // 本 tick 新准入工作流预计占用的核
+    for (auto& pr : order) {
+        int wi = pr.second;
+        Wf& wf = wfs[wi];
+        if (wf.finish != -1 || wf.dead || wf.admitted) continue;
+        if ((ll)cur_tick - wf.arrive > PATIENCE) { wf.dead = true; continue; }
+        ensure_slack(wi);
+        ll G = std::max<ll>(5, (wf.dl - wf.arrive) / 3);
+#ifdef ADMIT_FULL
+        ll limit = wf.dl;
+#else
+        ll limit = (ll)wf.dl + G;
+#endif
+        if (limit > (ll)T_) limit = (ll)T_;
+        if ((ll)cur_tick + wf.cp_pess * EST_SCALE / 100 > limit) {     // 已来不及
+            wf.dead = true;
+            continue;
+        }
+        ll need = wf.demand / std::max<ll>(1, wf.cp);       // 平均需要多少核
+        if (need < 1) need = 1;
+        // 租户配额余量不足就先别准入（配额可能随后上调）
+        {
+            ll head = LLONG_MAX;
+            for (int a = wf.tenant; a != -1; a = parent_[a]) {
+                ll v = quota[a] - tused[a];
+                if (v < head) head = v;
+            }
+#ifndef PEAK_DIV
+#define PEAK_DIV 1
+#endif
+            int need_c = wf.peak_cores / PEAK_DIV;
+            if (head < need_c) continue;                     // 配额卡住，等下一轮
+        }
+        if (used_now + est_cores + need > cap_cores) break; // 平台已排满
+        if (inflight_demand + wf.demand > cap_cores * (ll)ADMIT_HORIZON) break;  // 在飞工作量已够
+        wf.admitted = true;
+        inflight_demand += wf.demand;
+        est_cores += need;
+    }
+    wf_queue.clear();
+    for (int wi : active_wfs) {
+        Wf& wf = wfs[wi];
+        if (wf.finish == -1 && !wf.dead && !wf.admitted) wf_queue.push_back(wi);
+    }
+}
+
 static void schedule_tick() {
+    drop_hopeless();
     if (ready_list.empty()) return;
-    int attempted = 0;
-    int w = 0;
-    size_t i = 0, n = ready_list.size();
-    for (; i < n; ++i) {
-        if (attempted >= TRY_PER_TICK) break;
-        int ji = ready_list[i];
+
+    cand_buf.clear();
+    std::vector<int> keep;
+    keep.reserve(ready_list.size());
+    for (int ji : ready_list) {
         Job& j = jobs[ji];
         Wf& wf = wfs[j.wf];
-        if (j.state != 0 || j.rem != 0 || wf.abandoned || wf.finish != -1) continue;
+        if (j.state != 0 || j.rem != 0 || wf.dead || wf.finish != -1 || wf.abandoned) continue;
+        // 尚未准入的工作流：保留在就绪表里，等它被准入后立刻能跑
+        if (!wf.admitted) { keep.push_back(ji); continue; }
         int tl = tl_of(ji);
-        ll G = std::max<ll>(5, (wf.dl - wf.arrive) / 3);
-        if ((ll)cur_tick + tl >= (ll)wf.dl + G) continue;      // 收益必为 0，不必跑
+        cand_buf.push_back({(ll)cur_tick + tl - (ll)wf.dl, -wf.value, ji});
+    }
+    ready_list.swap(keep);
+    if (cand_buf.empty()) return;
+
+    std::sort(cand_buf.begin(), cand_buf.end(), [](const Cand& a, const Cand& b) {
+        if (a.slack != b.slack) return a.slack < b.slack;
+        if (a.neg_value != b.neg_value) return a.neg_value < b.neg_value;
+        return a.ji < b.ji;
+    });
+
+    int attempted = 0;
+    for (const Cand& c : cand_buf) {
+        int ji = c.ji;
+        Job& j = jobs[ji];
+        Wf& wf = wfs[j.wf];
+        if (j.state != 0 || j.rem != 0 || !wf_runnable(wf)) continue;
+        if (attempted >= TRY_PER_TICK) {
+            ready_list.push_back(ji);
+            continue;
+        }
         ++attempted;
         int x = choose_machine(ji);
         if (x >= 0) {
+#ifdef DEBUG_STATS
+            fprintf(stderr, "RUNDBG t=%d jid=%d rem=%d preds:", cur_tick, j.ext_id, j.rem);
+            for (int p : j.preds) fprintf(stderr, " %d(s=%d,rem=%d)", jobs[p].ext_id, jobs[p].state, jobs[p].rem);
+            fprintf(stderr, "\n");
+#endif
             do_run(ji, x);
             out_buf += "RUN ";
             out_buf += std::to_string(j.ext_id);
@@ -864,11 +1175,9 @@ static void schedule_tick() {
             out_buf += std::to_string(x);
             out_buf += '\n';
         } else {
-            ready_list[w++] = ji;
+            ready_list.push_back(ji);
         }
     }
-    for (; i < n; ++i) ready_list[w++] = ready_list[i];
-    ready_list.resize(w);
 }
 
 // ---------------------------------------------------------------- 主循环
@@ -982,7 +1291,37 @@ int main() {
         out_buf += '\n';
 
         // 调度
+        admit_wfs();
         schedule_tick();
+#ifdef DEBUG_STATS
+        {
+            int n_adm = 0, n_dead = 0, n_wf = 0, n_ready = 0, n_run = 0;
+            for (auto& wf : wfs) {
+                ++n_wf;
+                if (wf.admitted && wf.finish == -1) ++n_adm;
+                if (wf.dead) ++n_dead;
+            }
+            for (int ji : ready_list) {
+                (void)ji;
+                ++n_ready;
+            }
+            for (int x = 0; x < M_; ++x) n_run += (int)mach_running[x].size();
+            int pend = 0, pend_ready = 0, run2 = 0, done = 0;
+            for (auto& j : jobs) {
+                if (j.state == 0) { ++pend; if (j.rem == 0) ++pend_ready; }
+                else if (j.state == 1) ++run2;
+                else ++done;
+            }
+            fprintf(stderr, "t=%d wf=%d adm=%d dead=%d ready=%d running=%d usedcpu=%lld/%lld "
+                    "| pend=%d pend_ready=%d run=%d done=%d inflight=%lld qf=%lld nf=%lld ok=%lld\n",
+                    t, n_wf, n_adm, n_dead, n_ready, n_run,
+                    (long long)std::accumulate(used_cpu.begin(), used_cpu.end(), 0LL), (long long)cap_cores,
+                    pend, pend_ready, run2, done, (long long)inflight_demand,
+                    dbg_quota_fail, dbg_nofit, dbg_ok);
+            fprintf(stderr, "   tused_root=%lld used_cpu_sum=%lld\n", (long long)tused[0],
+                    (long long)std::accumulate(used_cpu.begin(), used_cpu.end(), 0LL));
+        }
+#endif
 
         out_buf += "END\n";
         fwrite(out_buf.data(), 1, out_buf.size(), stdout);

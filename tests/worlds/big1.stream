@@ -1,0 +1,12122 @@
+200 5 600 30 357 200 400 120 10060 40 610
+60 200 40 2 1
+6 5 2 4 6
+0 53 1600
+0 27 400
+0 4 400
+0 61 400
+0 101 400
+0 25 400
+1 141 1600
+1 174 400
+1 195 800
+1 130 400
+1 146 1600
+1 218 1600
+2 242 1600
+2 318 800
+2 326 1600
+2 298 1600
+2 274 1600
+2 313 800
+3 426 800
+3 376 1600
+3 458 1600
+3 419 1600
+3 404 800
+3 456 400
+4 581 1600
+4 557 400
+4 592 400
+4 488 1600
+4 488 400
+4 557 400
+0 8 16 256
+0 4 16 256
+0 4 32 900
+0 16 8 900
+0 4 64 256
+0 8 64 256
+0 4 64 256
+0 16 32 128
+0 16 8 900
+0 8 64 128
+0 8 8 900
+0 4 32 128
+0 8 16 900
+1 8 16 256
+1 16 16 900
+1 16 16 256
+1 4 8 128
+1 4 64 900
+1 4 64 128
+1 4 32 128
+1 8 32 256
+1 16 64 256
+1 4 16 900
+2 16 64 256
+2 8 64 128
+2 4 16 900
+2 4 8 128
+2 4 32 256
+2 4 64 256
+2 4 32 900
+2 4 32 128
+2 8 16 128
+2 16 32 128
+2 16 8 512
+2 4 64 900
+3 8 64 900
+3 8 8 256
+3 4 32 900
+3 8 16 512
+3 16 16 512
+3 4 32 256
+3 16 16 900
+3 8 64 128
+3 8 64 512
+3 4 32 512
+3 8 16 512
+3 8 32 900
+4 4 32 900
+4 16 64 256
+4 8 32 256
+4 8 8 512
+4 16 32 256
+4 16 16 512
+4 16 64 256
+4 8 32 900
+4 4 8 256
+4 4 32 256
+4 16 64 256
+4 8 64 900
+4 16 32 256
+4 16 8 128
+5 4 8 128
+5 8 32 512
+5 16 32 256
+5 4 64 900
+5 4 32 900
+5 8 16 256
+5 8 64 900
+5 16 16 512
+5 8 16 512
+5 8 64 256
+5 8 64 256
+5 4 16 900
+6 4 8 512
+6 8 8 512
+6 16 8 512
+6 16 8 512
+6 8 32 256
+6 4 8 900
+6 4 8 512
+6 16 16 512
+6 4 64 128
+6 16 64 256
+6 4 8 900
+6 4 32 512
+6 16 32 128
+6 16 16 256
+7 16 8 128
+7 16 16 256
+7 4 8 128
+7 16 64 256
+7 8 16 256
+7 8 8 512
+7 16 64 256
+7 8 16 128
+7 4 64 128
+7 4 64 128
+7 4 64 128
+7 4 16 900
+8 8 32 128
+8 16 64 128
+8 8 16 256
+8 4 32 512
+8 8 8 900
+8 8 8 128
+8 8 16 512
+8 8 32 128
+8 8 32 256
+8 16 16 128
+8 8 64 900
+8 16 16 256
+9 8 8 256
+9 4 32 256
+9 16 8 900
+9 4 8 256
+9 4 16 512
+9 4 32 256
+9 16 64 256
+9 4 8 900
+9 8 8 256
+9 16 16 512
+9 8 16 900
+9 16 8 512
+9 16 16 256
+9 16 64 256
+10 8 16 256
+10 4 64 256
+10 4 32 256
+10 16 8 256
+10 4 16 900
+10 8 8 256
+10 8 32 512
+10 8 16 128
+10 16 8 128
+10 8 8 512
+11 4 32 256
+11 8 32 128
+11 16 32 256
+11 16 32 128
+11 4 32 900
+11 4 32 512
+11 4 64 128
+11 4 32 256
+11 4 8 900
+11 4 32 512
+11 8 16 256
+12 4 8 256
+12 4 16 512
+12 16 32 128
+12 16 8 900
+12 4 64 128
+12 16 32 900
+12 8 64 512
+12 8 32 128
+12 8 16 128
+12 4 16 512
+13 16 8 512
+13 8 16 256
+13 8 64 128
+13 16 32 128
+13 8 8 128
+13 8 64 900
+13 8 32 256
+13 16 8 512
+13 8 16 128
+13 16 32 900
+13 16 64 512
+13 16 8 128
+14 16 8 256
+14 8 16 900
+14 16 8 128
+14 4 32 256
+14 4 8 128
+14 8 32 256
+14 4 32 256
+14 16 64 128
+14 8 16 900
+14 8 8 128
+15 16 32 512
+15 16 16 512
+15 16 8 128
+15 16 8 512
+15 8 64 256
+15 8 64 256
+15 16 32 900
+15 8 32 256
+15 8 32 256
+15 4 32 256
+15 16 16 512
+15 16 8 256
+16 8 16 128
+16 8 64 128
+16 4 64 128
+16 8 64 128
+16 4 8 256
+16 4 16 512
+16 4 8 256
+16 16 32 512
+16 4 16 128
+16 16 8 512
+16 4 16 512
+16 8 32 128
+16 8 32 900
+16 16 32 256
+17 4 8 512
+17 16 16 256
+17 16 64 900
+17 4 32 256
+17 16 32 128
+17 4 32 256
+17 4 64 128
+17 4 32 512
+17 8 16 512
+17 16 8 512
+17 4 32 900
+17 4 16 128
+18 16 8 900
+18 8 64 900
+18 8 64 512
+18 4 16 512
+18 4 8 512
+18 16 8 128
+18 8 64 512
+18 16 16 128
+18 16 32 512
+18 8 16 256
+18 16 16 512
+19 16 32 256
+19 4 64 256
+19 8 32 900
+19 16 64 128
+19 8 8 900
+19 4 64 128
+19 8 32 256
+19 16 8 256
+19 8 8 512
+19 16 16 512
+20 4 8 128
+20 4 8 900
+20 4 64 900
+20 16 8 256
+20 16 8 256
+20 4 64 256
+20 4 64 512
+20 16 8 128
+20 8 8 128
+20 16 16 900
+20 8 64 256
+20 8 32 256
+20 16 8 512
+20 16 32 256
+21 16 32 256
+21 16 32 900
+21 4 64 900
+21 16 32 512
+21 8 8 256
+21 4 32 256
+21 4 8 256
+21 16 16 512
+21 8 32 900
+21 8 64 256
+21 8 32 256
+21 4 16 900
+21 8 32 900
+22 16 16 512
+22 16 16 128
+22 16 64 256
+22 8 16 128
+22 16 64 512
+22 8 32 512
+22 4 8 128
+22 4 16 900
+22 4 16 900
+22 4 32 128
+22 4 8 128
+22 4 64 900
+23 16 32 900
+23 8 8 256
+23 16 64 900
+23 8 32 256
+23 16 16 900
+23 16 32 256
+23 8 64 900
+23 4 64 900
+23 16 32 900
+23 16 64 128
+23 8 8 900
+24 4 32 900
+24 4 64 900
+24 8 8 256
+24 4 8 900
+24 16 8 128
+24 4 16 256
+24 4 32 128
+24 8 8 128
+24 4 8 256
+24 4 16 256
+24 16 8 256
+25 8 64 512
+25 8 32 512
+25 4 32 128
+25 16 64 128
+25 4 8 256
+25 8 32 512
+25 8 16 900
+25 8 32 900
+25 16 64 128
+25 8 8 512
+25 16 8 512
+25 4 8 900
+25 16 32 128
+26 8 32 512
+26 16 32 512
+26 8 32 900
+26 4 16 512
+26 16 8 128
+26 16 64 128
+26 4 16 128
+26 8 64 512
+26 4 16 128
+26 4 32 900
+26 4 8 512
+27 4 64 512
+27 8 16 256
+27 16 8 128
+27 4 8 512
+27 8 64 256
+27 4 16 512
+27 16 32 512
+27 4 32 256
+27 4 16 512
+27 8 8 128
+27 16 16 128
+27 16 16 512
+28 8 32 256
+28 16 16 256
+28 8 64 512
+28 8 16 900
+28 4 32 128
+28 16 16 512
+28 8 16 128
+28 16 8 256
+28 4 16 512
+28 8 8 128
+28 4 16 128
+28 4 8 128
+28 4 8 128
+29 16 32 512
+29 8 16 900
+29 8 8 900
+29 4 64 256
+29 16 64 512
+29 4 32 256
+29 16 32 512
+29 16 8 256
+29 16 16 128
+29 16 32 256
+0 1 17
+1 2 5
+2 3 17
+3 4 19
+4 5 14
+5 6 10
+6 7 1
+7 8 10
+8 9 13
+9 10 6
+10 11 12
+11 12 20
+12 13 2
+13 14 3
+14 15 20
+15 16 7
+16 17 17
+17 18 9
+18 19 12
+19 20 5
+20 21 5
+21 22 16
+22 23 12
+23 24 19
+24 25 15
+25 26 6
+26 27 11
+27 28 12
+28 29 8
+29 30 7
+30 31 9
+31 32 9
+32 33 8
+33 34 20
+34 35 17
+35 36 19
+36 37 4
+37 38 16
+38 39 19
+39 40 5
+40 41 16
+41 42 9
+42 43 9
+43 44 15
+44 45 6
+45 46 7
+46 47 20
+47 48 10
+48 49 1
+49 50 17
+50 51 15
+51 52 9
+52 53 1
+53 54 12
+54 55 1
+55 56 13
+56 57 5
+57 58 20
+58 59 18
+59 60 9
+60 61 18
+61 62 3
+62 63 5
+63 64 13
+64 65 17
+65 66 19
+66 67 20
+67 68 6
+68 69 18
+69 70 12
+70 71 7
+71 72 5
+72 73 1
+73 74 17
+74 75 4
+75 76 16
+76 77 4
+77 78 20
+78 79 14
+79 80 10
+80 81 17
+81 82 13
+82 83 19
+83 84 17
+84 85 16
+85 86 1
+86 87 20
+87 88 3
+88 89 15
+89 90 19
+90 91 19
+91 92 20
+92 93 12
+93 94 8
+94 95 12
+95 96 11
+96 97 4
+97 98 1
+98 99 4
+99 100 6
+100 101 8
+101 102 10
+102 103 19
+103 104 7
+104 105 8
+105 106 19
+106 107 16
+107 108 2
+108 109 10
+109 110 7
+110 111 13
+111 112 15
+112 113 9
+113 114 2
+114 115 6
+115 116 7
+116 117 19
+117 118 3
+118 119 3
+119 120 13
+120 121 6
+121 122 18
+122 123 14
+123 124 20
+124 125 5
+125 126 7
+126 127 19
+127 128 14
+128 129 10
+129 130 4
+130 131 3
+131 132 3
+132 133 11
+133 134 16
+134 135 5
+135 136 8
+136 137 17
+137 138 3
+138 139 3
+139 140 13
+140 141 8
+141 142 17
+142 143 10
+143 144 16
+144 145 7
+145 146 18
+146 147 11
+147 148 19
+148 149 14
+149 150 19
+150 151 20
+151 152 11
+152 153 6
+153 154 15
+154 155 5
+155 156 8
+156 157 5
+157 158 14
+158 159 15
+159 160 16
+160 161 9
+161 162 12
+162 163 13
+163 164 12
+164 165 3
+165 166 20
+166 167 17
+167 168 2
+168 169 7
+169 170 16
+170 171 17
+171 172 18
+172 173 1
+173 174 15
+174 175 14
+175 176 18
+176 177 2
+177 178 7
+178 179 3
+179 180 15
+180 181 19
+181 182 14
+182 183 16
+183 184 1
+184 185 7
+185 186 8
+186 187 3
+187 188 8
+188 189 18
+189 190 13
+190 191 6
+191 192 5
+192 193 8
+193 194 11
+194 195 13
+195 196 12
+196 197 3
+197 198 19
+198 199 19
+199 200 16
+200 201 2
+201 202 7
+202 203 14
+203 204 18
+204 205 13
+205 206 5
+206 207 1
+207 208 11
+208 209 18
+209 210 11
+210 211 7
+211 212 9
+212 213 12
+213 214 4
+214 215 8
+215 216 16
+216 217 10
+217 218 15
+218 219 12
+219 220 20
+220 221 13
+221 222 6
+222 223 1
+223 224 3
+224 225 19
+225 226 17
+226 227 2
+227 228 17
+228 229 11
+229 230 17
+230 231 10
+231 232 15
+232 233 2
+233 234 2
+234 235 16
+235 236 6
+236 237 6
+237 238 10
+238 239 13
+239 240 11
+240 241 2
+241 242 7
+242 243 9
+243 244 19
+244 245 16
+245 246 19
+246 247 19
+247 248 19
+248 249 13
+249 250 2
+250 251 7
+251 252 20
+252 253 3
+253 254 16
+254 255 17
+255 256 5
+256 257 7
+257 258 6
+258 259 16
+259 260 11
+260 261 4
+261 262 16
+262 263 17
+263 264 4
+264 265 15
+265 266 20
+266 267 20
+267 268 5
+268 269 2
+269 270 17
+270 271 5
+271 272 13
+272 273 8
+273 274 8
+274 275 9
+275 276 5
+276 277 5
+277 278 1
+278 279 9
+279 280 9
+280 281 12
+281 282 16
+282 283 7
+283 284 13
+284 285 15
+285 286 19
+286 287 10
+287 288 4
+288 289 17
+289 290 16
+290 291 2
+291 292 12
+292 293 8
+293 294 5
+294 295 11
+295 296 1
+296 297 1
+297 298 5
+298 299 14
+299 300 17
+300 301 1
+301 302 11
+302 303 17
+303 304 14
+304 305 13
+305 306 12
+306 307 8
+307 308 3
+308 309 12
+309 310 19
+310 311 6
+311 312 20
+312 313 5
+313 314 4
+314 315 2
+315 316 18
+316 317 12
+317 318 13
+318 319 2
+319 320 11
+320 321 10
+321 322 9
+322 323 5
+323 324 3
+324 325 8
+325 326 2
+326 327 10
+327 328 4
+328 329 18
+329 330 3
+330 331 20
+331 332 14
+332 333 17
+333 334 4
+334 335 10
+335 336 17
+336 337 4
+337 338 15
+338 339 8
+339 340 5
+340 341 5
+341 342 12
+342 343 4
+343 344 11
+344 345 17
+345 346 9
+346 347 14
+347 348 3
+348 349 7
+349 350 19
+350 351 16
+351 352 6
+352 353 12
+353 354 18
+354 355 19
+355 356 9
+356 357 16
+357 358 4
+358 359 20
+359 360 1
+360 361 6
+361 362 20
+362 363 2
+363 364 3
+364 365 8
+365 366 12
+366 367 17
+367 368 15
+368 369 17
+369 370 7
+370 371 19
+371 372 13
+372 373 15
+373 374 6
+374 375 7
+375 376 16
+376 377 20
+377 378 11
+378 379 10
+379 380 15
+380 381 4
+381 382 1
+382 383 19
+383 384 2
+384 385 11
+385 386 13
+386 387 9
+387 388 8
+388 389 10
+389 390 10
+390 391 3
+391 392 5
+392 393 19
+393 394 2
+394 395 3
+395 396 11
+396 397 19
+397 398 11
+398 399 19
+399 400 7
+400 401 6
+401 402 8
+402 403 14
+403 404 6
+404 405 7
+405 406 2
+406 407 19
+407 408 2
+408 409 1
+409 410 11
+410 411 1
+411 412 14
+412 413 15
+413 414 9
+414 415 12
+415 416 7
+416 417 18
+417 418 8
+418 419 14
+419 420 8
+420 421 19
+421 422 9
+422 423 8
+423 424 4
+424 425 11
+425 426 2
+426 427 1
+427 428 3
+428 429 3
+429 430 20
+430 431 20
+431 432 2
+432 433 13
+433 434 6
+434 435 8
+435 436 18
+436 437 19
+437 438 3
+438 439 20
+439 440 8
+440 441 12
+441 442 15
+442 443 19
+443 444 14
+444 445 5
+445 446 9
+446 447 13
+447 448 7
+448 449 15
+449 450 10
+450 451 13
+451 452 15
+452 453 9
+453 454 12
+454 455 16
+455 456 20
+456 457 20
+457 458 17
+458 459 8
+459 460 16
+460 461 18
+461 462 5
+462 463 12
+463 464 7
+464 465 19
+465 466 18
+466 467 14
+467 468 9
+468 469 15
+469 470 17
+470 471 10
+471 472 10
+472 473 10
+473 474 12
+474 475 7
+475 476 9
+476 477 6
+477 478 10
+478 479 4
+479 480 10
+480 481 2
+481 482 10
+482 483 14
+483 484 19
+484 485 7
+485 486 15
+486 487 4
+487 488 13
+488 489 6
+489 490 13
+490 491 4
+491 492 15
+492 493 20
+493 494 15
+494 495 8
+495 496 2
+496 497 1
+497 498 18
+498 499 16
+499 500 19
+500 501 18
+501 502 20
+502 503 7
+503 504 2
+504 505 4
+505 506 2
+506 507 11
+507 508 16
+508 509 17
+509 510 8
+510 511 19
+511 512 10
+512 513 8
+513 514 9
+514 515 11
+515 516 19
+516 517 13
+517 518 4
+518 519 4
+519 520 4
+520 521 15
+521 522 6
+522 523 7
+523 524 18
+524 525 7
+525 526 1
+526 527 5
+527 528 18
+528 529 18
+529 530 17
+530 531 7
+531 532 12
+532 533 5
+533 534 10
+534 535 6
+535 536 1
+536 537 12
+537 538 11
+538 539 9
+539 540 4
+540 541 3
+541 542 7
+542 543 17
+543 544 12
+544 545 10
+545 546 13
+546 547 7
+547 548 11
+548 549 10
+549 550 13
+550 551 9
+551 552 18
+552 553 3
+553 554 19
+554 555 13
+555 556 4
+556 557 11
+557 558 20
+558 559 1
+559 560 16
+560 561 18
+561 562 4
+562 563 12
+563 564 5
+564 565 6
+565 566 14
+566 567 15
+567 568 12
+568 569 3
+569 570 13
+570 571 6
+571 572 16
+572 573 16
+573 574 13
+574 575 11
+575 576 15
+576 577 20
+577 578 14
+578 579 7
+579 580 19
+580 581 16
+581 582 9
+582 583 4
+583 584 4
+584 585 19
+585 586 5
+586 587 16
+587 588 10
+588 589 6
+589 590 15
+590 591 18
+591 592 13
+592 593 4
+593 594 1
+594 595 20
+595 596 10
+596 597 2
+597 598 1
+598 599 3
+599 0 19
+6 53 14
+385 316 20
+334 393 4
+550 148 15
+127 439 15
+218 134 2
+495 0 9
+38 76 2
+403 179 2
+408 587 3
+-1 90
+0 40
+0 90
+2 90
+1 90
+2 20
+5 60
+4 120
+4 20
+1 40
+8 20
+4 20
+11 120
+0 40
+0 60
+5 60
+4 120
+11 60
+0 20
+14 60
+15 20
+18 40
+21 120
+17 40
+5 40
+14 20
+3 20
+3 60
+1 90
+12 120
+8 90
+25 40
+10 90
+4 90
+29 120
+25 40
+12 60
+22 60
+20 20
+1 20
+10 20
+19 40
+15 90
+36 90
+24 120
+3 120
+3 60
+38 20
+35 90
+44 90
+7 20
+33 60
+39 60
+20 20
+40 90
+38 90
+37 40
+0 60
+2 90
+9 60
+23 20
+19 40
+18 60
+11 60
+47 120
+9 90
+12 90
+17 40
+48 40
+35 90
+25 90
+70 20
+25 60
+35 90
+62 90
+64 40
+1 120
+16 60
+71 60
+19 90
+53 40
+38 20
+41 40
+3 20
+50 120
+71 60
+22 40
+68 90
+48 20
+50 60
+49 20
+24 60
+14 60
+17 20
+37 20
+55 60
+67 40
+52 60
+66 120
+73 60
+87 90
+12 20
+31 90
+44 120
+51 120
+0 60
+13 40
+37 90
+29 120
+95 20
+107 40
+86 20
+30 60
+76 90
+50 40
+77 20
+78 40
+61 20
+64 90
+116 20
+53 120
+2 40
+64 120
+102 60
+67 120
+101 20
+39 20
+26 20
+10 60
+29 60
+46 120
+8 40
+129 40
+81 60
+2 40
+81 120
+52 20
+64 60
+104 90
+48 120
+116 20
+55 40
+14 120
+46 20
+109 120
+24 40
+48 20
+124 60
+88 20
+62 40
+110 20
+93 90
+128 20
+106 120
+60 20
+38 60
+34 90
+5 20
+72 90
+125 20
+65 60
+24 20
+149 20
+61 90
+67 20
+164 90
+5 40
+140 40
+61 60
+101 40
+63 40
+21 120
+117 20
+51 60
+135 120
+118 40
+36 40
+28 90
+58 120
+137 90
+112 120
+17 20
+96 20
+52 120
+144 60
+95 120
+91 40
+116 40
+28 60
+22 90
+43 90
+84 40
+82 20
+5 20
+190 120
+114 60
+114 20
+87 60
+59 40
+186 120
+57 94 78 56 106 48 93 84 86 95 10 30 38 16 93 34 85 96 96 54 40 81 93 87 80 22 92 34 60 120 115 70 46 74 113 52 46 73 118 43 63 66 79 53 96 118 42 85 37 38 42 112 88 104 65 16 72 44 61 118 66 11 107 26 70 39 63 80 39 97 72 75 120 42 56 61 65 42 120 101 55 27 34 28 115 112 118 78 58 80 69 89 76 98 29 67 24 112 32 81 66 47 23 87 17 62 86 61 92 111 105 80 100 66 77 83 90 72 25 82 32 44 18 85 80 106 28 51 42 54 40 12 93 37 101 28 62 41 83 54 50 66 83 76 33 88 25 19 62 110 111 61 50 46 27 10 64 52 38 17 44 50 35 12 47 32 77 73 85 57 32 25 73 112 33 81 33 24 59 61 114 21 33 97 21 73 19 28 69 76 107 43 77 120 46 100 76 78 110 115 84 63 65 56 64 35 23 28 69 106 77 82 113 24 38 75 87 39 55 48 119 70 93 102 100 31 47 39 106 108 77 71 69 50 14 44 41 24 61 106 23 90 96 101 30 59 110 23 36 68 62 98 79 111 43 91 14 81 36 70 21 111 28 30 24 76 86 37 26 43 91 48 102 89 51 16 71 81 44 51 68 29 93 73 93 29 83 32 120 111 44 82 65 107 21 95 72 90 78 110 23 97 29 40 72 47 103 77 79 47 80 40 89 62 15 73 98 35 107 104 13 81 41 16 116 11 116 12 115 23 67 118 35 62 87 67 93 18 18 21 23 18 66 86 117 88 79 45 44 72 109 49 117 52 59 80 42 96 88 63 66 49 119 15 17 16 81 46 97 62 83 117 21 100 69 90 84 117 79 86 27 36 101 11 79 101 98 88 19 38 99 63 78 22 82 83 52 55 54 70
+1 385
+3 5 69 388
+1 46
+2 38 310
+3 191 193 324
+3 272 361 385
+2 183 270
+3 103 230 308
+3 21 204 399
+2 36 95
+3 72 323 351
+1 385
+1 210
+1 321
+3 40 149 203
+2 52 359
+3 119 334 370
+1 356
+1 358
+3 183 197 309
+1 181
+1 60
+3 180 185 345
+3 88 152 364
+2 82 288
+3 70 365 387
+2 284 339
+1 372
+3 104 329 367
+2 20 49
+2 114 159
+2 25 112
+1 334
+2 47 140
+2 19 87
+1 94
+3 8 286 296
+2 2 36
+1 187
+3 5 205 336
+1 313
+3 89 133 206
+1 10
+1 399
+1 186
+3 69 312 326
+1 235
+2 120 212
+2 103 343
+3 32 91 232
+2 340 356
+3 20 28 349
+2 89 317
+2 113 292
+1 132
+3 90 202 312
+3 108 185 286
+2 62 335
+1 120
+2 286 355
+3 3 225 338
+1 38
+3 81 309 392
+2 231 340
+3 33 145 319
+2 10 73
+1 325
+3 267 302 393
+2 296 394
+1 390
+2 102 225
+1 154
+1 298
+2 93 385
+3 26 135 336
+3 213 366 391
+3 81 166 352
+2 35 231
+1 248
+3 43 96 392
+2 199 225
+2 21 109
+3 65 238 388
+1 124
+3 186 274 302
+1 127
+2 241 275
+1 0
+1 314
+1 137
+3 32 58 325
+1 326
+2 211 258
+1 355
+3 55 259 365
+2 51 271
+1 263
+2 47 213
+3 160 257 344
+3 11 176 369
+3 265 329 397
+2 161 366
+3 145 150 390
+1 205
+1 351
+3 64 111 375
+3 191 291 393
+1 21
+1 276
+3 3 31 197
+3 81 223 311
+1 331
+2 159 373
+3 6 214 254
+1 207
+2 110 372
+1 394
+1 165
+2 60 77
+1 256
+92 83 90 70 35 26 25 34 71
+chcdfhhf 34
+hd 30
+baaahdge 3
+bedccfdfgg 35
+efdhfe 2
+hggfcbgef 3
+gffgeehe 15
+fbabddagghgg 30
+fchhdc 46
+gc 12
+bdeegaaafdh 50
+ddfgfbbb 41
+cgeebbfb 12
+cgghcg 40
+dhd 19
+ahhhadfagch 38
+dfhedcbcbbda 22
+gcfbbcefcce 44
+ehbgeacheae 1
+hbeechfaag 11
+ad 46
+fdbefb 18
+bfcc 45
+hgebdfcggef 26
+dbffbaagca 21
+aeag 34
+affghffgc 42
+bbaahhcef 44
+bd 46
+dafhf 29
+egefh 15
+gdhbchgfae 14
+ehdgadgaabdd 28
+ghfehaga 29
+acfafdadg 26
+decae 48
+bbchf 47
+bebgbb 5
+aegdd 8
+bhhbba 18
+efbaf 21
+afahhgfe 50
+ebcegefhbbh 39
+chcf 36
+cdb 17
+ghfahcgc 32
+cchae 13
+ebdgbdfgc 46
+cafcf 48
+echegf 47
+dghebadbgaf 36
+feehbfb 14
+cee 40
+fhdeefffhdf 38
+eeebehdg 3
+fhdgeecha 38
+dhagf 4
+gcfbegcchc 47
+ah 44
+baf 29
+hgehdhhbga 45
+geh 40
+chageada 17
+dcgdahe 42
+dde 43
+cecfca 11
+fgeeabcggba 14
+dcdheafffecg 46
+dfddaefa 33
+dhhfeed 39
+bchhhhc 44
+cfgcaadge 19
+bhhh 43
+cfacghcccfee 44
+achef 46
+cgaabg 46
+afdecdh 11
+begefghbd 5
+haabega 16
+dabhb 49
+bab 13
+ffbfdeed 22
+haadccbf 38
+gdhedha 26
+ecaehahceegb 49
+aefhabbhhe 31
+gbchc 43
+ebacdghdbaf 17
+abdcegffehch 7
+eccagfag 36
+dgdehcc 1
+cc 30
+dgbcdaccfcd 33
+hcfdhbefddef 12
+bdeeeghcgfgh 12
+hdagcdecgad 8
+ebhchh 29
+bdec 33
+dhheffeg 39
+egce 23
+beg 30
+agdacdahf 27
+ddaf 2
+hfbfa 50
+ceffhfebgbff 25
+chdahheeh 18
+fhffdcgdd 30
+ecdegeca 7
+bebdhbc 15
+ac 15
+bbgbfhfb 13
+gfaca 19
+ehghb 32
+chhdfcee 17
+dggcbea 19
+dfhddd 21
+bgfd 19
+cd 16
+cfdceced 24
+dffhgg 7
+bggdfc 7
+bfdbfeed 32
+fgch 10
+ed 39
+ecdadcdebgeg 3
+hgaehbedc 13
+fha 24
+ceccc 5
+befcf 21
+beeca 8
+gdeb 24
+fbfffad 11
+geabddcehadc 33
+dfdfbch 19
+dhcffefgag 36
+ghaaech 19
+bcfadf 24
+dfcdbeacc 36
+ghhccceedade 43
+heebhhafda 49
+hddgbfggc 11
+cee 7
+gcbcgb 27
+cabhcffccg 46
+gegebea 23
+fedfdefbgfa 21
+gbdafef 42
+ahehf 28
+gebeaecgec 13
+eggd 49
+bhfhbced 19
+hdahcfe 3
+dfacaabegff 14
+hchafcbbeegf 38
+cbcbf 11
+hefcchbdf 29
+eaedadggcab 24
+cedec 13
+ebahhced 14
+bbbfhebbggga 11
+baffcc 9
+ebfb 39
+bf 15
+dfbacgc 32
+bbhdegdefdgd 12
+ac 39
+eb 40
+ea 41
+ecbdfaecga 34
+fhehfcgfbhef 13
+dfdcdaefda 49
+bddhfdceh 27
+deeffccecch 47
+ccbdgdfgf 29
+bfba 15
+dgbea 20
+edgc 42
+dbfebbf 5
+fgcebdfbdhfg 27
+fdgadhbhf 9
+dhdfgbf 35
+deagdgf 23
+cfhfecch 24
+hcfabdfedegb 41
+ehbbefgbg 23
+fec 21
+ffdaacefd 6
+hhccdhedfacf 17
+ff 33
+befccfa 41
+abebecf 30
+hffedhegb 25
+efaabgaceeb 46
+bchgf 23
+geegfb 43
+edgbdeeeb 38
+eaa 12
+fhgeedfdaghc 28
+ggddcfcfbfd 20
+agea 46
+egachf 41
+afgfhacbeh 39
+ahafdbd 43
+cdcgdbfhhcc 27
+gcceddffhgbb 47
+dc 17
+dbfcfdah 27
+bafbdd 40
+gd 47
+cac 39
+hfheeh 30
+dheede 32
+fef 20
+dfbacccbecdd 37
+fccgageag 41
+affbgab 33
+fcaggdegdgdh 12
+bbaaahfbeg 40
+hfdcab 22
+gec 46
+dbbfffgbc 41
+cefhhcgc 21
+hbcdhdgcga 35
+gdbfhd 37
+edecchdgede 15
+aebahechca 19
+begbadagdg 48
+gbedcbaffcf 4
+fabaffhdh 3
+acbdeefafdb 6
+hedfehchccf 4
+gb 10
+gega 2
+gcccbhageef 4
+dgdfd 43
+ffd 6
+fg 3
+efhdchbahhee 1
+dedccb 17
+hbdcfedc 19
+fh 24
+dgacfefdacgd 40
+fhgffgafhf 21
+fcgdddgaaegd 46
+efdfcagdceh 39
+hdcgaecggh 7
+aaagbgdceh 31
+aaafbah 22
+hdhfbfhd 29
+edcg 1
+gfbaaf 41
+caac 31
+dggg 23
+bhhhhe 27
+agbfd 46
+hdfbbbcgbcae 7
+ebecchefgh 24
+hbebgaheabee 30
+ehhghda 31
+baecdbd 45
+dghhfgd 49
+chdeeeaebg 15
+gagc 15
+gchbhebfcb 40
+gfebeb 14
+eehfeffba 44
+hdghdhbfdad 17
+cdccddhdbhbb 33
+dbbhegdad 48
+dgecadbfedbh 9
+fffbccbaeh 10
+abffhhcfaf 16
+abhdbddbcfe 30
+defbda 38
+bh 15
+gggfhhggeg 37
+cgfeggdedb 46
+gg 42
+adcbbghhefe 8
+fcbcahfd 35
+hdgbdgh 25
+fdhaabge 43
+becfgagabd 19
+afhb 43
+efgggggahgc 40
+ccd 29
+ehdgaegbebh 31
+gfdchg 45
+fcfcfeaf 18
+egfdcgb 44
+fbfadchdh 2
+agefgebhfcaf 34
+ehgcfccbgd 42
+dfbbgchahcf 34
+dhecbea 49
+affffeedfad 45
+ecb 38
+ebffhhffd 30
+ahaeebbec 20
+cgh 31
+fhace 34
+aebbhhd 24
+ffdhbgcgeaec 48
+gdcbababad 6
+fdgbdhdegcg 20
+dehh 27
+bfbahceegfh 33
+dbdahgehddcf 19
+agcfhbgbega 14
+ha 42
+hebgghbefaah 4
+bafbh 37
+bfhefebffc 49
+hcbghfec 4
+egfcbhgddade 46
+eaech 20
+hbgfbebfhg 36
+daaa 15
+dfbc 40
+degdcgggdf 23
+hcffggbg 28
+fhhahgffdggf 4
+bgecdgecbfhf 18
+dcfbbbh 37
+eabadb 41
+cffhffhahbg 13
+gbh 44
+ddbgggg 41
+bdcabcabfb 42
+dggfcg 16
+hhhbdhfhecb 20
+debfgeddhb 23
+eaabgacfbdec 34
+dgcc 4
+bhf 48
+eabfd 5
+cacca 35
+dcdedde 6
+dacaabdfgab 37
+dffgc 10
+cfga 40
+dcac 44
+bgcaad 18
+dfgahhehd 32
+fgbbcbdbga 27
+hbaecdehhede 8
+ea 2
+eaf 25
+efeaf 50
+hab 26
+achefgdaab 3
+dddgdh 18
+hfd 14
+hcffehbh 37
+fgchhbaaeade 41
+cbgaegd 21
+eabgf 12
+bh 4
+fagfb 15
+hddcbhagb 8
+gbdcgfh 16
+efhb 1
+ca 36
+bb 27
+fcgbd 22
+becbff 9
+cfhg 10
+adbag 2
+bgbbbbec 2
+fgddcbfafc 36
+dhadd 49
+cahh 39
+hbcbcb 39
+adfabba 40
+abeacedha 45
+dhg 28
+cehecfhdf 20
+bggfff 11
+ccefbbdcahbg 4
+bbef 26
+cgfcaebbc 16
+adfaf 48
+bcc 46
+hdcagcbeded 17
+bbbff 36
+dbbddha 46
+bbadgh 12
+cgfchcg 36
+eccdfce 29
+aebcfbae 32
+aehgcccfgfc 9
+cfgabfcdhgaa 35
+febbaffagdh 27
+decdcgadha 22
+ahff 27
+bcgcbfggdbhc 5
+eebe 14
+gdcfhgdgde 43
+gcfgc 22
+ahhhedfcf 46
+dhdh 9
+fegdhaabffe 44
+cfbbcg 5
+bhcbhf 42
+hbfgdaa 34
+gbffe 39
+adafghcee 5
+gcf 20
+afehehfcec 48
+cbagffcdhadb 34
+egdcgd 50
+dcbdddbehhd 31
+heehf 33
+chccgg 18
+fhdghgafcfgg 18
+abg 20
+eabh 43
+edhfb 37
+chabgaaecafh 15
+bhhd 13
+dbbhhdgce 21
+cdbdgbcdbah 31
+fahccehffh 13
+efcbdadceg 36
+dbchhdgfac 10
+hgeddcgfddd 2
+ecbcgef 45
+ge 46
+cfdchh 39
+cbdcf 20
+aabcacgg 31
+aef 39
+cd 6
+hdgaee 22
+de 45
+bebfddcbc 33
+aedadehdcd 17
+fffhfhga 27
+eeehdddb 15
+bbbf 1
+ehffgadgcgb 10
+dgcdgg 36
+ahacgdgbg 36
+echgeeg 35
+babcgbbecbee 24
+gd 21
+bbgg 11
+bbfgd 7
+hb 49
+dhgbbdhefeb 2
+bdgfhb 27
+edgbd 24
+ebdfe 17
+ddhfcghabb 45
+dacbhh 7
+cdfa 5
+ecdeacb 45
+gfedg 2
+dhb 23
+eb 23
+feaggd 7
+bdccf 31
+ag 50
+aadaf 33
+faabchdeg 47
+adfe 49
+dbfaefe 39
+dcedh 20
+ccdfcagbgbb 12
+afecg 17
+ag 13
+gff 24
+fcdefhg 37
+ehbfaaefbg 32
+bhfhh 9
+gbhchdabdh 9
+dhga 40
+ccbgdceegb 6
+ba 46
+egeabbg 46
+ddcfddgcadfc 13
+bcgchfae 39
+chhbbhcedfa 49
+fcfebghbdbff 46
+dafacagg 50
+ecacfhff 48
+afh 42
+aha 31
+cedg 45
+ebcfeadbga 15
+fdgacaggea 44
+hbf 46
+ch 42
+bbfahehg 36
+gchhcggaebad 41
+gbdghhehac 39
+hbgf 42
+fb 15
+aahhhbdhe 4
+bceb 37
+efhe 32
+da 3
+achgd 38
+bdbedghdbe 1
+aeaga 47
+da 33
+aachgbfeeba 24
+cde 5
+hccgb 41
+eeefcaehfeb 9
+bfd 47
+gcggdd 20
+dbecfdfc 40
+debedh 2
+fddeb 48
+dhcgb 26
+hc 1
+agag 43
+heaabcdh 26
+gdggd 44
+ebfeddcged 35
+daf 24
+chcghdfcggcg 40
+dahbgdcd 4
+cgbceh 8
+fcehfbbhfa 34
+bgfh 34
+ccbebhecbf 5
+adhadbffbb 36
+fagafhhedhbg 46
+efhbb 16
+fcachhechbg 21
+gbffbedfdceh 36
+cegg 15
+hefhacgd 48
+hfaedcdg 11
+ccedabbafefd 33
+gecac 35
+gacc 17
+ahfccfba 16
+fcghfab 17
+cdd 13
+bdhbdbah 42
+hebbfch 19
+dadcdgc 18
+gcdccbb 23
+heabd 15
+hefehh 24
+hgfga 17
+gbbfdhffebhf 24
+agdfgdbb 45
+hcdhecdh 12
+agfbbca 50
+fhdddgdgach 20
+gccebhgbfcbh 34
+befhee 49
+dgbaadb 19
+gfbahdb 36
+eageddfc 10
+hcgegcfadf 5
+bbf 3
+dhfcaecheg 42
+dafabchc 46
+ecdbhb 16
+gffabha 42
+hgbef 34
+dfhgcehgbfac 35
+hcecebhg 41
+agddac 13
+ce 21
+hbddhgafc 1
+ccbababc 49
+aga 17
+ehdecfcc 17
+ghgea 2
+beceabacedhc 43
+bfcheccfg 36
+eahe 20
+faeccfheg 43
+dcdhcga 5
+adhffbh 11
+ad 23
+dchhbafc 44
+gegcdhh 17
+fhg 40
+befeec 5
+hdacdca 2
+ffb 23
+aeghhdd 35
+bggeddabb 45
+ffhghcace 10
+daf 1
+abehfaccghfc 31
+fcg 25
+dgebg 3
+ahefag 26
+cec 35
+afachhb 9
+hbcbcea 11
+gc 50
+da 28
+aafc 37
+fhaeg 21
+geaebfhfcdfa 24
+ebhccgebg 16
+gehededgb 49
+ccddedc 48
+cbeedb 45
+gchhada 15
+hfbabdeg 26
+haceh 21
+bccd 17
+haefbecdaf 26
+gcdgcb 32
+adfe 1
+ffcbafcf 24
+fefhbc 16
+eh 29
+ecbegbffbgb 26
+fcdacgeebha 43
+ggefbfdfa 38
+ccfeebh 43
+edaaaedb 37
+cgh 48
+egga 17
+eeg 34
+egab 44
+eaege 9
+agbdecacdaf 32
+ddfdf 9
+aaed 15
+aaehce 5
+gaacaec 28
+aaga 23
+dchffedegd 33
+gadece 3
+gbebddhgca 17
+dh 7
+ahdedcga 48
+hd 17
+bcahbdeh 21
+gabeeaedfa 2
+efahdafg 26
+bgb 5
+fcagc 22
+ebdhghbb 11
+hfdae 28
+agafacd 16
+fabhhdafg 47
+eggdhadabe 21
+dcfgdhehf 3
+aecbefadaeg 4
+gahfchchage 33
+ffcgcfcad 36
+db 49
+egeacaegagaf 15
+eebc 50
+hcff 39
+baefdefcd 37
+dedb 48
+ebccgfefeaea 43
+fahdfb 42
+cebgac 16
+ahegcchhe 9
+efefgehdga 18
+achgbf 9
+gagd 40
+ae 24
+dhdgfde 40
+ac 31
+ghghgdccgf 25
+abdbdadcedd 14
+ecfhhehehgbh 3
+defddaegdhbg 36
+dhdhefhce 50
+gdcgchdba 37
+bef 4
+eheaddh 13
+hadagdeb 41
+cgeecffcg 2
+feddchc 9
+febbafhgeg 9
+cheddfhffchh 41
+dbaagfhcg 14
+cfdebdba 28
+ba 35
+chfeb 49
+behbh 3
+bffhebebg 46
+gefbfcchhbd 27
+achhhhhb 35
+defaahcdhdbd 21
+fechbeghaggg 40
+fahcehdeab 21
+cb 45
+aedeadeed 32
+caefhbahd 49
+fbg 42
+fcch 18
+bhfeca 28
+hbcfgg 3
+febce 31
+ffc 20
+bfaegbhehbh 23
+fh 3
+hefbdbfgecb 37
+bg 1
+gega 47
+bafcb 50
+ehfgeecddehg 13
+cdahebgha 43
+fhabhfahaaf 41
+agfahehbbf 17
+adecgachcfec 14
+eaeddhdda 41
+dgdeb 48
+gabeccfh 6
+bhefccfa 8
+bedcfhd 42
+bceggadebc 5
+edg 18
+fggcde 48
+fchahg 2
+cbfc 14
+gedagafbc 34
+ceb 21
+chfcaehaahf 19
+daff 48
+gaeeda 36
+eacgffc 42
+bbhgaagbe 6
+hfhhbbefe 47
+hcahgefaebe 14
+hdeed 10
+ffafbc 37
+bhea 23
+eheagdc 5
+chfg 11
+ggfebebbaga 26
+hf 12
+fcedgahegef 19
+gghccfb 42
+ehdbddhad 13
+gdgagbbg 3
+aaeheaeebfbc 41
+cacbhcfa 27
+bhdafbdg 20
+dfg 11
+hh 16
+efhdg 18
+gd 28
+gdefhaccbad 20
+edadhaea 42
+ffahcbhg 16
+aadfg 43
+gcghdhhbh 23
+bcce 36
+abhabh 21
+eecgdcdh 44
+bdehcagea 34
+chhbb 14
+ec 19
+hdhfba 33
+gdddebedg 6
+hfc 47
+hahghbaabad 13
+fdagacadhfd 7
+ghcfdaehggb 35
+dfefgfhbec 45
+ecbhhhddcbg 50
+chehehcha 2
+fa 12
+aefcaecdhdc 6
+dggce 49
+dgffaheha 37
+hfegdf 49
+ghdfcdbfacd 26
+egb 13
+dahaahhecg 9
+eabhf 21
+ccbecbbfbad 8
+degb 7
+cfdacbg 39
+ahfbaebebb 5
+ddcdagchgg 8
+hcdcgbahfbdg 27
+dac 18
+gg 39
+dfgfcbbgb 16
+ehceb 43
+ea 23
+gfbdhcbhcf 36
+bfcgbhhdafb 21
+fbgdeb 47
+bbeehaeeded 7
+bebfdbabfbg 37
+hehedgf 38
+cddbcgbededc 18
+bd 23
+achf 7
+edgaefahfbda 24
+gfgegcc 5
+gccched 17
+gheagccbbbae 24
+fgeghchbged 18
+bahacgb 41
+acheacgege 25
+hc 3
+ggf 46
+ce 44
+dgdccc 46
+bcfdcgb 38
+fg 4
+beb 29
+decefgce 32
+gedgbchchhdc 19
+dfacbddaefe 50
+dggfeffeaed 20
+bfbeedfdeffh 41
+bc 41
+gebeggfgfhb 49
+dbfgebbfba 9
+dgdcccgfdee 36
+bbce 35
+hfcfg 28
+egefde 11
+dbh 42
+dcaabd 34
+acf 20
+dfecd 19
+dfe 42
+dc 20
+dgdaggd 20
+he 44
+edcbegagbe 34
+dabhggacdaah 36
+gb 24
+eefcd 20
+hfdfagbd 36
+fb 11
+af 12
+deehfch 21
+ghbbccchae 35
+ghbgcchfcdcf 7
+gbgbggagacac 33
+afg 11
+gdb 3
+fbfdfbcadgad 8
+cbdddhgdfchg 28
+dcdb 2
+bgc 42
+hf 26
+bbffbe 35
+bbaagg 1
+cff 23
+badbacgfha 45
+afe 47
+bheeh 46
+ef 4
+cg 22
+chffade 25
+dabghh 1
+fcbgcc 26
+eaggbgacffeh 21
+abacaegbfg 17
+hhgaabgh 6
+bchbdbcbhbed 20
+eac 38
+cae 34
+efhcafddbc 7
+gehehdgaead 12
+fgb 35
+dcfhbfd 19
+ehgbgcgg 28
+gceeehce 35
+ehceaabfcab 23
+adfhd 8
+dafffccegca 46
+daegcecfg 42
+aaae 24
+bbebba 44
+cbahg 33
+efbbcdf 50
+gfacbfb 8
+gbeef 17
+degae 50
+fg 5
+cgffgahaghd 28
+adaacdcdg 29
+bcchga 31
+afafdedh 48
+gcceg 27
+gcfbaghaddfc 23
+abfafah 38
+dgchdfdgd 5
+dhhgcaddchcd 30
+gffbhahgfgf 19
+cddbbb 44
+fdhgfdghhb 24
+hahcegga 43
+agegchc 15
+ahdhebfchh 33
+bdhgfa 13
+fbebehgeegf 26
+gfaeecheb 43
+fdedcccefd 8
+ebageebeggh 8
+gecbbfaehgdg 8
+ffbch 9
+abh 26
+dehfabceed 26
+ade 34
+hcg 30
+addgedgdfbg 18
+bffe 16
+afghf 34
+beb 17
+ghgab 32
+dghd 5
+gachahea 13
+hb 5
+dhc 40
+beda 1
+behhgggfdf 44
+hg 4
+beahgecbedbe 6
+fbcfcgh 17
+ada 34
+gabec 8
+abaeggdch 25
+bdchbaafgaab 49
+eg 50
+cde 33
+gaeehhe 33
+gddhbdh 43
+acaaed 48
+begfbc 21
+dbe 50
+gchcefeah 7
+bfgdbaedh 29
+gchgaddf 39
+hccbgeag 31
+ggedbaggfefd 27
+acgee 33
+ffeaehbbf 30
+dgdabade 11
+bheee 36
+fbhb 28
+ha 46
+hac 17
+cfhdcbhcfhbe 22
+ahgeh 27
+bba 17
+gbfg 2
+dgfda 12
+fcfehhafaeh 44
+fhabgfb 31
+ehbaegbdgaa 9
+chffddae 5
+hehcaceeehaf 32
+beecdfabhafb 34
+gaeadabeabcd 50
+defdfaaeedgd 15
+gfaccecaafce 50
+agehhgfgcac 32
+afd 41
+dddcaaagh 18
+bddge 29
+daggcbha 2
+hhaedddhah 2
+eacdc 46
+chffd 36
+efagbf 16
+ghdhggca 14
+bffacgddh 9
+bbbbddg 7
+gabac 36
+abggfdb 45
+adbcgbhbd 50
+fhbdehd 5
+ebh 11
+feb 16
+agfcbhg 18
+agafgdd 39
+dahdcbahdbhg 35
+bh 14
+hhgcghbeg 40
+ebh 33
+bfbbgbced 4
+bd 5
+adfedbcfbc 17
+ebacbhf 26
+eheged 26
+fhcbfc 50
+debbg 14
+beeccc 3
+hfdececbhdg 39
+df 35
+heffefgc 14
+fegbfhgbaabc 46
+fcchdf 15
+ecae 30
+dgeccbhed 34
+adcffhe 16
+cc 31
+efdadhhaedc 19
+gedec 49
+dgchg 20
+ghdehehbdfgh 46
+abegbgcec 37
+ebbhbhge 18
+cgb 46
+gcfggcfcgg 11
+fehdcbdbd 30
+gafbad 27
+ffeceghahh 35
+dceg 29
+cgedahhd 47
+acegafcgb 50
+bbaeghfcaehg 17
+bhee 42
+cbffeafaacdg 17
+ghgce 39
+bgggb 27
+hdeeefghfca 27
+defc 37
+aa 30
+edfcdb 43
+chdddaceh 43
+bh 11
+feaccgfbbce 25
+chhgcffd 48
+adffaed 26
+gfcgcbeddacd 1
+gededhag 25
+acagccagc 34
+ahgbhhdagbac 34
+cgabdddaecag 22
+hgcgbd 20
+cbhhebehgbf 10
+hehbdg 30
+hadcedhba 17
+gefa 36
+ghbfddfdeebh 33
+hfcdfc 33
+dfgebfdfeg 46
+fhcacgcd 8
+chcgce 44
+deghfbfh 43
+aedeaad 50
+efehged 15
+fgc 34
+gdceaffe 22
+ehefbe 19
+hdeddhcd 40
+dhcgddaf 25
+dgbbhdgcgh 31
+aaaaf 26
+dceacgf 29
+ahfehf 33
+gdcacf 34
+bhebdd 2
+aadeeceah 35
+cdadahbahg 43
+cbgbbegg 30
+ba 24
+dbcgdfd 22
+egbahchfcd 27
+ahdca 37
+ecgbfecehbca 41
+geggecfbe 41
+ddbddagf 22
+adgd 17
+dgcdacgbf 14
+heeaa 3
+cae 6
+hcggfa 15
+dfcbdgc 31
+dgbgahh 42
+dbbbfgc 18
+chdebhgd 46
+dgagaefbag 6
+ebeea 23
+dda 37
+gcgagefebe 38
+hacbgheg 11
+gdhha 21
+fbdhfheedf 46
+heeda 25
+ef 26
+fhbgcfgcfbfa 27
+aaafgeheb 18
+dbaf 29
+gceded 13
+aadcbfdacga 49
+daddefebcc 3
+hcefbh 6
+eecgffbcdbhb 16
+gccbhfa 50
+edbfecedeahe 10
+cfbgfg 17
+bedbe 48
+bbeedbc 48
+fefabccafa 24
+facc 8
+egg 3
+af 11
+hgebhbaecedg 39
+cgfhfecg 10
+hgdbebf 44
+gbefaafe 30
+dhebecheaeea 29
+dhadghbhgah 40
+agbcb 44
+ddeceedddge 35
+hbdaghhaa 28
+acbdfgcahhah 17
+fhcaacebhcgf 19
+he 35
+chgbgfa 31
+aadd 10
+hfebfhgccc 16
+ffaef 29
+eedgehab 50
+aeaeaehgd 49
+eec 39
+hcfe 16
+hagdhg 28
+dcb 6
+ha 21
+hhgdbfbbafb 33
+gbbacgb 34
+geecgdhbc 49
+hb 1
+fgdchafdh 31
+ddgegaae 46
+adac 31
+gbfdfafbccc 33
+hgdgdgh 3
+daab 45
+acbgacbfg 19
+fbcegfcdef 48
+hfdgc 10
+hcdbadba 5
+cfgbbbhdba 2
+egdbch 19
+gf 18
+eaghhcagdh 19
+ehaedbghc 5
+ffgefef 25
+hhcfhaa 10
+dddefddgehg 35
+aadddabd 33
+ecg 41
+acd 32
+adhdfhfhc 2
+cebdgabcgdg 37
+bbchchbdf 21
+adb 8
+fcbabbbaeafd 35
+eadgcaeha 45
+gdhhghea 7
+eedebhecag 9
+cafdbfece 14
+aa 11
+bbd 42
+fgcaega 29
+bcfcgefhffc 11
+hghccea 40
+eddgf 23
+ddhbch 44
+hffbabfaadga 28
+fhfbechc 35
+ba 4
+fbefeahdhcha 24
+ahabebhhb 35
+dggeheafgaae 50
+agf 41
+fadbcfa 46
+gbhcgdc 47
+ebdeabh 44
+gdgaccdecegd 12
+fa 49
+cgf 18
+dabhgfdc 48
+dacbfaf 18
+abbhfcbbg 46
+hfadgfddadhb 10
+cgdefbafcbd 32
+geffc 5
+bagbd 42
+dhcebhc 10
+eceh 9
+aeghgbgbfff 27
+bdagefgaafb 47
+edad 24
+abea 19
+caghef 14
+heaaaaag 49
+ahfhbbfgc 13
+chacgccheeb 21
+cfdh 47
+bfceebffd 26
+afehefehcade 17
+degahgfgdfca 48
+hch 2
+cfah 19
+ghcadhhdg 18
+gcefca 18
+dabeega 47
+dcg 29
+gdhcbgaced 7
+eh 42
+fge 23
+cfghhdagcb 24
+ef 11
+cfe 9
+dagafad 31
+gdf 4
+hcgdeahecb 27
+egdedhh 33
+dfdgghgaffbf 49
+ef 12
+adeg 30
+aae 16
+bbeggd 13
+fgaede 43
+cadffebcfg 4
+cbcchaeefhc 19
+hgahcbbc 49
+ahedcacb 6
+gfdd 45
+ehg 31
+hhbaeah 30
+ebbf 33
+eggfddf 43
+ehbbgd 8
+df 12
+beheaeh 11
+gecf 31
+dafdhagdha 45
+ffhd 24
+eehcae 13
+afhhaadcbc 20
+abhabdbbf 20
+cccdbgea 37
+bdefgehed 18
+aecdhgh 28
+gdfcddfdae 43
+fhhhbeed 38
+bdhecebdhf 29
+bhfcbadc 43
+fcg 6
+ffdadgggd 41
+fhdced 44
+eghehggf 31
+bheacghabh 17
+hdcfacg 35
+ceagfe 19
+dfhfcccc 13
+hdb 7
+hggdbhd 17
+ehga 32
+afgdahgac 21
+hfcdc 6
+hhhd 23
+ghbbbfhaacgc 39
+cfadcfeegcba 25
+hbc 31
+adahff 31
+ahdffahgebae 49
+ghbcchdfeg 4
+egb 31
+ahdbdf 23
+da 3
+hgdhgaaaghf 22
+hefddda 33
+gfch 36
+ffgedfedff 50
+fheebhhg 50
+bfcfcd 20
+geba 22
+ff 41
+aah 44
+eg 3
+efgahdf 12
+gebeg 17
+bgebgabc 3
+db 21
+fedecbfbfa 37
+caggegaf 23
+adehc 3
+ba 6
+ehhegecede 39
+cbgf 32
+gffhd 7
+hhabcedfgg 30
+chaddgfc 48
+hbebbbdaech 45
+hcfce 38
+hcaf 46
+fgdahcb 47
+dfgaahe 14
+dgabcd 21
+cafgehdfaeef 32
+bfbcggfgbh 8
+eaehgbagfa 18
+eceh 11
+ah 27
+chgddh 50
+cfbe 18
+bcgfgagcccdf 47
+ebfhhab 28
+afcfdehd 27
+bafeb 27
+egeaahgb 46
+gefd 5
+cafgbgbc 38
+ahceaaaegcc 45
+fggb 14
+gcgdc 42
+aacaheb 33
+eedeeah 2
+af 17
+hgc 27
+bebhghf 35
+cd 4
+cgdfdbchgahb 20
+dbbbefdb 5
+dddeecehaahd 10
+cgfgdhcdc 48
+efe 36
+fgfaeegca 22
+bhaaecaefdae 24
+ae 17
+hchhhagc 30
+adcda 8
+fge 26
+ahcahbg 18
+hfcgahbg 48
+bbdbggbae 20
+fhdgffdfbaea 10
+hchd 38
+ag 26
+chegdgfecbh 6
+acehdadah 40
+geggbfbahb 39
+bbaaeehdd 48
+fggb 15
+dfagbddaf 16
+dgfc 10
+bf 45
+bgbdceaeachh 2
+dfbbea 1
+hfdeagdhefcg 48
+fabg 43
+heeehe 21
+cagbbegbdh 25
+bfebgbge 24
+eabfegc 19
+fdaacagdag 24
+eaaehb 27
+gg 19
+ga 24
+fagffdc 24
+ecfhbceeefge 37
+hcegefcebcc 16
+cadcaafhbch 43
+eggehghhce 26
+dcffegaa 13
+gggeb 43
+bbaehg 9
+ddbcff 25
+chddaccb 23
+gcdgaecfh 1
+bbgbddgbfgc 17
+eefffagae 7
+caebcagchefh 27
+bbfc 46
+eahe 10
+hhbcfah 1
+bffbecfeac 35
+hhfafbeeed 35
+cabhcaccd 14
+dad 33
+ead 41
+fedbefg 25
+cfdfaecccef 40
+edhd 24
+edcbfbhagcd 26
+dbehhf 44
+bbcgabeadb 35
+bhg 42
+dad 15
+baa 50
+bhfbhfb 15
+adghdcbh 8
+hffbegffefbe 34
+hbc 24
+hbhbhfdfg 41
+abaggbab 21
+gc 33
+gafcebfhahaa 10
+befceh 29
+bafd 38
+aeaeecbcea 24
+ea 6
+cee 21
+ghhfbdaha 22
+egfafe 20
+aggbdgghe 30
+efbhhcbacg 3
+hhhhgaceafgc 48
+bdgagbaaec 45
+hhafbcfbcch 9
+ddfb 42
+ehgdccaffcdh 37
+ffdbccebhe 30
+dhcfhag 12
+cechfcchg 22
+hhhedgd 48
+afagaggfg 20
+dgegbefdhbgf 7
+ebhgcc 28
+aabcgbbb 22
+fcfbfbebdbh 45
+ghbe 16
+dbgcegh 16
+aa 50
+gcgbbchggbbb 20
+gbdbhfebada 11
+affe 34
+ccg 4
+bebffche 7
+edbc 13
+chgb 5
+afecghccbbc 10
+dhhgedhf 1
+gaacdhf 3
+agdcdhadd 33
+dhada 29
+hfhab 47
+fahhahfefcdf 49
+dffhbdbd 42
+gdabcecbhbdc 2
+cga 48
+gcf 25
+cdecadab 5
+hfa 29
+hcgbgbgfh 4
+ca 26
+bahfda 46
+fcbadfged 9
+eee 27
+eagbegf 40
+adh 13
+be 14
+df 44
+feggcgaahbb 37
+ae 49
+cfghaddg 50
+cgefccdgdced 44
+feddgehe 40
+adhceaddab 46
+fbha 14
+gacecbcacb 23
+acahaefb 32
+eagf 25
+affhghfgcfga 36
+dacegfgbb 24
+efhgefhdcgaf 27
+ae 24
+ggdeedehbhb 17
+fcagcahbdaf 10
+aedh 4
+cdbdh 20
+gb 5
+ffggdg 46
+bb 7
+fhh 3
+dc 15
+aggaegh 20
+fbebcacdb 14
+hachc 20
+cacgchf 13
+be 3
+gdhcfgfh 4
+ccaec 23
+eaaceaghhhde 8
+bcebefcbbbgd 7
+cchaabbcc 28
+fhacheda 16
+hehhh 32
+dfgbgeb 9
+bgaag 36
+deh 47
+hbgcggcfcfa 46
+achcfedfga 33
+abhheaa 23
+ggdbfbag 38
+dcahed 36
+efhdeaeed 48
+fdcb 1
+afeggchh 43
+dgdedf 2
+ecfdfhbdggf 31
+cheddgbhd 26
+cccfegchec 30
+hgba 13
+ehegbgdc 37
+beca 4
+gdh 46
+edchh 42
+ddcgegdbfdd 8
+hfbeb 14
+haedbdcfg 36
+cbe 8
+baae 3
+bheebhc 40
+cdba 25
+ad 38
+efhefhcafab 34
+ggeddhegeac 45
+ch 47
+gebffgcbdg 32
+adbcfgghgcag 13
+dff 11
+af 8
+aahg 22
+ehfc 9
+eb 40
+dabfbcbbdbec 50
+ccfc 1
+hbhhagb 28
+gdfcgf 7
+bbgcagcbceb 22
+fbb 31
+bggbcad 25
+chghgahadc 1
+aegffe 24
+hahdde 49
+aeegcgdhga 13
+gfbf 18
+bfeahagabf 29
+feagf 45
+bfbafahbfcg 9
+fehaafecd 41
+cchbdbaeeca 13
+dbceeah 14
+chfgeabffg 12
+efaceb 10
+dfcef 32
+gbaababdhe 36
+geeabcfdbcdc 41
+fg 8
+dceceb 32
+gcd 18
+ce 33
+ddbc 9
+gafehegggbfe 39
+chadfhccg 21
+dghddhehea 41
+fghffebdhh 18
+bb 7
+gcbfdeeggch 45
+agcaha 16
+bcaabe 38
+aachhbgdhgbd 3
+eghf 12
+eeeeeb 45
+bedbbcdeba 46
+fcagccdefedf 43
+bh 45
+hhhbgbbf 32
+edgdcgag 10
+egc 38
+bhcfedahf 34
+dghegffa 34
+aecefdhddfdb 17
+bhchefbecb 31
+feb 47
+efhedhdg 6
+hgbhdfhcc 36
+cdaffbeadc 39
+eff 4
+bgbeadgadd 44
+hcbbegg 42
+hh 43
+gee 26
+hcaega 47
+ccfb 1
+dcccdgd 31
+fbbaafadb 46
+bfdfhhbahe 19
+gef 47
+fbegcgadbfa 45
+dagddh 15
+begfacfb 32
+eeafgdhbdd 10
+hacaecgfb 45
+ghhaehafh 20
+edbegcccffa 43
+hhhh 36
+ecdfhfgbf 40
+ddhhdce 27
+faacbbehbghc 45
+dgd 49
+bfdcdbee 41
+bcgehgh 47
+ghha 30
+ggfchbafa 29
+bedhgchafgg 17
+adeaachg 41
+debdcafghf 23
+hfeah 43
+dcgheacbfa 39
+df 20
+chd 3
+ad 12
+agb 30
+cfe 3
+dcbgdbhdf 36
+hgghchfeegh 33
+bbdefedh 27
+adfhhaebhf 41
+fbeedagb 1
+ebgffdgag 30
+cehdf 7
+hgeagd 48
+ag 18
+hecg 45
+hf 35
+ddabb 8
+hgfdh 9
+hhehcgbbfh 8
+bcbgdh 29
+acbeaace 7
+gafebhaf 47
+dfhfga 24
+efhhfdc 37
+ddbeeagc 28
+hcgbdgfhbd 36
+eecahf 32
+ahcgeacfgef 42
+debdhbbeb 4
+eadagg 19
+dd 26
+dbd 42
+cgaf 35
+baddhcfhghdh 22
+acg 40
+dcbhhggg 26
+fgbghcdcbc 13
+ahgdb 48
+de 49
+efcddb 23
+eag 9
+ddbhgb 11
+aggagf 22
+cccaeacaghha 23
+dbb 34
+cbb 42
+fb 19
+hgefg 5
+ffdb 34
+gffac 7
+hgg 26
+hdacgedfgfd 47
+cgf 15
+bbadechdafb 43
+bcacbeeahah 49
+edgaggh 47
+egbhfdeebah 18
+hecbgehdefa 5
+cbechabe 6
+hhfghd 16
+hfcedbfbaehg 48
+gfebdhbfchh 4
+hggbf 11
+agbged 6
+cdd 48
+ebacdcdebeb 43
+gagg 25
+bcedb 3
+beedcea 46
+hacfgdgde 35
+cea 11
+fchedg 24
+efda 34
+hgcfdf 23
+hhbaac 34
+edce 13
+bdg 47
+eehd 30
+hce 17
+dcbaaaabae 36
+gcgea 33
+hafcbbhfchf 7
+hg 18
+hccdeafbggh 47
+hg 24
+bbfdbfh 8
+ag 42
+cded 31
+cghhgfaah 3
+hagaeebhc 32
+bbhbbbfce 9
+hgfbfhhfcc 3
+abched 39
+aba 28
+eeg 1
+gfcgfdgh 27
+bgaeaf 34
+cffceceb 27
+achc 21
+dcehge 30
+dffgghc 18
+ffdhahbfgd 47
+ccbba 1
+hbbdhcagefgb 20
+bhdbhaga 23
+eca 28
+cfeadefgghgf 1
+efahhccbf 32
+ce 32
+cgfeebgee 19
+efdcfddbhb 28
+hagegad 41
+edghhcfhhfce 42
+hdegdecafec 29
+ccfbabbg 48
+chggfecgcdfe 25
+hgecfdgffde 38
+eeedggfe 40
+aef 38
+faaegcebagcc 28
+ed 12
+fggc 34
+chfgehchca 38
+fafh 18
+fedgacc 27
+abed 23
+ecccdbehe 13
+hbaeh 3
+gcgfceddcgcd 6
+bhfcee 10
+chhehgfdddcg 5
+affcdfcehb 7
+dbfecchfgg 11
+fdaehga 35
+dg 21
+cehedh 42
+bfh 33
+cb 21
+fca 38
+ccfbcahcgfc 44
+gfffdbahg 3
+dfea 8
+gfcgbhbbcbge 37
+eagfbeaced 13
+dddfafgbeaea 26
+ggcbchdeea 6
+ceffaede 39
+cghcee 50
+ffe 15
+efgcaf 32
+ffgbh 7
+dhbacdd 39
+adefb 12
+gddefdea 50
+cbeaeeefdcch 16
+bbfh 25
+cbeffa 5
+bcc 10
+aacgdb 44
+hdghed 5
+gh 8
+hceeeagf 12
+fdbb 18
+fdbhgeh 15
+hbfdagfbc 11
+bfbdcdddceac 38
+acbdce 23
+aeggedfa 25
+haehcg 22
+dbfebbheaf 39
+ccbc 23
+cchbh 28
+heccfheachea 26
+hdfe 49
+cda 16
+hebfaehhch 33
+hghadcdehh 47
+chedgabhb 16
+dhcf 43
+cfbg 19
+ahbefbbfeg 1
+fbhcgbfcb 5
+eecche 36
+eb 39
+bccc 25
+ca 31
+fbf 7
+ahe 3
+gcedc 17
+dbb 20
+ghc 46
+fbh 9
+bbaf 17
+eggedegeg 44
+df 26
+faaeh 43
+fefcabd 5
+fgchdhdhh 44
+gbdgdef 19
+adeedcceed 31
+cchfce 23
+bc 15
+fggfcghbch 33
+defhgaagehce 42
+afhffehbdfdh 4
+daddb 5
+ghaahbdbcf 49
+dhed 45
+bg 1
+afhfebcfecad 30
+faafehege 19
+adeffa 34
+hdegdffab 17
+afg 9
+cdceceb 49
+gaeg 11
+fd 38
+cadc 9
+cba 46
+fabdg 13
+ecdbfdbcag 27
+ddgfhcgedfeg 35
+hde 37
+fffedfadcdee 4
+cbgdgg 28
+dbbehafg 12
+agde 50
+dbgb 8
+bghcdh 10
+ddgef 11
+gbcecfa 27
+fhefbb 15
+dgeefdfhc 50
+aedffaaca 8
+daechgbdfbf 33
+ahhb 38
+eb 50
+fg 6
+feagfdacfd 50
+hcgdffafchc 39
+bgbbbag 12
+ghchfh 8
+agcbgfdebgdg 10
+ca 21
+chbcdec 49
+cbcagbeg 5
+hdacd 42
+ebgg 33
+abbad 47
+fcaddaaagfb 8
+bgbhdda 22
+bccfb 25
+bcdebdfcfagd 38
+dgabgafaca 22
+fffegcgbag 5
+bdefhagddcge 36
+cfaface 30
+hbacge 15
+fcfaaccdheh 42
+bhhhhheffh 44
+hfdddfec 22
+dgggdc 10
+ededdgdfcc 7
+hcfddeac 12
+cbggbaefchcg 6
+bfafhdbadcg 34
+bdcagchcead 13
+ehefbegah 47
+ddcef 15
+eg 41
+dhffg 19
+ddhfdcc 13
+hd 7
+haadcfdf 44
+baa 45
+fceae 50
+cbacch 18
+ddefebbbhg 33
+eabchdeba 13
+acfcccffacce 5
+cg 10
+ffdb 46
+fabhdgccdc 11
+fdaddeff 20
+dacgfghddaba 39
+feadbdhd 17
+hhccc 45
+bbedd 39
+bdbgea 21
+ddah 21
+ghgbdggbdhd 42
+dhefb 45
+cacaedacgc 18
+fg 17
+hb 48
+dhfgbh 28
+edecgbfegf 8
+hbegcgacghg 16
+eeebcg 34
+aadcaecgegg 19
+bbeehbhghbdc 49
+dfae 24
+hgfcaee 21
+dd 9
+fdgfchh 27
+dhafh 21
+bgabdahb 3
+cfhdaaacgf 2
+edhefgh 19
+fdb 29
+ddbhbbgc 12
+gg 40
+bhadfdh 31
+gdadbgc 12
+acdach 12
+abgddbffech 1
+gafge 34
+cffgdehe 4
+gbebacfafg 40
+bbdb 41
+ccbabdda 15
+ebebh 13
+ced 11
+adbbbg 27
+cgbfaefce 48
+hbde 34
+bacbecdbb 33
+daehcacbg 11
+hcg 7
+aefhgf 44
+bhafaaafhbgd 31
+febfg 31
+cbeaadbbgh 47
+eggdbccfgcd 32
+gfaacdahbg 40
+bgd 40
+abebhghgfcd 18
+bgdccdedec 37
+daaafgfe 17
+abgfaacha 10
+abhcbhgg 21
+fege 47
+cfecagf 36
+ededdccdcgge 12
+fhahgbdbffb 37
+hggcceegchge 36
+ggb 35
+fae 17
+chhddgfcc 47
+dhb 25
+fbfffdg 27
+fbgecbhchchf 46
+bag 27
+cbebfc 31
+hagc 48
+ccaaccaaaacg 37
+dffdadhc 37
+dgad 14
+eegghhceegh 30
+cbdagehbgba 14
+agafdfbfhfd 22
+fhfbhebcdee 27
+cecbdfb 22
+fhfda 2
+ded 21
+aedccfafaf 40
+cgghagc 17
+gehgbbc 39
+beedgcgbhe 14
+hbbegfc 42
+bbdagdda 24
+eddgbafa 1
+ccagaahgfhf 32
+af 38
+fbfchgcfc 16
+adgha 18
+bgcaheaeabaa 14
+hf 50
+gdhbhfbce 4
+ac 39
+dcdggfa 3
+fchhdafdecef 14
+egdfgge 37
+gehecfbda 18
+gaacdgaehag 25
+ee 38
+ecfbd 1
+cafgaahh 33
+abhhdacech 43
+adb 40
+cadhf 38
+faf 21
+ffb 4
+hbdbdg 5
+dhehcbdbhafa 39
+hbdffdbahb 9
+hafgbhfbbe 28
+gcfhbgfbdeh 9
+cdgffdccdchd 20
+hbhh 48
+abgb 46
+acbcf 3
+he 9
+egd 21
+hgdghgda 15
+dbeaahf 38
+bd 45
+cgfd 36
+aheaddbefegc 30
+bddbfbbgee 39
+badefgbdfa 21
+bffhbd 41
+gegaad 7
+afhfd 3
+abcaegdb 47
+aece 47
+fgagh 23
+ecehgbcdb 25
+hbfgghadf 48
+gfehfehcg 9
+bfdbdbfa 21
+ahabcehh 20
+dgc 36
+baadacafcebf 43
+eac 38
+bbghbhcfgddb 16
+bccaghhhbh 35
+bfhcchddhcff 43
+accbfhacb 40
+cha 18
+fhb 50
+fccdgh 33
+afgbaafe 13
+cb 11
+daadcgfge 38
+gcbfbch 43
+edhbgc 18
+fc 13
+bhdeccecbgc 46
+dee 24
+hecb 35
+ffbba 18
+cecgacehdh 43
+gebdhdfdc 4
+faefcahfhee 41
+cbccebbccb 40
+fcegbgeaagh 21
+gdfbge 42
+cahc 15
+fgbeahagd 10
+haafebab 23
+aebegaehabhb 18
+ffef 45
+agdcdfaebgha 15
+cdafeabeb 8
+baaebhh 25
+aab 40
+ef 33
+aheb 18
+ddcbhegbgce 38
+gdheadbh 19
+ahchbgdheg 17
+ec 23
+dc 1
+bdggaadc 35
+cdece 5
+ef 27
+dhf 21
+deg 40
+hggcbab 26
+ecd 3
+efeaadhd 20
+fbbddccdd 30
+bhfe 49
+faa 26
+dfaddfcagf 28
+ceedgf 27
+fdfchc 17
+hfecgdgad 48
+dfeaafccec 27
+aabahehacedf 50
+gdhdfe 49
+bfcdf 48
+badh 42
+ahafcgf 28
+abgdecbafed 41
+dbe 38
+abegaaafade 43
+bcbg 26
+cegheedeffde 29
+ffhde 9
+edfeebhgdad 22
+bfehee 41
+dechefd 15
+adbe 10
+cd 12
+dfabbgdeafhf 39
+fgbcff 25
+fdagaff 8
+ahbbag 9
+ehfagecaa 5
+gdebgccbffha 38
+fccafbecahbc 3
+gfed 38
+ehdhbg 12
+dfg 42
+de 32
+bafab 49
+bbfedhgfa 44
+aefgggbb 17
+ccaaebabbbbg 20
+cfhdcc 11
+dhbbaahahed 45
+agcgeaeag 5
+hecgdbceaee 48
+fbccgehbhh 44
+efeagbd 12
+gbhefdeeacgb 28
+hg 8
+dhfga 45
+afb 50
+fgcdgbddca 16
+hcdgf 21
+eghccce 41
+cadbhehfhe 6
+hcha 31
+fhfacdfe 2
+agfa 25
+baaedfaebfe 20
+ceabeha 43
+cfbhghad 36
+haagg 36
+hghffcageha 16
+ggb 22
+cfffa 10
+gdebgedeh 37
+hfabecge 18
+bhhgae 41
+hhfae 24
+hcbccca 8
+egageheheeha 48
+hg 41
+ecaffhhg 32
+ddca 13
+ghhdbhbf 49
+aacahdbdbch 18
+baegfehegdeb 5
+gc 26
+hcdfcfgfadbf 39
+hchec 27
+gcdaddfbaccg 17
+gcdeebehcff 44
+cgcbecf 26
+aehdffdde 50
+ceef 12
+hd 22
+hcchfgg 39
+bfeaggee 44
+hc 14
+bebd 8
+agaecggabge 38
+eecaede 9
+chaa 19
+eea 25
+ghbhfbgebcea 14
+becaedba 49
+ecbeahg 9
+bfgf 35
+cbga 3
+cd 21
+dhbefaghfg 45
+dgeagfdcc 25
+ghffce 18
+feacbdgh 13
+hagbhd 1
+ag 7
+dfehbfgeadha 43
+cccgbgbd 29
+deebd 26
+dhehca 44
+gdab 26
+fggcghaehhf 42
+ceffh 42
+bfc 26
+fdhdbaebecba 19
+bha 11
+ebgcbchaaach 5
+fhfff 23
+ebge 17
+fbeghfechfed 5
+fbcccabcgahc 23
+daccfe 44
+fbb 45
+hea 24
+abdbbf 17
+cgdffh 1
+cfed 10
+efgd 30
+edbfdbbefc 16
+bdef 36
+hgbhgeach 34
+gg 48
+cag 18
+fdbabhd 36
+fehh 29
+feacddegf 2
+ghg 11
+ef 1
+hchhacfehd 29
+ffaacf 37
+babeeh 46
+bcgcdabbhcag 46
+dghfafh 40
+ffacgdbg 14
+gh 24
+eea 15
+eb 25
+cadbdebgcfb 16
+fdaaachf 4
+fec 49
+dfcch 18
+bhbb 3
+hbcfhfefac 37
+edcecefcbea 1
+dd 30
+hcbaghhfgdg 13
+geffaga 19
+chhacec 28
+ffcbcgf 42
+agdfhbce 32
+eebecbdhaghc 17
+hedcagfbecdb 31
+bbcahadab 25
+bad 50
+dhchh 24
+gcfgdfh 9
+hahdcfceg 4
+aghfhbf 31
+heeabceahe 20
+bdagc 20
+fegbchccb 45
+gfh 48
+fchcfadggbh 28
+cddffh 48
+dhd 28
+fcaaddfag 10
+cddbbfc 11
+af 32
+ad 32
+dghbhdf 16
+faghhdef 24
+gdgdbchdag 32
+hhgdffghhfea 4
+dghhgdcfba 23
+gcahhhhgfdb 31
+fah 20
+cdhceadcac 29
+ahgadde 15
+cdgdg 23
+ecbgacfgcfdc 48
+eggeb 22
+ehagaccdcf 38
+fbecffa 38
+dbhceafh 35
+dfeafcdccaeh 45
+bc 37
+cchccc 17
+hagccebchgg 5
+bbfhbchf 10
+hchbcge 23
+aa 9
+eefdadaf 30
+hbcbggdfebf 12
+agacbfeeg 28
+fcfbfhfagfb 2
+abafgcgebdea 37
+bhcehbfdbda 33
+cebffeace 20
+agdb 32
+ehcghadghf 24
+bacdcaagche 39
+gh 45
+fdhfgeaddc 4
+ddahcdfde 6
+gcddggd 44
+hgfha 45
+hace 1
+edbafechdfd 3
+ah 41
+gaddgcad 50
+ghhefcdhgdhd 23
+gb 16
+dcfehg 8
+baghbchbce 42
+aadhhhbaa 34
+hbdaa 38
+fhdg 4
+dbdfbbbcbffa 29
+abffgehb 27
+ebahggedgeda 15
+ahccegabaa 29
+geecg 4
+efb 42
+eafhdchgfc 2
+eah 18
+cf 40
+ddddbdh 21
+edahchch 7
+afgccd 18
+edbfgd 37
+hdbeagd 43
+hafbdfhdg 27
+ffadfgafd 20
+bhahheea 29
+eacagbafbggd 12
+bacafhbggdbe 39
+hbbbfcacf 28
+effafh 12
+cbdbfaehdha 49
+heah 47
+edc 30
+chd 45
+ef 8
+ffafhae 2
+deghhce 31
+eaeacg 32
+efd 41
+eccdcbeggh 46
+bcgaef 41
+hafbgfdbbbcc 1
+df 38
+ecbfadgcf 48
+hgaabaad 16
+hfbcabag 36
+gcfhhcg 22
+heefdgecd 25
+aefcgabc 37
+caeffaehe 42
+bdb 17
+aedcbdegcheg 48
+ehebbgedbdaf 2
+gcgffabhga 48
+agece 3
+fbdchb 8
+dgfbdha 14
+be 17
+ga 16
+dchbchgaacf 15
+ehche 36
+ah 49
+fcedchah 33
+ddgeafhgf 29
+aagah 2
+cbdbecbfh 38
+bbg 21
+gb 17
+hghed 35
+gcfbdhbcaggd 18
+abdc 39
+egc 8
+habhcdeabaaf 25
+heg 12
+cccb 10
+hc 19
+dbhhea 25
+dhhcceccdb 24
+cbchchfhghgh 36
+ceebh 11
+hfhdb 33
+eehfdefc 45
+dd 14
+gegdecehga 29
+abccaaegggda 40
+bfdaecd 28
+cadaffcfa 21
+bcbdfaeeb 44
+dcehgcceafc 46
+dbfdcagdahcc 33
+eheddfghhbc 34
+ffh 41
+ehdhecgchh 31
+fd 42
+egdeg 24
+gb 24
+gbdcgeabbg 25
+ab 3
+abecgggecfge 12
+aagcdb 50
+aabhgdbed 38
+hgfca 12
+eehcd 37
+ffeb 44
+fffeafde 45
+dbadebcaef 16
+egbg 34
+dacbb 15
+egdccdeh 36
+bcbafeedhcga 49
+ghda 6
+hbahehbgdeb 14
+hbffecc 6
+aegccch 47
+dhdcc 2
+fgh 50
+ahhc 24
+dcfdafbdgd 27
+cc 8
+fgcdddbgdhb 10
+dggfedefh 20
+bdfahf 43
+agcdbcbefe 26
+hbebehccbdh 16
+bfhfefehbdff 9
+fhhhcbfh 36
+fahcahcdda 38
+ehhedbab 38
+bbabcddb 5
+hadfbbfcd 36
+agfcbhcdga 48
+bhf 50
+hhhe 29
+efchedaebad 31
+ahegd 2
+dgheehe 18
+gefehhadc 31
+fd 20
+cfgdabfbdc 18
+cgcbecag 41
+de 32
+ffeeaedh 37
+cbcfgdceggg 1
+fdc 50
+hb 45
+debhdeahd 22
+agbbgahahhha 44
+ababhahgh 31
+cfhegh 13
+chdefbfffgab 23
+daachd 48
+fghabfhdeeh 27
+aafafdddfghh 39
+ch 15
+ecfbefdd 38
+dahbhhc 39
+dceh 18
+ha 9
+hgffc 25
+daacdfb 6
+eeaaabdchc 28
+fb 32
+adcdcdhafd 9
+ceh 46
+fgfhdfacgf 16
+hdccbhee 31
+hddf 42
+eaf 25
+aadgdagaba 39
+gegcehbcggha 17
+fhacdgdgc 10
+ghh 45
+bfcaag 28
+ebcddchcbfge 36
+cgeaaag 36
+eh 49
+fcfafe 3
+geaadbacc 37
+ffbda 9
+fdbdfahhde 16
+fddeghbfdbbh 38
+befahhgaaa 16
+hhddahdee 41
+hggddbfedch 6
+adchdfh 22
+eba 26
+cdhcgffag 23
+dfghdfa 30
+gdefeef 33
+bgfheedc 39
+dgceeghbg 25
+ffeghcbcbeeb 38
+acd 7
+afc 43
+ccec 48
+ehcbhhefdd 23
+che 39
+cchhhbebgd 20
+aa 46
+hbddhfghead 27
+bhd 14
+cbfbegeghf 1
+aheheabg 18
+gahedchc 8
+dbfedfgebce 10
+ggbgfh 35
+cdb 4
+daahbhacede 7
+fbcagcbefdf 7
+hcc 19
+bhgg 13
+agb 8
+hgabcfbchg 33
+ehggcgedfcab 41
+dd 30
+ae 16
+hechagbf 9
+hgea 17
+daccdah 42
+dcdccdc 36
+ebhcg 20
+dhffdcebgh 48
+hceecb 35
+bhcehadahgfg 13
+dhfafaac 22
+bfhgda 6
+gcgabf 36
+hheaahgfaeeg 50
+cdfhgbabfd 47
+bbdbe 22
+bbbee 39
+gchab 31
+gd 42
+bhhaafbeeaaa 23
+caebgaad 30
+cbegfg 11
+dccdgheggb 23
+hceececgf 19
+becde 23
+had 27
+ff 31
+aaedcea 46
+aeabdd 18
+ffhf 27
+cffaahgfdbdc 49
+ea 36
+ddef 17
+hcd 40
+bhbcecfch 15
+fbe 15
+bhfbda 1
+cdgf 18
+echcaedh 18
+hgegedbeh 18
+aef 33
+cfcd 49
+ghb 47
+dadfcfffgagb 39
+fg 13
+eehaefadd 49
+hefhdeafd 21
+ghb 38
+fhfgg 13
+eeabhah 25
+affceb 38
+hcd 18
+fedehahgfdfc 2
+ecggbehfb 30
+adabcfcbfec 45
+ecfc 29
+gagbcbbd 45
+daagc 31
+cfaga 44
+fhg 16
+dhabchgdhgab 32
+habdf 5
+cbbbdceeadc 28
+cfeaeaeafaff 8
+hebhgcf 10
+bdhdedbaehfb 20
+gefe 39
+dchgbehh 14
+gchddhggdbde 22
+gheeahe 44
+deebbgahgd 36
+bafdd 12
+aeahga 50
+feaadhfhbfec 25
+baccecechac 6
+acace 28
+hbbg 16
+ccgbahcgcfd 18
+ecbdad 49
+ed 24
+caacacafaghf 25
+fba 49
+fbhbdbffega 4
+chhdcgccfdha 36
+ecccheace 30
+cdgbc 26
+bbcdag 49
+gcbefggd 31
+cd 17
+eeh 15
+dfbdffcgf 20
+aceccb 9
+ccda 8
+daffeedhffd 50
+hhhcgdgbe 12
+chc 15
+ebeg 46
+gd 28
+eebbb 10
+cfhbcdefcaae 29
+bcdbedbdcfbe 24
+hgbd 30
+bgfgeeaafbc 11
+dcegedfbdahc 40
+bgfdbdaecfe 10
+hafebdd 36
+fhdf 50
+dcfhcbghggd 17
+abfaaagfbegh 40
+dgdbdbggdfah 14
+ga 16
+hchgdhc 27
+dhf 5
+cbadfhfgeged 16
+ceegfgb 15
+db 29
+efadgehgaf 7
+hchgb 18
+hhghcgdafahg 20
+effef 38
+eghbgegbe 31
+aaaafb 33
+eeceeacc 24
+edcgbcdhfb 12
+gfcbagc 35
+gaadbbe 24
+fhge 37
+bbh 43
+gc 26
+dfbd 18
+egefbghce 2
+edbfb 31
+hgg 24
+hgdchcbgbhca 20
+hdcfh 2
+aafggbe 25
+bgbfbch 23
+fagf 21
+fc 1
+ahed 31
+gc 31
+ach 18
+ah 28
+bdcff 7
+gcehfgea 34
+cedfhehddce 37
+ecgh 27
+dhchh 40
+hhhdbccbdag 49
+hcehegdbfd 16
+feaehc 30
+gacffdd 46
+bdadccgd 41
+hbbddbeea 27
+hafaaedhgbd 12
+feg 3
+cdhfbchhhbce 19
+adhdbbg 18
+fbddeefgdbea 40
+cgbfgfgfggc 25
+aeafhhg 7
+afh 22
+edcahdcbbh 37
+gbefegdece 11
+bh 13
+gdgegbh 18
+babdca 37
+abffdedbdb 48
+gfaecfac 49
+caageafaddag 42
+afdgbaeg 7
+ddgehgfgead 28
+eaddheca 42
+cdbghagefdc 20
+bd 47
+aahdgbdghdd 40
+gh 3
+bgaacaf 21
+hh 31
+gcdb 18
+daadhcffed 29
+bef 2
+egfggba 27
+degfdhffhbf 4
+bdfcf 9
+edhb 9
+dbhegdgeg 14
+fh 28
+eghc 35
+ddccfceddc 36
+fc 12
+hhbdfcaghafe 16
+chfacfg 41
+be 3
+ffhahdgfgfa 2
+efcdagggebb 39
+cg 49
+gege 36
+caegbfagdf 25
+gd 2
+ef 45
+hfbfbdcggca 32
+cb 9
+defabfead 39
+cafcgfa 43
+chdcefeachec 43
+gbdc 30
+gaaggcbeghc 15
+hgehg 31
+hfh 22
+gfhf 25
+hdhbfdab 42
+affhdfag 3
+hgfghedeebb 3
+dhf 10
+gbcfge 29
+gef 44
+cegb 19
+fchfbfdffchc 13
+aagahefhfff 21
+eg 49
+fhfgched 48
+dcchdfed 8
+hhadabcc 41
+bhba 30
+hdhhdfccedcg 47
+fcaddbc 32
+dcgeaagac 46
+gabhaehachef 12
+cdhhdbfbcgg 43
+eafgggadcba 23
+gbhagebaga 10
+efbchbe 5
+fgfbhfbdd 45
+bdghdch 29
+baec 30
+gefb 42
+cbfgchch 33
+bddgacdedgfd 15
+gbegghcghcf 21
+hcdch 22
+hgdhh 43
+hfhhfbg 2
+gb 35
+ddgegaecf 29
+gd 50
+gdbegea 23
+chce 45
+daggad 14
+fehbfedbeh 4
+afcabdd 12
+gdgahb 31
+eb 29
+cef 23
+bag 22
+bgcc 5
+fegbdehbah 9
+echdbhfaaeb 50
+bbedhafdhd 29
+cdcghahccf 32
+fhcbcgcede 50
+cgheda 14
+hhaafcfgefce 32
+habcaabbba 46
+bfhddf 36
+geafbabfead 22
+dcaaabb 11
+ffafbdf 34
+ceagcccb 48
+fgdfhbc 22
+hdgfebgdb 13
+ahhbfa 2
+db 17
+bcbhfdhba 28
+eadacef 42
+adffaee 46
+gfhbe 36
+cgccgagb 39
+fhfe 42
+hdbcfg 7
+bdegbhhhddhf 1
+ecagha 16
+eahedeccgg 9
+fgbcabccgga 20
+cagafdb 12
+egghbdhcdege 19
+fgagebagh 37
+cagc 5
+hdcdafffch 40
+hddagdhc 29
+cgfb 35
+bcgdabaeaeh 23
+ddf 42
+agebgdc 38
+hfagaebbafhh 15
+aadhfagbfad 17
+egg 6
+agbgebgbacg 27
+degae 49
+fdbdhbeebheb 41
+dgabc 30
+febecbhdga 37
+dhaheagf 5
+hcaaha 35
+ddhghgdhbfc 26
+cgfege 12
+bggbfdffd 46
+hbeaa 19
+ffecfgbbaadh 50
+agacdbfegdeb 30
+bfbhbc 7
+fbdgeabcbeg 44
+aeeebafhbc 4
+adbdbebfbd 40
+ec 37
+fdfccgdheah 18
+fgbadg 7
+ddegdhcdcb 26
+hfhfhddef 23
+beagbcdb 3
+efhdeeabbhch 33
+hh 42
+bgcfbhef 36
+behehefafcgh 19
+bcgbfdbgabb 47
+gfedehfffh 5
+hdheae 22
+cfg 36
+fbdccdd 34
+bdcbaeb 15
+gfc 36
+cdfcdfb 19
+gahf 16
+bdhad 7
+ddd 36
+fcggahaafahc 7
+bddbcbgdfaaa 24
+aahhagahhbe 37
+dgbaech 29
+cdfcc 2
+bcefaf 40
+dccfdagdecgf 45
+acb 30
+bcfchb 12
+bhbefbgfa 34
+gbchccde 37
+bac 28
+eccfc 43
+hfefedhdcc 25
+fgdf 34
+fgaddbcgg 27
+fcedbcfh 19
+cddhddbcgcgg 40
+hffbbcbhbe 16
+hfafggdbacb 13
+hhdbhe 17
+geb 37
+ef 49
+babeeg 23
+aceafe 20
+bchfaedgdge 30
+dfeffbbgdgc 30
+bdbhf 8
+afhbahh 4
+fedgfcdghhd 33
+efggae 19
+cceaeabg 20
+gbaddcebh 31
+bda 30
+gdadhagcadd 14
+ecbbddcg 20
+ehcd 15
+bhfg 13
+gaaegdfgcb 46
+cgacghfcdg 37
+gaagaehbdbb 40
+ccgdachghg 50
+hgbecabeceeg 19
+eh 48
+ehebaacfehgc 30
+dhchca 46
+ab 47
+eh 49
+agbfbbcbd 3
+ddfef 42
+eahc 7
+fgfaaadgbd 6
+gbceb 3
+gfhhcdcfgcb 49
+gbhgbaaha 13
+bggfbdcge 25
+chbfb 2
+bffdefged 5
+agbaah 42
+ebgc 33
+ce 22
+gdegagc 17
+bcghafddffeh 44
+dg 20
+cddebgbae 34
+cdefbh 24
+beghhcdheade 15
+hcec 17
+egg 28
+hddhh 2
+edcff 47
+aagbafahfdb 6
+afaecgeeh 19
+fehbfggeegf 28
+dagg 7
+adhedd 29
+bdfhbecbab 35
+aeeeab 22
+dcfdgegefgg 26
+fac 22
+hfdhcgdc 35
+febfefacea 28
+fccgfh 43
+ehadc 37
+fdb 22
+cdgbh 37
+dh 34
+dfd 42
+fhcgfhd 22
+hfbee 5
+gcdgcecchhh 10
+adheaafgbc 5
+gaecghchb 11
+befafgadagaf 20
+bfeegeh 16
+accdb 18
+gedchfhaf 7
+dcef 40
+ahhgbfa 36
+dcba 1
+fchegd 25
+bbfd 44
+gbdag 49
+dbhfce 47
+hhc 31
+hcbcaa 48
+hcafgehbff 44
+fcfghdbfhaf 48
+fbdfdchdddeh 16
+fgccbadecbha 19
+bdbadgdada 3
+fe 30
+ccfcf 25
+hhec 7
+chhcggfbcc 10
+fg 1
+ghbbbgdahfgg 19
+bhf 43
+bdefggaaebf 22
+hafcdadbfda 1
+aehaahh 21
+dde 44
+agh 5
+deegff 37
+gchgfaeeaab 3
+eacgaa 27
+ch 21
+bdgbh 41
+bbahdg 12
+egfebdhfa 4
+ghf 4
+agh 4
+gffeaebdbb 26
+gha 21
+edg 50
+fadbge 24
+bhdfeeebdb 49
+caefba 13
+fehgde 33
+fdaa 48
+dhfbcfbagbbh 2
+edcfddah 33
+fdbdegabcb 28
+fhebdehcaa 43
+caebggbacbae 27
+hbhgdcdhegg 8
+eehacgd 7
+ahdcgbdgf 47
+ca 27
+ddcgdg 47
+ffgb 31
+ddeh 8
+hfbfhfdfhc 8
+bdfafcddfca 14
+bdccd 27
+ac 19
+dhff 38
+bfeec 2
+chhahab 47
+gahfcefa 27
+eabfhhgg 14
+hfcdh 17
+ddacgbf 5
+gfbchhhabgda 32
+aghhcd 29
+hhhgcgbd 36
+fdebgahhehb 34
+cgbccfhfg 38
+fbdd 12
+afgcgddcb 41
+efdfbd 49
+dfbhh 26
+afdb 34
+ddcgchbe 2
+bhhaeh 46
+gd 12
+gaaheebfedh 35
+dbgeh 43
+dcgaeg 46
+heachcbgegef 31
+ddd 7
+gbbddbdf 41
+ddcdaa 50
+ahcca 41
+ffecgc 37
+ahbcbd 19
+ehfcafhaha 22
+dhcccfd 14
+abd 39
+fdbgad 37
+cadgab 5
+eecbhccdacgf 48
+bgabe 4
+dcegecbcddaa 16
+egcddc 4
+ahfdgbe 41
+ecca 18
+cb 18
+edheefdefgg 17
+ebhaaedcba 1
+fcgffhacfb 35
+bce 17
+gfaghbcf 33
+egfdhafbfca 18
+ahadaebbbaca 23
+fbhheahehb 46
+edbg 48
+ahea 37
+acfagdafb 10
+hhcbeegbdcch 16
+bg 39
+aage 49
+ad 1
+aageh 43
+ebdba 41
+chef 49
+gghh 3
+bccddche 41
+dhgbbahheeag 3
+bccedbedcf 13
+cb 28
+hacgha 49
+eddc 9
+afgbgacc 34
+hbgcbh 16
+feaaf 39
+dh 26
+cgdhgh 8
+efgebghhgced 45
+gdfdeagbec 14
+dgab 14
+eccdfhbfgc 18
+df 5
+eebcdacbdeh 28
+fe 25
+dhehaehdcgh 44
+fg 18
+aacddefdaeeb 10
+cgfh 49
+eccbhha 33
+geba 9
+ehecdcfhf 26
+ba 4
+daabd 41
+gbfh 28
+fca 33
+eh 1
+ecadadb 39
+gd 20
+ccgcfb 14
+agabhace 27
+bgebegbegheg 32
+acccbaddae 3
+ahc 43
+bdhcfabfgdd 25
+aggdbhbgf 37
+cfaaabbecafg 48
+ahdch 7
+abggg 40
+dbecfgde 37
+cffda 40
+adg 10
+gfafcdhdba 7
+gff 26
+bfadbe 1
+ac 45
+ec 8
+cfha 42
+hcbde 50
+dachedegea 27
+fbcebeh 21
+behe 30
+aacd 25
+fbcbdfeh 49
+dbgedfhf 1
+bafbge 43
+bfbche 16
+eebfeeggacb 27
+bgffgbhgfgd 35
+fhbfa 30
+deg 23
+hfee 16
+hbdcfcdbd 19
+ega 5
+hac 41
+ebchaeg 38
+hh 35
+gc 49
+cacceg 34
+ghehddff 35
+ecah 30
+bebfdchh 50
+hfaaaf 4
+ecf 36
+dgfe 48
+bhfhde 32
+hbeddbaehd 9
+babfhcdh 23
+adda 34
+fcdhfg 28
+haahcafhhah 34
+cahg 22
+fgd 49
+acagghachdd 32
+gcb 16
+fcdbbgdcabed 49
+acdbgd 16
+hagagadhb 35
+eafdcdacdh 42
+ecefcaeagcdh 14
+ebegbhghahh 36
+efbeehe 24
+gcbhgf 48
+echede 22
+fffdaeedegcf 39
+ebgcbgg 2
+ea 26
+ghhbgbhebhdg 28
+dd 23
+cghdhg 20
+afgbhaf 13
+dfac 33
+gacchdcbccg 14
+bacbff 23
+eecc 28
+fgh 14
+gbcd 10
+fbch 37
+aecagg 36
+cahcfagbfc 4
+hah 36
+bgb 28
+cefbehag 9
+hcaddhg 25
+bcagcgahbf 45
+ecfche 18
+gfdahecchde 29
+edehf 27
+hcd 46
+fdbaeeefb 18
+db 28
+bfdhgb 15
+cfhfeebccgcg 47
+ca 20
+hcbedb 18
+hb 1
+cccbed 46
+dc 6
+fbgb 38
+ghfcca 38
+ecfcacahfcg 43
+hhhfhefgadga 46
+hbceehadhfg 20
+gf 21
+afhefa 41
+gdfab 39
+badfecbaebb 30
+afd 21
+dfghdhbe 2
+efchh 42
+hgbb 37
+bbfe 48
+abda 28
+chfc 42
+hc 16
+dgceg 36
+efeeefecgaeh 17
+ddfag 24
+fed 37
+dh 39
+ee 5
+feabeh 9
+acgdadaeeaaf 49
+fafgecafb 40
+cehf 26
+hahebeg 10
+cgaaeddeeb 18
+cch 49
+hhgebfgh 5
+dc 18
+faee 19
+bbgcgeaffdbd 31
+ahahdheedd 14
+fbfg 44
+faeb 24
+edfddbdbhd 43
+dca 49
+fbah 1
+bhgageeg 31
+dh 32
+ag 5
+fbadbba 32
+fggbbc 16
+hdgggeaaaf 28
+edhdggdbghgb 3
+gae 35
+cbdcf 8
+feeah 3
+hgdaae 19
+fghf 4
+fhagc 20
+gd 4
+cdg 12
+caabddabeh 31
+bbhbdabae 46
+ab 24
+bfhabcaeedg 11
+dagcehehcaa 44
+bedeafff 48
+hcbgh 5
+dhh 16
+chchebgghg 6
+beegae 26
+afcchhgfhef 34
+dehggbeeh 25
+bbhcgcdhad 48
+edd 8
+bfaacdaehada 50
+gha 37
+eafcaaaf 4
+dddhbeccdfh 3
+dcdebahech 18
+cagchbdeed 12
+fddbbgffag 36
+hf 36
+ebhfbabheceb 28
+ea 33
+afdg 48
+adhef 7
+ecdbcbcc 7
+hbcg 41
+hhhbghcbbd 39
+gba 23
+cb 42
+eg 31
+cdfaaddbg 24
+ahhgdc 23
+hb 21
+hcaceedada 12
+heagafe 37
+fd 30
+hahaagebhecd 46
+gcdgaed 40
+abdbha 30
+dbagdgagdg 1
+gfc 19
+dhddcfd 25
+bhbfahb 47
+fehcb 18
+cededebedec 17
+haadhcbcdeh 43
+fagcbeg 26
+eg 3
+bb 41
+bcdbgaf 15
+ddcf 44
+fbghehda 13
+dfhfceddg 22
+eehfcfd 50
+chhcfcahcef 27
+eaafda 15
+agehde 7
+ehdcbhahfc 31
+fhabdc 41
+dcfgc 39
+ff 17
+edfabbahbfg 45
+eef 2
+bdfgef 14
+adcb 47
+ecf 7
+gfgf 38
+ebhcdgeefea 37
+caebfhhbbg 9
+fggfddhhdfeh 7
+febgecdhd 22
+dehdda 26
+agfhacdccf 49
+aea 26
+cc 40
+hahcecda 15
+bgfcef 38
+adeagah 28
+efa 37
+afbageggcdgg 14
+afchbd 31
+aafc 47
+fagggcde 40
+ebedhdcga 30
+hadgacd 2
+bbafhhe 50
+hgh 31
+dedhafgaaae 50
+bdagecg 2
+cegefdadd 31
+che 28
+gbabfdgcadf 22
+hgbgb 29
+gadfhhad 11
+hbfgbhcf 39
+cb 1
+agebf 11
+aahhchbbadh 38
+ddc 40
+cgcfgcfcef 17
+hgeefdaacg 1
+abggdggh 49
+dhfbhc 24
+dahachhddbc 49
+efhdgcb 15
+ff 19
+hcachaabbch 50
+dddfhc 38
+efbcdd 39
+dagafaebh 41
+ahgbbgf 16
+ahbbafgefceg 9
+cgdgaaeggb 36
+eeghebdbgbgf 1
+gaebgcbdac 47
+dbgbaggbh 30
+cfehdbcbd 2
+gebaadbc 49
+cabhacef 37
+hacaeggcce 26
+fhabgdf 45
+acecge 20
+bbeead 48
+ffgggbagbgdd 41
+gfbahh 38
+fhefgdg 2
+bcgh 36
+deghaeged 12
+efdeafafdfa 39
+hbaadfedbh 27
+cgeggbeecbh 9
+febadfegda 30
+gfdfcdcgdeec 47
+hhdgceahdbhb 48
+cbhhfa 19
+dccggaea 26
+cfcbcbhdage 43
+fg 4
+aaebcacfhcd 28
+efb 7
+eghehadbh 22
+fhefgheh 7
+cebcbhhahh 39
+dcec 34
+afcgf 49
+adggehadhe 24
+gaeccadcea 30
+eg 31
+fddbdfaf 6
+ff 5
+hdfgddca 43
+caffffhfag 43
+ffbgfcceffed 24
+abafgdafb 13
+dfg 22
+eafb 24
+dagceebhc 4
+dgb 10
+bacac 46
+afcfbadec 14
+cd 22
+ffabfbe 48
+ddhg 27
+ea 42
+bdg 4
+deegcabc 11
+bccbgegeeh 50
+gcabcgcaf 30
+fhdbgbdhhf 24
+gbgeaaab 45
+ddbgaach 40
+hg 42
+gc 1
+dbhfcaf 12
+fecghgafgh 45
+chfcec 42
+bd 45
+cehfd 5
+gcf 39
+abcc 3
+cafcffbb 42
+gbahg 11
+bbg 28
+caag 19
+afha 6
+aaghga 27
+dhfdedf 30
+dbbagfbhcfha 44
+hd 13
+fhee 11
+ehaeabfd 47
+gaehehaagg 42
+ebbfbe 1
+dbff 49
+aade 34
+cedc 27
+ch 24
+egahdeeba 9
+hbcgdhe 13
+ef 26
+begd 18
+dafcfcb 9
+dabecgadc 11
+hhcabeb 28
+dgaa 34
+gg 43
+gae 41
+cedagbcchegf 21
+gdhhh 19
+ceba 19
+baehdce 24
+cbbefbbbgcc 4
+fbacdgbhdgf 1
+eecec 47
+ccfcegh 12
+hbehbh 46
+hdfbae 5
+aabeffgbffgh 6
+ch 14
+hbhhfcee 40
+deeeab 40
+cdedgadh 20
+gbf 30
+aca 12
+fdg 8
+beb 33
+acgdhce 50
+ecgh 34
+cbcaacegdfb 32
+ga 30
+ggbcbce 13
+bcffedc 30
+fhgc 11
+dahhb 27
+bghfhcddfa 3
+ghgfffadd 26
+cgdbagbadde 5
+gehagahedf 3
+aaced 32
+hcgb 50
+ec 7
+dhbecch 6
+dfcfe 30
+gaegchhfcf 30
+cefgdc 14
+bgge 36
+ehhgg 12
+bb 14
+hbfb 44
+dccb 7
+cfdhch 18
+bdg 50
+bdcee 11
+gcg 7
+afhcggbf 14
+eheahcb 43
+gg 38
+ahhhdae 49
+aaffeabaecc 41
+agedeaf 2
+abggb 44
+hdadfga 2
+gf 1
+bh 36
+gghfdghbgc 18
+hfdc 45
+abbfaefa 33
+dadbadfabehh 31
+abefh 7
+bf 42
+faghcaged 40
+ecbfgacg 31
+eaaaehhgbcgh 31
+bhf 35
+hfcacc 24
+eefacgbbhf 46
+ehehehebaccc 45
+aggd 11
+gghgahab 21
+bhdb 47
+fhdeccgbbad 20
+da 33
+bacehbg 5
+feeb 21
+bcghghed 15
+bbgd 22
+cabbcfagf 15
+cacgf 47
+eagagbh 8
+ehg 49
+hfaf 20
+afehfaac 26
+aagabfaadd 42
+acb 32
+ceafcabf 14
+ag 45
+ahfcehdghb 20
+gh 28
+ceg 37
+ggfghca 19
+gfbfcd 20
+eggacbcgbfb 11
+aaahcdggafc 8
+bccagcddf 8
+beagehbgfd 48
+hcdgfdehghed 38
+eafafeabde 23
+dedhgfedcheg 27
+hahec 12
+dcdbgcfc 14
+eecg 9
+dhdhd 26
+ddafbfbeega 5
+ee 8
+bf 47
+be 17
+dcfddhcdbbdf 42
+bffahgabeahd 13
+hfhcgdcfhhah 29
+cfgdh 7
+bg 3
+bceed 44
+hhfbac 33
+hcgafcccd 43
+gdggcbecd 30
+fbg 32
+ecdgcfhcgfe 39
+geb 13
+beddfc 7
+afbbgcge 8
+gdgfdhbeeag 23
+fgcfebe 25
+dggdcdgahed 37
+eaecegbbhda 43
+gbahd 46
+dgcbcaah 21
+bbdbbfgfg 40
+hbgaghdece 22
+hafaae 24
+ahdcfgbff 25
+begca 20
+fhabccea 46
+da 45
+cec 42
+bahfedbadg 13
+agfggdf 32
+hfbfa 31
+fhdgegee 43
+ddeggfc 47
+eecdccbaeahc 37
+caceg 46
+dgbdbd 22
+cfgehcce 36
+bfgcdagfbgda 17
+afgeebagb 41
+efdggebdcfb 26
+bbhdcbbhgh 3
+bcb 9
+efahcfdab 34
+eecgehfd 42
+ecgaa 33
+dccdfhdba 18
+dacgh 37
+hcda 7
+abdbca 38
+dfeg 27
+hgghhbccaa 29
+adhbcbfbcbe 39
+hdbddgcee 32
+dffedfcec 24
+ccbeaged 13
+hbgfgfeegdh 44
+decfe 9
+bgdeb 30
+fedchfgfhh 34
+fege 39
+hhddfefhe 21
+dhcb 32
+cgeafgddga 49
+aba 34
+bhbccfgabe 10
+hgdbagd 45
+hfeeceddcfa 16
+feef 46
+dbhe 27
+acafdchhhcaa 21
+daegdg 21
+fecebedc 9
+ege 20
+hgfdcbcdeec 33
+ecbhb 37
+daffg 19
+afbgce 30
+daad 20
+gcbebcgadch 17
+becebbcaa 48
+fggdggd 46
+dgdf 35
+cagehgdbhf 23
+cafffcced 30
+eebfdeeadb 37
+fggcbffgd 11
+eb 5
+fchgg 27
+cgcfbdfhfafb 24
+chcbhfcgdg 46
+hbefdfbh 31
+fghbfgab 25
+ha 31
+hgafd 1
+gehfebbcf 18
+cb 18
+fcad 37
+gaccgfhcdb 23
+aadechefchb 2
+achfbedeg 21
+bbgbcdcbabfa 36
+hfgchehb 47
+cabda 16
+geagcee 7
+fdgdbfdfa 9
+bafdeedgbdfh 13
+bgghb 40
+afghcf 3
+aeacga 37
+hchffh 10
+hef 6
+hah 29
+abdadebhah 4
+cfeaaacfebf 24
+aahga 16
+hgeggegbhgcd 44
+caagabaf 27
+ac 30
+hcbhcf 23
+beg 9
+fbgdagdddg 41
+edeechedbe 46
+addec 29
+ebbfegfgbfbf 5
+hccbhfbfhac 10
+ghfbadfgdch 7
+fe 33
+ccafhhf 14
+fcbceecge 12
+hgfgddafh 30
+hhbaedcdafh 48
+dbdggg 24
+ceagedhbe 18
+fgbfcehabac 43
+cacad 30
+gehffhabggbf 47
+cgahhgbd 50
+bdfcfbfdefc 26
+eaeef 50
+dcafhhadfead 47
+bdech 1
+egf 28
+bdbace 37
+aagedfcabgc 15
+hcabadb 10
+edgc 6
+cbaechbdhad 31
+cceabaeafaeb 39
+haabcfaeffe 25
+fegfheegdbhh 18
+abahehhbb 20
+dagbafcaf 5
+dgfhffe 47
+addeeh 21
+eadhabcah 25
+bbcgfbfdgha 44
+af 32
+bfcfacge 26
+ffdcd 26
+gfhgcbahfc 34
+df 5
+dfhffhgdh 46
+ad 37
+fgebcefcdabc 41
+hbaaeeac 38
+cdh 14
+faeae 16
+hffeh 42
+ed 47
+dfd 2
+cgaffcae 50
+bhbgc 30
+dbbdfah 27
+cgfbf 14
+chadafbabfb 23
+eeaffg 32
+decchh 23
+cffcbchg 7
+edfaabbdhd 23
+fehgeahgcchd 35
+aefcaffhddhd 32
+hfhdhgebf 1
+fff 25
+hbgfgd 31
+ccdhfe 30
+bhachd 22
+gchddfhb 43
+hcggdcabd 39
+ghcefeaehefh 12
+fbh 2
+dhhgchchhdg 8
+def 33
+egaagebdb 3
+gg 2
+hcgc 24
+bdghaaa 41
+gdfggfh 12
+baggfefgfgba 36
+bhgdcfc 13
+fcbhegcddfa 18
+fcf 42
+hcbaeefgbhb 46
+ffehffdebcb 39
+aeaafgd 35
+hfeecae 14
+dagcgggf 32
+gaefhgc 50
+edhfehdahcbg 33
+hhgbghe 41
+hcdcah 25
+gb 45
+eadgfada 32
+deabfeghahd 15
+dchc 30
+gbfahcgbda 31
+hbadcee 39
+ddbacgcbfa 5
+bhbchhb 32
+dhfddha 39
+ha 9
+ge 15
+gbbhhgeccga 36
+fdceheaa 6
+hafeaacgh 49
+egafa 42
+affhffcffa 4
+fcegcahgf 45
+fag 11
+edh 34
+adb 47
+fe 3
+gc 39
+fchgfhdbhfc 42
+bgbhc 27
+ggadaab 14
+fabbaeddeae 39
+hcgd 24
+ehb 24
+ahabgdggdchg 32
+abda 44
+hedcaf 47
+adaha 12
+ddhbeaefgf 3
+adefed 9
+aaadebehfa 27
+degcbgh 27
+dfdfd 10
+bfdcabda 30
+dcbdh 41
+bbad 27
+fcbaeaae 27
+dh 41
+ec 24
+eeecbgcaacb 38
+bcdeagbbac 30
+edhaab 18
+ahbacafde 47
+bbhdhfc 2
+cghfdbadghgb 8
+chhfbc 29
+hgfeacddcegb 35
+ahbb 5
+fg 20
+aagceca 38
+fgh 11
+edfd 7
+hffgb 29
+dfhacf 13
+ede 33
+ddcahd 32
+cebeggbaab 23
+hdcdga 35
+dfdghdhgdhb 45
+ecfebhcdaf 27
+cbce 19
+bg 47
+hbb 18
+deccacdg 22
+efgebg 48
+hhcbhchfeghe 35
+eaaghedchhcf 26
+dacc 23
+babeebd 5
+hc 35
+bbhfbhccbd 43
+ebcfdcfae 1
+afahc 9
+ehfe 6
+eadefhc 46
+dgh 46
+gcfafbad 37
+dbdadcg 34
+dgedf 3
+bgcggc 18
+ahb 16
+ddcfd 25
+fcdheccafh 37
+ff 36
+hfeee 12
+adeef 12
+gcdeecfch 4
+aaebcfcg 15
+db 31
+dbcahaffg 43
+dbgahcc 3
+ehcbgcgb 9
+bahdaghcb 43
+edahaaagcb 46
+ebcge 25
+gehbec 16
+baabhcdgfcf 18
+aebhdgeehedf 31
+ecdebgaccfch 4
+abbbgdaf 11
+bfchdbeba 11
+gf 44
+dbdaebb 9
+bgfaddfeebh 46
+bffggabeegg 24
+ggeaf 40
+cdc 39
+dcdbdee 20
+fbfafehfcbcg 19
+bddabch 32
+adbbfhfbhea 32
+fgabf 19
+bdggg 27
+aeeeehcbd 32
+ah 45
+fbebh 46
+hcged 15
+aghcgccdbb 18
+bdbddgdb 39
+hcgef 49
+haggcehbg 8
+eafcabbh 23
+ddcd 15
+eghbgh 11
+ceae 48
+daffgcbadb 47
+eh 21
+bacfhdfbgabb 21
+hcdebeg 50
+abea 14
+cgfhb 46
+hdahea 11
+bb 30
+eg 32
+haccacfcgfa 36
+cfhheehdehfb 26
+fcgg 22
+geacedahedcf 10
+eb 39
+chahheb 9
+dffecefdac 50
+dgddg 39
+cggghf 25
+hcafhghafffh 33
+ebg 14
+cgcfebcdae 2
+hhfdfcge 18
+ahcf 19
+ae 20
+fe 1
+ffd 32
+bfhgdc 10
+bgdgh 41
+ehegfhhbc 33
+feehdc 39
+hfd 32
+dghcbageccdb 36
+cehe 38
+bafd 17
+cheeb 29
+cbedchfgbged 2
+dffcg 20
+bdgehhddeeb 24
+hchc 23
+aecaec 14
+aaaacgfgbaf 44
+dahh 9
+dgcbhdh 6
+gfgacbffdd 41
+gaadegha 42
+fb 23
+af 37
+hfeadhebg 4
+dagf 3
+efheggfg 10
+affgb 17
+cefacehddhhb 9
+abfdghchgg 33
+afcc 36
+gdbedged 26
+bacb 7
+heeacec 49
+chceabghhe 40
+hchcdacaagch 6
+bgcgfdc 29
+hhfcceafbh 5
+gadhcfccdba 31
+fgdaggeeahf 40
+ecbe 27
+cbfga 43
+fbfbdachb 17
+ee 2
+chgace 40
+bdea 21
+acdbdbhae 48
+dgd 48
+cfe 32
+ggegb 32
+aeabaeffebgg 48
+dbd 14
+fcefaaha 23
+abbegedhag 17
+haa 28
+ahdgedfdb 3
+db 8
+gffedh 13
+ebcfcbfe 46
+gebegba 17
+ged 15
+dhebhebadc 2
+ce 43
+efae 22
+cf 2
+dbfecbhh 7
+gfbahba 26
+fhgfhbc 17
+ebhaehbgffg 10
+hcbbabdfgcd 19
+ffgfbfc 1
+bbaedae 6
+hbeafg 37
+ggfbccfbe 34
+ahhdbhgedg 13
+ahfehf 6
+cd 39
+agefeh 41
+ea 7
+hecggdefdd 37
+gghghfebff 47
+dhdaae 37
+dagegdahdcag 26
+ddcgea 21
+bhf 40
+afddbeea 11
+eghgec 8
+dfgdgaeghfag 30
+hgchcbegaff 16
+bffhahg 39
+aaea 33
+ceb 46
+gfghagdcc 22
+ddbhbeccdb 9
+hae 25
+da 30
+chchebhhfb 28
+cgfcafehaf 8
+cheaadeb 46
+fbbcebbf 37
+edceegadgg 37
+cb 18
+cfaefacfhahf 37
+hfaed 36
+ahecdhfehab 16
+afcdchfdd 5
+hag 47
+ggeh 9
+cccc 12
+gdfafeddf 47
+fedgcgf 25
+hgccafach 4
+beefdgecf 19
+egfce 45
+ehfgeeccc 7
+ehbddfcfaaea 5
+eahacgdfac 2
+bg 33
+bafd 33
+fheg 36
+dhfha 36
+bbcagfbb 7
+faeaddagehh 49
+ad 47
+ecaaheccafbe 42
+edcbhe 19
+da 16
+fcbh 8
+gcbehhfa 27
+bhgbcfhfgech 24
+hgfhd 23
+hbdbfb 41
+hgdabeccadb 41
+hc 33
+cbdgeedfcdef 11
+dchc 36
+aegefffac 28
+effefchfcagh 43
+bfhcahfhc 31
+edf 31
+hghadgcff 9
+dhbaafgfe 47
+bccbdcebbch 44
+adfc 48
+fcaaeedefd 38
+agagdcfhcfa 47
+aed 31
+babfddhhdgbe 35
+hafbebgae 23
+daadeadbffh 21
+abhg 9
+gacchecbd 48
+fdfgbdhfb 46
+cfdadad 44
+hegcbfff 9
+cffgbf 23
+dfh 1
+aeabdeeddgfa 23
+hgeggh 9
+hab 10
+acedbafcffe 39
+cefdchfehbg 38
+ge 8
+ebghed 48
+hedfbaff 45
+afcga 5
+fc 28
+dg 28
+eef 24
+aeffha 1
+dbfabd 7
+dcgcegbhdh 15
+hcbehebcgaad 35
+fahghb 43
+fggfhga 44
+ggabag 39
+fgcgdbfcde 34
+bdecag 47
+ghgehbchbdhc 4
+bcbaaagcfa 27
+bgdfedcge 32
+geehdfhdgbaa 29
+egfd 37
+bf 24
+bdhedeaea 7
+ehacbge 27
+eaccc 22
+afgafffaaa 6
+daebfaegfh 41
+ae 40
+fhgadf 14
+hchheb 8
+ebdgaacgaefh 47
+ccedffbhgbca 46
+cfebaeaa 26
+adgeghfeaea 11
+fdgadbcadb 11
+cchhaabbb 12
+gagbf 23
+cehgabhe 37
+ebaggf 41
+cb 47
+gga 28
+eacafgh 7
+fdeadac 1
+gdb 49
+abfcffeaffd 32
+hbedaaf 30
+ehgcegb 47
+fbg 35
+fagfbaefbde 7
+dabbhgghcgec 25
+hhegbaafcf 45
+cagc 12
+fbadgfh 42
+dfehgcgbgg 38
+ga 2
+ca 40
+bagacbcbfe 28
+aahehgdd 6
+aahefg 30
+dcgedeead 24
+heaeh 46
+ecechahhaec 33
+gdccgdddgfa 16
+cchaf 48
+hda 29
+hhda 42
+cffhg 42
+dd 41
+gaheffafdcd 32
+bc 44
+ebab 8
+ad 18
+eaecbd 16
+ahabfeeffdbe 1
+dgdhdebdgh 34
+fdhc 8
+hhefcddae 2
+bgaf 29
+hhcbffcdd 1
+dbcd 46
+fgcceeb 45
+caadffe 6
+cdhdh 45
+cbfhfhchdh 44
+facfbccf 41
+dgaghhdgf 23
+chcdfgf 44
+hhfhfgbeh 45
+eddcbdegbhd 31
+dgfabg 41
+gfgehecddegc 20
+hgae 22
+bbba 29
+cbaf 30
+bcghcbcdh 37
+ghdhgchh 34
+efchfhed 30
+dcebeaeacbf 44
+ghdgdhd 21
+fecdegaege 45
+eeaffgbdcbc 33
+hacgdbhhcf 6
+bdbgefhb 40
+hffahcgcgbh 32
+daegffeb 14
+bhfgha 26
+bfgd 38
+beebg 18
+ahh 16
+fabbcbgaad 9
+feehb 33
+begb 21
+eabbbcd 16
+fcbhhbeca 24
+bdh 20
+bfchdfdebgd 20
+abbahdbcdg 22
+fgd 41
+hb 36
+adfgefgf 45
+bbhda 46
+eghh 26
+gahhfeechbeg 39
+ed 37
+dbdba 18
+bedcg 17
+eacdceba 28
+bgaea 39
+cebecffa 49
+cfbbbh 5
+gadfbdd 36
+adhaab 18
+hd 25
+hcgbfb 21
+bcbbfc 37
+hgcf 15
+ebhc 4
+fcfbhbga 25
+bafcgh 11
+fffhgc 11
+chfeegdaed 28
+ghcabegfhba 47
+cbef 49
+beah 45
+fchgaadcbd 41
+ecdcgcfb 38
+dbdebebdbed 40
+acaba 38
+ddfgdcae 32
+dfbffhgbdh 11
+egdcf 11
+ghacbd 38
+gfcbbcbd 47
+gfaah 35
+behfdadheb 49
+egecddc 15
+ghhb 20
+eaa 3
+gfaaahcb 20
+ghcdfced 34
+abccbgeca 37
+hcgd 9
+fgfdbdb 28
+cecdbcahee 39
+faacg 36
+fdh 24
+aecc 23
+fbbbfchddcfg 44
+dbfhgdhd 41
+ga 34
+ccb 49
+cgheafeb 1
+bahedace 15
+ehhfhb 43
+cddghbhf 20
+egd 23
+bdagadh 29
+hgeggcb 31
+ahdbabc 41
+hebebfefe 8
+ddbgffhbg 40
+abcchgebg 23
+fgaffhdbff 28
+daefbeafhg 27
+gag 47
+fbechghc 29
+fcgg 37
+accfbdcfgcef 24
+bbdffgegfba 3
+agchefag 44
+ced 18
+aehhabg 41
+aehffgbech 1
+hfb 44
+ddgfgaceb 22
+haf 37
+hdfffbbhheh 48
+gddh 36
+ffggdfedeag 33
+ebdhgdehebh 30
+chghffagbd 47
+bcfgdcg 1
+he 35
+hgfhddhc 22
+fdba 2
+bhcdaegdbad 38
+cceacfdfg 28
+hhf 33
+afhf 43
+daabchgeb 23
+cbcg 32
+cebcdc 16
+egaeecbgdg 34
+bdffgggg 49
+ahecafccbee 13
+efegf 33
+hbbgcdgad 36
+dabchfccfb 42
+gf 47
+feegb 35
+aff 7
+bagfhaad 50
+caaghddaghdd 31
+cadhhhceahad 50
+addafhgd 11
+aecahbd 18
+feeaggb 6
+dahbhf 18
+acceeach 13
+dhbgcecab 4
+bfae 1
+eegb 22
+bhhfdgg 12
+fceeddbad 24
+ddcfcagafha 7
+hhfe 12
+bfhfcbgb 29
+abbe 1
+ebdfaghbfbbc 27
+dffbgdhgggba 12
+fabbd 21
+gafhaeah 21
+hfdcghbbee 23
+gcgbae 26
+bcf 24
+ahgcahh 39
+effcdabfbh 33
+fcaebc 31
+gbedahed 41
+agb 44
+ahdbhafhhdgc 21
+bdaaghbecehf 8
+dacbfab 8
+hfghgdaecfg 7
+cgd 38
+bfeaag 12
+hdge 25
+fagdfebfbedd 34
+bhcggcdf 6
+gdhbbg 32
+ffcdab 1
+dfehhabhdfd 40
+cb 24
+fdcccbcdg 35
+bacchfd 41
+eaegbdchf 28
+hccgeaaccbhd 20
+hbd 46
+aaghgd 49
+bgdcadcebfcf 45
+cafe 38
+gcbcf 9
+abb 44
+bbdc 33
+adac 49
+fcae 2
+dhb 21
+cahefadghd 22
+gbccffd 30
+chcdgd 38
+fdecfdceb 47
+bffbhd 48
+fae 1
+ehedd 39
+hefbfchacae 21
+aabac 50
+dbceabahab 4
+geg 44
+eggehef 10
+bfeaae 35
+hcggdgegdb 31
+hc 35
+cageec 8
+cd 18
+dfgbd 21
+fcehhdagbf 15
+adccdefcedhd 30
+ahab 27
+defbh 15
+ffa 25
+abgagcb 28
+cebffgadg 12
+deefacecc 10
+hagabce 42
+hdhchdcghabb 47
+aa 35
+ffd 41
+gghefgcee 4
+ededhe 45
+gbdefcchc 49
+gheba 44
+ccccaeadg 5
+dafahdgbged 50
+gagdacbhece 41
+hhc 9
+fgehgc 12
+aehhgedb 36
+fegbdbfbf 21
+fdggebh 4
+bcbf 5
+ec 35
+dhfgghb 27
+eecbdf 17
+gdbbb 22
+gbehbcbbdchh 15
+gdgbheaf 50
+cgecfcaagfb 47
+geec 14
+fffbffgcafgh 27
+hgacadd 37
+dehdffdgdca 21
+cgfhcdbg 17
+adh 16
+bfaaddhg 30
+gfg 35
+ee 12
+gh 47
+fcae 17
+eg 49
+cfbhf 15
+cahfag 3
+caaefafc 29
+bgb 39
+dhgacaegb 33
+hedfhdhgaaf 42
+adfbaeabc 24
+hfddebfhg 25
+hadgg 13
+ah 26
+ccfgggaceh 29
+abbe 43
+efagabh 28
+gff 30
+be 14
+ggbedgb 42
+fcafhehbg 7
+dhbgc 19
+hgffgedbg 3
+ffagbch 45
+gedfg 42
+ec 7
+fbdd 22
+abccgdccdbb 19
+cbgbfab 10
+bddccdfbhefb 26
+hhaehhg 42
+fda 28
+hbgab 50
+eafafhbb 43
+abf 13
+aadfgbad 22
+gbhabhd 43
+ga 31
+gfhecfccaf 41
+gghcgddcc 25
+bchfffhhd 4
+gfehdegfabc 30
+geedhcb 49
+heaf 24
+dfb 30
+affaabeghgd 50
+abfebeeb 29
+bacacba 28
+dbggbcd 31
+hcfbc 13
+fcaeece 26
+decdehabb 40
+eegbcb 26
+cbdchbae 29
+hbffahbdaa 36
+cddd 13
+fahg 1
+fbceheaae 20
+bcbeegcaea 14
+gcafacee 42
+hdgdgabbaa 40
+ebeaccfdedbf 30
+fbhhaagbhhba 26
+hecadb 48
+ggfdbhfedfge 4
+abh 45
+hee 33
+ebcfbhce 36
+hgghca 30
+aegcbcfgfdd 6
+gdh 6
+gee 30
+hdg 1
+gafffecc 16
+bhfgagbh 48
+ffccfbh 41
+hhagadcdgc 30
+bbhcahbcg 39
+cdcgcefcec 25
+bbeeffh 10
+hafb 7
+bcdgecghfd 13
+egf 49
+chbadcefbf 15
+fcbgedbgbh 29
+aeedfaedbd 36
+caf 46
+affcc 9
+fegdgcghaeb 8
+bdcfa 34
+fa 31
+afdbhgdb 6
+dcgghcfac 27
+aad 28
+dcba 49
+chc 11
+eeeab 29
+cd 14
+fhhbebd 45
+ec 18
+gb 6
+fagbhf 11
+ghgdafa 19
+ehadcfbhbfba 25
+gdhddfcg 10
+fahdffgabdf 3
+hcgdcgghef 8
+caahgf 41
+edaaeaeg 5
+acchdhbhecgb 30
+dbacch 37
+daeaeddcfggh 33
+ageaehehh 1
+fdcechgcfg 45
+gd 32
+hbfbb 45
+ffa 43
+hecgdfeeaghb 30
+bccfg 48
+ggfaaa 48
+efbcc 6
+haaebfb 27
+hdcfbfdebge 35
+gaad 31
+efh 2
+cacfdgf 26
+af 14
+cgh 15
+dgabffbfh 19
+ccegdgecdage 35
+ghbaa 41
+agaafgf 16
+efdeah 19
+ehaggdeda 6
+ea 13
+bfc 34
+cbhg 44
+edhbfcc 31
+bdcddeec 17
+cgd 11
+daaedhf 9
+afbaehbca 25
+feddfcbdfee 41
+gaa 12
+hdbdhhbf 25
+afgddd 22
+cdebee 48
+bdcfdcddac 31
+dgaf 4
+cgacgf 14
+hhfdfhe 46
+cgfdbfbfffcf 12
+fb 24
+dfffhaebgf 13
+de 46
+cdadfhedh 13
+bdhf 22
+daeaa 26
+bgcebgeghdd 46
+abbfabbfae 32
+hhaggc 32
+bgeddhfgbe 27
+bgegeecccgbg 16
+cgba 15
+dbegahe 4
+cgbh 9
+efefd 44
+hdeghbg 4
+afhdfbfabd 6
+cagdcc 32
+dbdfcegche 40
+fbahba 29
+fdgeagh 27
+gchhgchdcdda 9
+fadfhdecd 4
+echeahcfeccg 5
+dhhfhgbfece 30
+gedcgefdgcf 32
+ecddhedcba 5
+ecfbddhgcga 48
+ahdfdfeh 4
+ahedbfghdegh 24
+hffhfeg 9
+aeegfaagbfgh 48
+hggcaafb 25
+cc 15
+hdbd 25
+dgghdhgaeh 23
+facccfhdadg 43
+acdbf 38
+cbhdebabe 47
+gcdghcffgab 16
+abffabgdbcgc 47
+gbgfhhbgg 17
+bebhe 1
+bcfghad 7
+ceffaebafga 16
+dgf 3
+abaghdeff 13
+efdbch 21
+aeebbhhbgafc 28
+eeehc 32
+cbcgadba 13
+dggceg 42
+hbeeg 26
+facgcabcaf 32
+gfgahfhhfa 45
+gdbdf 43
+hbfhagdedahc 26
+chgccgchgge 34
+ffcfdbd 48
+ccf 24
+bahg 16
+bbacgbaba 46
+fcbfcdgca 32
+ed 9
+ecefhdbccg 16
+ebbefdegabhh 42
+ag 36
+bfegbbg 6
+fe 14
+cafafgf 16
+efggefcae 28
+gedc 40
+fcdcccb 25
+dhfhafggfa 30
+gdge 34
+bddc 39
+ca 48
+hdbecfbeheg 38
+dfchgg 22
+hfba 27
+dheca 17
+ehdfe 32
+aeeefedcbe 24
+df 2
+ffafacgecc 49
+dhafaa 4
+fhgfedeeg 17
+cebecb 23
+ffbafddbf 44
+bfehgd 46
+bfgag 45
+aaehadebba 12
+cgebbf 28
+ce 12
+geceehd 28
+ffgfghba 39
+dhffdhe 29
+ggfffffaadd 43
+gfhbehcfac 30
+bhchfaheh 1
+abeaa 23
+cecgf 24
+bcgbf 1
+eedgefhfabgg 7
+dbdchhccfd 12
+feahegffg 37
+gabhcdag 1
+haefbg 38
+ccf 41
+hggcdg 41
+af 45
+dhhhbcdda 15
+ffbf 31
+ffhhffg 39
+dcabfff 26
+fcgcaggf 4
+aahffhcf 43
+ehfbd 19
+cebeha 29
+gd 40
+efgbdgcdaah 41
+addfdfffc 16
+hhggdg 27
+ebfgddcec 17
+ahfccbg 8
+ecehbha 40
+hegchefbgdbe 31
+aadcegb 47
+fdhehhah 50
+facffcdb 10
+cfahhcgbefda 37
+hgafagbafhg 12
+gefdheg 8
+ahh 7
+ccgfdfd 37
+ccaa 50
+hb 8
+fdfegeh 41
+fbdfgge 6
+dhfhfbc 8
+aeh 50
+cbgcf 22
+ddehfa 9
+fbgdb 14
+fg 23
+begeb 29
+bec 25
+abhefgb 37
+ebecgg 50
+cffdhgecch 9
+ahgbfgdaghbe 29
+acaccbcfhfdd 16
+gcgb 28
+efdcfbfcc 1
+gfahhfeca 45
+aabedhgah 18
+cgf 17
+eedhab 36
+bhfhfddab 42
+hafffdbefcd 17
+bgfhbdfdhcfh 38
+ahd 12
+cdedegacgaf 29
+aacag 11
+hbabafeac 12
+bbba 41
+bdcfadfagd 20
+dbgdbc 40
+agefcdhcegfa 6
+gbcgafaha 38
+cfgg 37
+gbhegbggaag 41
+fehbdbhf 5
+cheagdae 43
+gegc 32
+egcbb 45
+adbcdh 11
+caafedgcb 49
+fhad 22
+cbahecgbab 47
+gf 38
+gfbhheg 50
+heddceae 20
+ae 8
+cgeb 29
+dfba 37
+ggahfh 45
+bg 6
+bde 30
+fa 37
+dhgefhcch 35
+dbbbbeb 29
+bfh 42
+hfhbhch 21
+dfghfeddb 15
+gdghdegcfe 23
+efd 34
+hadhadafcdff 4
+abeefgah 43
+gbfdbecegf 36
+eha 38
+agbdggh 45
+ce 1
+bdcfcbdchc 12
+defabdgdg 35
+bfddhdh 39
+ehhgah 28
+bbbhggffbd 3
+gecefhfdef 31
+hfaad 49
+ab 47
+aga 18
+fbh 20
+gefbgc 28
+dhbdadfcgc 24
+bbdb 17
+eaecacbag 11
+caghefefe 31
+afabb 8
+eb 44
+ghebdcbechg 36
+gba 17
+bhhhbfhca 2
+gac 11
+ggfd 32
+ccfdgagfdegg 20
+ba 16
+bceaef 42
+hacgghcdcd 45
+adbdfe 24
+dece 18
+ffhgfbbb 38
+ghhhba 2
+badbhhhhbaae 5
+gbchf 38
+gbddhgaffdh 1
+hf 12
+ebfcdhdeg 49
+ebffahcef 49
+gadhgb 20
+bh 31
+bagbbgag 44
+ha 9
+aegbdbe 44
+cd 34
+dbcffcgea 14
+ehdefdec 3
+fb 48
+gecefgdgh 34
+ffbgceadga 47
+chaebfe 11
+dcgghfa 45
+egfhfgcefe 13
+fdaffebefdh 24
+efeffbfbhfhc 13
+hehhdg 28
+gh 27
+ffefhegec 38
+ebcgeh 1
+faegfhgc 26
+eaebfhf 26
+dhhhgbbg 40
+hb 5
+bfcghfdcfbd 40
+hfaadbc 20
+fhbaaggedh 33
+daffh 27
+ffcchf 26
+headcdgcca 1
+fdeedgcebgah 11
+gf 23
+bgcdah 5
+ffaga 39
+fahdbehf 11
+eaehbgdh 23
+bdc 32
+eahehheadbg 37
+hcabfgbe 49
+dgde 20
+bhah 37
+edhdb 4
+beefeehhbge 43
+ebabbcea 25
+acdfefhefcfh 42
+bgeedfd 50
+cbdfchbdgbf 24
+egabggadgfhc 25
+fdachf 8
+dfg 24
+agcg 49
+abhedega 12
+begchfgdaece 6
+bbbedgheb 46
+gdccgaceh 19
+gdcaaffhedg 42
+hdcbegaf 41
+ch 31
+bgagc 32
+aaf 34
+ebfaaechhe 8
+fdfegceebhdd 40
+ahacdbbfbeef 17
+heafhbf 36
+aba 13
+bfgcff 7
+fbfbdb 16
+edgffh 10
+cbabaf 43
+hebega 22
+ce 30
+gccafaf 2
+cbaaffcfeea 22
+fhfgceffg 3
+hfacghaee 20
+dcabcadehcaa 2
+eghecab 14
+abbfedb 46
+ddhdcbgfbbb 39
+gbfcagacdbeb 28
+fdd 44
+ccc 12
+ddahfhcdehaa 37
+hdcaeh 11
+dec 48
+acacc 41
+fcabadcc 3
+db 21
+cbdaegc 25
+eefdeddgdbe 48
+baba 46
+dfcehh 48
+fcac 29
+gfafedhahc 8
+hhfcdfef 11
+gfg 18
+dhaagbcgeed 20
+gfgebc 9
+fhgggfh 50
+bedcbddcee 42
+hgcde 21
+ddgcah 43
+ea 7
+eddaeec 24
+ddbbh 34
+gbgd 28
+cdagchadabh 48
+hfeda 31
+eegeeabhdd 31
+eeahcfeffdcb 7
+cbdeddffbbf 32
+ebbgaegfd 15
+aaea 24
+hbdhae 16
+hdc 48
+ahaecba 27
+fhcecchcbae 35
+fafdcgafhb 15
+hed 40
+hbbbhe 5
+hadhbdfdehgc 45
+bdda 42
+fch 30
+dgcfhfhhbbcg 10
+bcbchfgebaaa 18
+egg 24
+eehgfdeb 45
+efeeeggd 34
+gaddddhfb 35
+bfaaeab 29
+bhagecfgh 27
+gebcfagbbcda 9
+hgbdgg 48
+ddd 20
+dbb 26
+ecehceggagdg 48
+eebccfe 9
+gagc 8
+ded 3
+ha 25
+aecbfefhee 16
+bgbbaeg 15
+edef 7
+bdbcbcddfdea 31
+egchg 21
+cgcadbgbdh 49
+aeafgeffgad 48
+efhggg 42
+dcdbaea 18
+gdacfgahhgda 11
+fdhggcb 10
+hb 18
+hhbebhbh 8
+hgaeadgbha 29
+fahceecgbehg 10
+afh 31
+bbagedbaface 20
+ccgacg 48
+eehaccabhag 6
+eegfcaffed 6
+fcccg 10
+heeccgcdebbg 12
+ehcecadbgfhg 4
+ffgdaa 34
+gbeehcbd 50
+afd 48
+bbgeea 48
+hedhg 19
+aaada 29
+bedhabhcb 33
+eadha 26
+aeheecfddfch 19
+edcfacgafc 47
+dahgfg 23
+eaaggf 47
+eedhbedfea 34
+ehhddchebfab 49
+ebghe 34
+ghfcdggffa 41
+hbhcfacceag 5
+bghccaf 16
+dbcbbb 26
+cdhf 9
+cdedadd 12
+cegbbfhghcbh 16
+fhghefha 24
+agg 45
+dccfbccge 32
+hadcbh 25
+hdfegggfe 50
+hf 11
+gcda 23
+hbdfgfeh 30
+eg 12
+df 40
+ea 47
+ecfc 4
+decebdcach 46
+fhadhhgdfbd 49
+aadcgbg 3
+dhh 43
+gfchhfchbcaa 30
+ffabaf 43
+gd 10
+hgddcffggg 23
+dcbehbacba 10
+ageebeghdeag 39
+bhfeadfd 2
+dh 26
+ehb 31
+ba 31
+hafdgdheg 10
+effhbdf 39
+aadbb 11
+beahgha 1
+aehhc 31
+bfgeeeda 46
+bhhahcfggb 29
+abbhhdgaea 15
+cdgbc 31
+hbhcc 35
+bhdhc 12
+gcc 25
+hdafccfbdfd 47
+aeefh 25
+cebedfechgc 4
+ehgf 6
+hbccbdfg 49
+ccgbcgf 47
+bhcc 43
+hebhc 15
+cdebfc 26
+begaagd 31
+fcf 36
+ecbdacdehef 40
+ea 8
+behffbccegeg 36
+afc 32
+cb 47
+ggdbf 35
+hh 2
+dbdcghcecae 15
+daa 10
+agcebgg 14
+eab 24
+fe 21
+dehfca 34
+acbbdefbecah 26
+dgh 32
+cecba 6
+acbeccbbfdah 35
+aabdhff 50
+ca 35
+dhbghgfhcdah 48
+aeff 45
+dg 8
+bafacgcahaed 29
+cfddbcdh 34
+abffh 43
+gd 32
+gdhagfhfba 37
+cbcdehfahaf 9
+heehfbd 21
+aceaheadaeab 3
+agdhha 39
+fgdcafbdbfha 27
+fgach 3
+bbfcbdcacdb 13
+hbgghhaffec 50
+fhgdca 40
+hbhabc 28
+hch 31
+hcdged 29
+eaaefffcff 1
+bfahgegdd 7
+cagcdahdce 27
+ahd 30
+ffbaehhbc 30
+heafcgdhc 6
+hc 9
+hhaeabeacgf 6
+gfaebhbg 21
+hgceeaa 31
+adfgc 22
+aa 15
+egbcfdcee 3
+dafdha 28
+gff 8
+gaggefa 24
+ebbdfcghb 13
+gadfghebaf 37
+dafaaecefcbg 17
+gafgcfgchd 43
+cddcbegbecc 46
+gdadcdd 28
+geded 49
+haedfc 3
+aggdg 17
+hcbh 41
+abegcgddaa 28
+fcdcacea 35
+achgeecbbdcd 20
+hehhabgffgac 20
+ab 34
+hcbfffge 42
+hcbhdhg 27
+bhccbg 35
+addabhgdabge 1
+cdbeggdaeh 35
+adcgae 4
+cg 34
+ccebdefcaage 30
+dbhbedafdb 37
+efbefd 4
+bdbbfgdc 23
+beheedch 2
+hacaehb 32
+ecfcggfhfheg 22
+cbfcfgbeafd 40
+bgadcfcheab 10
+eegggaghd 34
+bf 22
+efdagea 1
+chbbee 9
+bebb 11
+gfhbdfca 37
+ghcabad 49
+cdghbde 27
+eagafbgabggd 12
+fcehdgcddade 30
+agbdehhaa 26
+feddhdeb 24
+dff 17
+cghchgf 33
+dhaeafhb 36
+dbfcbbffdeh 39
+aabeegghahdg 23
+ecddfccchfd 6
+cdhabfbbd 18
+cfgb 48
+dc 49
+hfhhadge 14
+ehbh 45
+fbagab 1
+aehgbadhcd 17
+bbaac 45
+fbbaggefbb 17
+ffdbchg 43
+daefhd 1
+gdhfhahcfbhb 19
+eg 36
+dbaefcfda 12
+aehbecdebc 10
+fbabegbbefce 14
+dbdcccdd 2
+dacdececch 18
+babdh 23
+dafa 47
+hhdgebeef 16
+hheehhfeac 44
+ceffce 49
+ggg 1
+ddga 11
+adb 8
+fdafbcgdaa 16
+ehfdcedhdd 42
+cadce 49
+ggdd 20
+gf 36
+hfde 48
+ceafffhfdh 6
+eeccbhefbab 40
+ceecgdfhbfdg 21
+bhfdg 44
+acfehgdd 7
+gggfeheecccc 49
+dgcaabdabca 26
+cadfgabfhbda 4
+hdhedcbhbbcc 13
+caceg 37
+bbcbacdhced 29
+bfdadgb 17
+bh 26
+aecabdbbcafe 27
+da 4
+bddgfeace 50
+bbfafbcef 17
+cfedggghchgc 4
+hhech 13
+ef 21
+hdgbbefhdade 17
+abhafcgcedgd 34
+gaeadea 6
+gfdhhcghgdda 39
+gafe 28
+caecdhdbgac 33
+aabh 21
+ga 47
+ffcgda 44
+bcagcbhffb 19
+ad 11
+dcadbafb 27
+eaaggbbaee 13
+bfg 18
+fdbffad 14
+dggfgdcddg 46
+bfhdcefbff 21
+edfebad 16
+cgch 11
+bgeddbhchhha 41
+eggachc 29
+gcccchgag 23
+dddgbchgchdg 23
+hhaaabec 21
+aagcdha 30
+afdgdagd 44
+ffbdhbb 6
+bdhbcgg 14
+fahchc 15
+ffffa 9
+faeacdc 31
+hbhe 26
+fbbdfcggcf 20
+gdgafffeadeb 4
+da 33
+fgc 13
+cbehgeffea 29
+fhghfha 34
+abcaafff 38
+bebdghdaeebf 19
+dddfhc 40
+dhgbfab 7
+ddafbc 24
+efhecbha 2
+faegbba 1
+fgcc 10
+dcabdhc 25
+eeec 17
+ahgafhggg 23
+ecf 48
+cghgcfehg 2
+egbffggf 4
+cc 1
+aechb 7
+bebdhcghceab 45
+egdhdaf 12
+bhah 47
+cdga 20
+bb 22
+bgagac 45
+ccafggfc 33
+ahhbg 39
+hc 20
+db 2
+cafabdcacha 47
+ceeadacbf 20
+abggaege 7
+fhcdccheccc 30
+cbccfhdbg 11
+acgaecebe 40
+ccecggegaa 9
+gcedaaeb 5
+hccdeh 39
+gccbfafdfccd 41
+bge 29
+egceahhadd 10
+baghg 5
+egcfd 46
+dcbefgcefd 5
+ghdcg 37
+fe 17
+eh 33
+cffbdahe 12
+bdd 3
+aebabhbgg 3
+ddegbg 29
+fh 25
+agbehabadhb 25
+badgcdhcecg 44
+bdba 48
+ccefccdca 15
+hafadag 11
+hcadchec 34
+bgcfddeg 5
+beebbe 16
+edhbeda 3
+agdaeecb 6
+gde 6
+chhgfggfdfgf 19
+dhgceha 34
+cdefahd 35
+begcehbgfg 11
+fch 16
+hhde 36
+fgebhef 17
+hfffha 27
+fadf 45
+cgfbaffcge 23
+cdc 23
+fhdh 39
+feedfcghe 34
+hfd 44
+dahhggchgfe 1
+bbfechaf 45
+eaeeehccb 39
+ggg 50
+dggbhadaeacd 37
+fgac 43
+abcf 3
+fbfea 24
+fchg 44
+ccdahah 10
+eada 2
+eabedbgadhhh 36
+hebg 44
+acf 26
+eghdfcfbbef 33
+gda 18
+cadc 1
+ghbcbea 46
+hh 22
+ac 15
+fbdc 44
+dacbabcdabae 45
+chgdfhggcb 34
+gh 45
+gfbdeg 14
+fhba 34
+fhce 4
+ahdcgafcdeea 42
+fhfa 5
+cfe 42
+bbegdhaaaaed 37
+af 49
+aabdccc 45
+dddd 7
+ff 36
+cchceggdh 43
+hhe 16
+bfbad 25
+hedbb 42
+gadfha 22
+deeh 43
+gbhccggfa 8
+bhabfhcf 6
+bcgchgbh 18
+ffaag 21
+baddacfggfb 2
+gcc 13
+ahaefc 47
+dfeghg 26
+gbfdgfba 31
+chcgfgechfg 42
+gbaaaedcagch 41
+gchcghf 32
+cahfhf 19
+gdggahfe 21
+haccea 37
+bedhce 27
+hbdeddd 5
+accddadfb 7
+becddedfbbcf 26
+ahcegebbg 27
+aeedb 7
+gaf 13
+hbhhgfdhgheg 31
+df 35
+ecgcg 15
+af 9
+abe 41
+fbfhcadbhd 17
+efcc 4
+hhagbgfacb 39
+gg 22
+ehh 33
+gbeafedcb 46
+dheafb 20
+eb 26
+ab 29
+eb 17
+gcddg 24
+eaefffcaf 45
+bgcafah 11
+efagcbaafbag 16
+hadhgeaae 29
+bac 15
+gecffcc 29
+gaehfddc 34
+afa 49
+ccd 42
+da 4
+bggfedegha 25
+cfa 29
+addebgbafcgg 28
+ggeaabfbc 16
+aeeb 7
+ghggf 36
+cgchfb 3
+dghbfg 15
+hfabeggge 24
+adaegbed 2
+cafdccfadfha 18
+egd 47
+fha 3
+chahacbfbh 8
+dec 18
+aadecgegceef 11
+ecgahf 21
+hcbbdfgdffeh 4
+dchfedb 37
+eddabefahe 18
+aggbfdgafg 7
+gccfahcgcgea 41
+gd 28
+ehgee 11
+fdcgdb 30
+dhcdhhdafbde 16
+feahffefcge 43
+hhda 28
+dahfcaeceeb 47
+fghcdff 45
+dfagaadg 21
+gdhegggebadg 39
+gedce 14
+bhdh 20
+bhebf 20
+cbhaf 1
+cdfhceahfhc 17
+daeefgh 4
+cbbacg 7
+baccaccbhhaa 35
+gcfahac 47
+ghecfeddh 27
+cc 45
+cdbfc 45
+gdbhefgec 47
+afbcfcbfhb 50
+dehc 11
+bgefgghdh 40
+dgaef 8
+begcbebdd 22
+aaag 23
+cagcegdhef 29
+heeadhaehe 26
+ggbffag 13
+efadddaeah 2
+hehehdagach 38
+cg 39
+fefgdgf 45
+cbdabebfgb 37
+gh 34
+bh 31
+eecg 10
+aa 41
+hgfeae 21
+bbfgfcbbcbd 23
+eeba 5
+gfcfggabdg 5
+cgdbefgccdf 43
+hagbeabb 19
+bhc 28
+aaadhhfdedcb 31
+bfbbdfcaheg 14
+ggbafcbe 28
+fh 8
+geffhdcgeeb 10
+cbcc 45
+cbcfbb 20
+bf 1
+fdff 21
+aegaefdc 18
+bbegfh 27
+ahgghg 23
+ccedcc 28
+bcbhb 27
+gdgcafcddee 47
+dafgdcefbaeh 23
+bbfahhahebc 48
+cb 40
+agddhheeede 8
+gedfdbg 14
+gbabeh 4
+gchg 21
+ghdecea 17
+fgdfggcac 29
+eaca 34
+afh 26
+gfh 24
+bhcccchaegaa 45
+ahaadaabdedh 16
+cgahfeedg 6
+eg 44
+cdbdhhhe 28
+aacdhhehcb 17
+cefcgeg 5
+aefdcagaaf 7
+beec 50
+fhhe 2
+eh 28
+ahehbgabgh 44
+eaddc 48
+gdgfg 33
+hheedcbfbgd 8
+adgfecdbc 27
+ghbheghfaedf 46
+dbdbb 27
+hffeghbaee 50
+agb 37
+efdehchcdg 17
+hdahceggehb 17
+aeabeacecge 30
+ehdhdg 43
+bhhehg 8
+fgcdcbgcd 41
+dcffffcace 31
+efaa 2
+afhhcdfbhgb 23
+hhe 20
+bgefgchdach 5
+dbhgb 26
+eaebfbebca 37
+dffcg 14
+bhfhcb 32
+aadhcfagfbec 49
+ebagdbd 45
+acdb 14
+eacehd 17
+hggbecgb 11
+ddhg 1
+hdfe 6
+hbag 44
+gahadd 31
+egfgdabbahf 15
+geda 49
+cgffaaabff 38
+hacfegdg 19
+bgbhhf 43
+dhg 44
+eaaabhfbcdfb 22
+bffgfcbeahge 35
+gcdchge 10
+gg 2
+ehbahaghhf 11
+ce 10
+fbedd 3
+echadgffdg 8
+cf 15
+fdeb 2
+daafhegh 11
+ag 41
+debaffccfg 4
+hbdhagdh 12
+fd 28
+ceeefcg 46
+bbhf 29
+bcbcgcgbfc 23
+afcfagehd 42
+aadgbeda 16
+hahggae 6
+ebe 16
+cgeb 8
+hhcadaeegcag 28
+gcb 21
+dcahd 12
+egd 38
+daebchefbcba 13
+gchbcgehh 38
+abc 25
+bdccghfgh 1
+befccche 38
+cdhdbf 8
+fdgch 22
+achghh 28
+gbhaagbb 37
+hbfdfeehh 44
+dege 37
+bedegb 25
+ga 6
+gdf 35
+hdbccfb 18
+aebbbcbfge 4
+fh 25
+ceaffggbbb 1
+eafdbhhb 36
+hcc 15
+hcb 7
+ggecbeae 32
+hgfgccbgg 2
+adafggach 36
+dcgb 44
+daegd 12
+heabedbg 38
+hgbhf 33
+gchh 3
+acb 2
+cd 8
+fcggg 23
+bgbc 3
+abaegbgffea 19
+aefaffd 33
+ahfegf 40
+eee 13
+ggdf 50
+cfhb 24
+hfgcac 12
+fffbe 28
+debfbcgc 26
+gaefdeg 32
+eeecc 22
+fdd 20
+eggcchhdahbh 21
+ggdhedh 27
+agg 2
+abececgegd 49
+cb 36
+gad 27
+eefgachf 26
+fdgacacbc 1
+de 12
+dbhgdch 47
+aechcacghde 18
+ehageaeg 10
+gcgdeah 11
+chadfhhgb 29
+bdceh 30
+hcbcdc 40
+ecf 23
+fadgb 5
+bhdfc 38
+dceffeeahdh 2
+hadefbdafd 35
+bgbbdfa 35
+cdahga 17
+behgdgh 35
+abefeaf 39
+chdghh 21
+ddcdfbfgffdf 7
+bfacbbccha 15
+cheaahhcdag 46
+bbdba 25
+dafccha 48
+hhcb 13
+fecbgbaeca 1
+gdhdecfech 48
+fc 41
+ghgfdba 34
+ghgabddfdbch 11
+ebbbadbhdec 38
+eahhgaahhg 9
+fbg 28
+ggeag 18
+hhgafcag 46
+echbhdgh 39
+ehabea 27
+ecgbhdeeefbd 21
+hhbghhc 30
+bbchafgag 28
+acbd 11
+afhcfdeg 14
+hhbc 20
+hc 37
+eagg 26
+dgcdhfcffaef 46
+fbdfa 35
+abgcec 31
+eghdbccbefh 41
+dee 24
+chh 31
+fbbhdebh 7
+bee 15
+hgah 44
+abghbdegcedf 44
+abffdbg 17
+chdab 29
+chaaaadgbce 35
+bbfa 7
+abcfhgdddeh 50
+dedahadhffg 12
+chdhfbgbgef 47
+agg 22
+agbe 35
+ceg 6
+cdchah 23
+bfdbhdgd 8
+efedebh 31
+edfhdghe 24
+fedghgade 37
+agac 33
+adegaggeedeh 14
+hcfh 47
+egfdhfhdb 14
+cfccfhaec 39
+hfahahddb 42
+hga 32
+dghd 3
+dc 1
+dbhdfbb 4
+hdd 45
+eheccecge 1
+gbbghfbgfbfc 4
+hgdbhcf 9
+dfddf 34
+bbahebea 34
+fdfaahfcbfa 30
+fccced 24
+fcebfca 46
+aceadeah 27
+efg 24
+degbbafdc 31
+add 32
+faefcced 7
+gcaeahb 28
+be 50
+chahed 48
+ah 37
+ggefddbaha 31
+deabgcgch 46
+feb 31
+cedd 48
+gdaagcfaacbh 44
+beaeech 31
+gef 38
+bcccfchcdfad 18
+eadhcb 3
+aagddgaagac 46
+cafhcfbfegg 47
+ca 1
+chhhc 38
+gabdhceceg 35
+ch 31
+bahddgbf 22
+ghhccbhgc 45
+dbgf 11
+hacfedb 28
+dh 27
+fcbgcg 35
+efbbcghec 10
+gfdbcefcgae 26
+bbbbh 24
+cfgbbefdaef 43
+ebcdab 39
+de 12
+gcgcc 36
+geaeabgefh 50
+acahf 44
+bhdhdhhh 19
+ffaaffgbgfed 3
+checbabg 22
+cgbfdhbfee 7
+gbhagdebdgag 13
+eafdgcedaaa 4
+fdgg 31
+egdhhcecghc 49
+bgfdef 24
+hgce 3
+fbeaad 46
+aa 36
+hehca 38
+aefffde 7
+gcbaca 4
+ffehhdadhfbc 4
+fhdgfg 29
+baeddcbchf 11
+cacee 14
+adff 7
+efdhb 31
+bbhegb 36
+fg 5
+cbgeaed 19
+ahdagcafc 39
+ehdcagfbhce 29
+gbecc 11
+dfcgfadcgc 19
+dd 27
+bbbcacc 27
+gebgceff 40
+bhd 13
+cabhgfd 47
+ah 28
+ah 34
+fcbgdbfedf 39
+eceaaaf 44
+dagdeheabbh 4
+dbfbcgefgda 42
+efbbffcc 31
+cd 10
+hbedgfddhabc 43
+gfeb 28
+bbcd 21
+fefebdaee 44
+cabe 2
+dcbee 2
+dffbc 46
+aehfdhcadf 42
+gfceh 38
+facacbha 33
+fdgfgeabceh 44
+becdd 10
+fadhgddfbed 12
+cccbaf 14
+fdg 16
+hfbbe 14
+efb 19
+cc 30
+hhcfhhfh 24
+dcgccgdah 27
+bhff 17
+acfghbgddh 4
+dhe 20
+cegcbcaabce 13
+fbcac 21
+daecbedgecb 6
+fegeaddc 9
+ehbcggcadb 10
+cggfhg 50
+dfda 23
+edhhbdebdfaa 40
+deeeeaffha 18
+hgefadfebbad 22
+cbb 37
+cgehedeef 5
+bfeafhh 14
+ahbcfccceeg 39
+hcdefegfehfe 29
+cc 26
+bgfb 20
+abdfheeeg 26
+fdd 38
+bghacfbbegb 21
+bacfbhaceaga 45
+faeaggc 5
+fffdhh 24
+bbdahbdeagc 46
+hfgccde 26
+be 1
+effg 3
+fafgfabd 3
+bahecgghd 14
+heafhdaddhe 29
+cbdhhdfbbe 48
+hdbfbg 11
+bdegcb 44
+fd 9
+hhdghhgb 10
+agcagadeghfc 45
+ddhf 5
+hgbfghda 16
+hecgd 1
+eacecba 35
+gbgfdbecghdf 33
+dgbbefabhh 34
+abgcc 36
+ae 37
+bec 6
+agaa 47
+eh 5
+chhdgdbh 14
+gahhggdc 29
+hbhbehhefbc 20
+dgdcgce 10
+ccfbdhdgc 44
+cfbfg 43
+gecfbggg 15
+cdb 20
+aghaghd 21
+eefgbb 7
+ach 10
+bhha 37
+eghfhge 12
+edda 22
+agdggadac 4
+bgahdha 48
+dbbcdeghaade 22
+dhf 14
+db 7
+efbgeb 9
+gchcgbc 40
+gchd 4
+hfbecfhfb 24
+cbabehfgcc 27
+bacdbeaahbdh 42
+fbaafafb 47
+eachheahfcb 28
+gdfghfb 46
+hhdcd 16
+fffbdcacae 44
+deadhfg 46
+ebd 37
+fahcg 19
+fadcbe 45
+cabefhc 26
+hcd 33
+gbfgee 25
+faddachb 48
+gfbhcdbgdce 9
+cafcf 6
+eafabb 49
+cbcefbaegdd 17
+bbhfag 25
+dfdbdeegdb 24
+cdfhdbef 6
+cgdc 43
+eehcehbbcebd 43
+behfg 45
+acbaefdbc 28
+fffdcgafcd 50
+ceg 22
+habeb 4
+hge 2
+gahdb 37
+ddcbgf 42
+ddfafbgee 15
+hbdbhbcbcc 5
+bgghfecbabdb 7
+hhbdeg 39
+cchdceaceh 26
+hhb 33
+cdcgfddah 14
+ehdfdghgh 28
+gfhcc 10
+ahhhfdgge 39
+gggahaha 6
+cbeccadfcb 42
+gceadgcgdfeb 6
+eea 48
+fh 31
+eefh 18
+ghggbhee 45
+habh 40
+gfafbahce 45
+deaahbbfefh 3
+bfhdaecfgg 11
+ghh 43
+edhecaedf 36
+hgbfcachd 17
+cghbchacfcbf 18
+ceagaebcfda 16
+bbbgbca 49
+cbdfgghah 21
+hff 40
+bbbchahc 8
+ffbadcabd 50
+cehgddghe 17
+adhhhcad 31
+ehaecfcg 20
+cg 18
+gaf 18
+bahefabbhb 30
+dbcbf 26
+gbehdfa 17
+dhdggcf 31
+ffgcggggeaed 38
+bhgfhb 48
+fdhbb 30
+bdb 18
+gfebgeec 16
+ebacfdhegbg 48
+hbce 50
+fccce 30
+fdb 7
+hhbefee 15
+aegbd 31
+cdefehecg 16
+hcgeccda 18
+fhbfhg 14
+ecfffbbe 50
+hhhddaade 12
+eheaghadab 6
+hdacegfefhde 44
+cafhdgf 29
+efeec 6
+gdahfeg 11
+abdeafbaba 47
+dgdbcdhgda 36
+bbdcd 25
+beb 25
+abededce 26
+hhdebdeb 37
+hgegdafg 36
+ddeghcb 25
+edfhed 15
+dcfhaadhbcd 37
+ehabd 19
+bbdggcgcc 14
+bcafaf 43
+egfbbeefca 5
+febadfcbd 50
+bdebgdfgeg 12
+gb 9
+hddefdbggc 41
+bcbbbd 18
+hbca 13
+fffhcdhfd 33
+cahecegddh 31
+gdgfh 45
+dega 33
+ghecc 2
+habdhdg 38
+hfggdddcbde 14
+dd 11
+aafgggbafac 43
+ghcbdh 10
+hfgaafd 44
+abgfffg 43
+hbhcagcfah 40
+cdhhgec 14
+be 50
+ddffdffgf 25
+hbaeg 1
+aehgba 7
+dbaecchfb 15
+dgegeh 17
+adbbhaaccdc 4
+hbh 19
+hdeedgb 29
+fhdbbfcbeae 5
+hacgbdfgd 1
+fhfdfedb 40
+eccbecg 1
+ebeadhchbe 14
+gdace 34
+hgcacfeefe 28
+ceeag 46
+dffceadde 3
+ha 50
+cfdbcaca 4
+fdhhf 33
+bcgfgdff 33
+baedeega 22
+fhgcbfcdfde 43
+dhhhecada 40
+cd 23
+ddcfcaf 50
+aaafdgah 16
+ebdbbdbfha 2
+hbabaehbe 21
+fgddchhe 6
+bef 15
+egedcccabc 23
+cgdbhbfbfd 20
+bead 44
+aaaeheeghada 20
+cbdd 42
+egcebbhd 7
+beege 50
+bffdad 46
+ddafeafggb 6
+efgb 49
+ehdd 25
+gfd 28
+aah 29
+bb 37
+hfac 41
+baebbdgfg 15
+dgdagh 3
+hhbcea 46
+hddcfbcefcd 29
+aga 13
+ebebfdhcfdhg 47
+dgbda 36
+hbgdfhedga 32
+eh 2
+eedf 45
+hacecc 17
+heefa 29
+ccdahbgg 7
+ecahcbc 26
+bf 24
+aahdhe 36
+cagead 50
+ahbedgf 18
+ehbd 50
+bbehcebah 45
+adacccabecbb 18
+fad 1
+af 40
+afhadccff 42
+fdbc 27
+dbacb 7
+eaeafg 32
+bffbf 29
+dbhhdafbhb 45
+cfbea 3
+efegecahgc 33
+ebfchhdhgfhd 47
+dbgbfaeefbca 23
+dcaheafcaea 14
+hggb 17
+cgahh 50
+ddh 30
+chaefhcc 49
+gcdgccafc 35
+agfgagbdgfch 35
+efebegbegcb 43
+eadcgbgffee 12
+dbbeacbdbg 7
+fagad 12
+cbbcg 16
+aea 5
+ceaceagfchec 46
+adcf 23
+caega 16
+ehefgebb 7
+fbdcbg 43
+ff 6
+bgcbfgdb 28
+cbdbgd 15
+edbebgdagc 50
+dfdcaedgg 9
+gfddcbfccadd 41
+dab 39
+adbeagfeh 28
+hhdagge 43
+gcceaagghhae 15
+hhagchca 12
+accaaeafdf 26
+dhg 47
+dg 39
+gbaafh 30
+bghdgdf 43
+he 35
+gedbcc 7
+hcddfgggfhf 36
+ffhfhadbg 29
+daaghbeb 19
+bfcfcdehedgb 38
+begagebfh 11
+gfecchafbad 36
+bhafhgcdd 5
+geeebgfgeb 20
+bbcdhfdg 31
+gafcbce 50
+cdgeccdh 19
+abddfeec 16
+fcfac 28
+abgch 34
+bbbegae 30
+ed 26
+febgfd 44
+ed 32
+fggchg 29
+eaagccecbgba 45
+hfehceefe 11
+acbdhee 21
+afe 7
+hcbcgaghb 15
+dcdcd 31
+abegfechgffa 40
+ggghcg 28
+fbbdhbggahc 5
+gc 22
+cadhhdedgfc 26
+bcdbac 38
+fc 17
+fchcg 35
+ffbbbehb 26
+cee 50
+gabe 14
+acbef 37
+cbdfaachdfa 17
+hdhefgfhbcff 22
+hbfae 3
+ceh 28
+gfbeddfe 31
+bcae 9
+hegghchbe 16
+gbffg 34
+hhgec 46
+acdfbag 41
+acddadcdd 1
+cbddbebggc 33
+ef 44
+dahchdfcadfc 29
+eegedgffbg 20
+ahhggbcg 35
+bcehdgbhffh 49
+bfeafdcehah 20
+cecdchee 28
+gghhfdgaeh 28
+bfehhbce 28
+begcb 21
+daab 27
+gbfdfbcgcfc 25
+bghahdghchah 50
+ghcdec 12
+cdhc 21
+ghhfhdfdcg 7
+abbdgdg 18
+fbedcfc 34
+cafebdd 48
+hhehdadddf 44
+cdgfafcg 29
+bgd 20
+gaagfcbaee 26
+fahheeadad 28
+ddfbheaacda 4
+ffaa 2
+abbcbf 20
+fbgaea 5
+fdbcfd 22
+aahcc 15
+ggdfcachfdc 1
+fhahbebgcdae 11
+chchfbfhgdcf 12
+ggfeabc 11
+fdedcadhafea 44
+ccddbhhbcca 24
+hadhgadebacc 8
+gehcd 29
+bcghchhadfb 23
+aabe 27
+ca 29
+hdehah 49
+cegb 43
+bgcgceg 14
+hcegeabdfhg 39
+eg 23
+egba 42
+fafdgc 36
+ggdae 20
+dehhhgefe 5
+chebddahf 42
+effdgedch 17
+ahacfafaagf 2
+bcggbgbece 16
+ecfachfgb 47
+acbgbhc 30
+gfcdfhdc 30
+aaagbbg 17
+hadbhbedgdb 41
+fhe 33
+de 22
+ecfehde 49
+feecfefd 2
+ccba 24
+ffdaabbgagdc 13
+aeee 13
+dfhhbehbafh 35
+fahhgdeeea 44
+bfeaaeechbg 18
+hcbdggcca 19
+hadfeh 14
+aegfea 23
+ahaehbfhfeee 20
+hghcgcbgge 38
+cafc 30
+hfdgdg 6
+gehf 34
+cebf 20
+be 47
+fagbd 10
+ccahafg 6
+hdaa 3
+acbbef 5
+bcddf 42
+ch 5
+aae 7
+chffeebha 44
+hdge 15
+cchacbfhbf 10
+dbgedcbbdhb 50
+edabgcbbhff 32
+hgbfdagddfag 26
+hebgehah 4
+bfffdabghe 42
+ea 3
+fcdeeeg 45
+dagehcahdgh 25
+hhfegfdfgbe 13
+aedhdddfce 38
+gd 48
+cghhefadbg 33
+hafahdhhafg 14
+gcegc 37
+cd 41
+aebgac 6
+edeedegadfff 10
+ecffbgaff 40
+ca 43
+aaffg 5
+afachfhaafda 36
+hgcfdaghafcf 10
+ehcfabbcghd 4
+aff 21
+bbbbcbfede 44
+ehgcgbhd 11
+cg 23
+fagdab 35
+ebdgfgbdeb 26
+afhfdfhagbbh 16
+hbhbfgefe 48
+gadbcaehedfa 42
+bcc 45
+hcgchaehfg 47
+fbcga 7
+fdd 19
+ebhhe 25
+fccagcbhaghf 5
+bfegfgh 46
+cbaheffhc 33
+ahfadhhgehhc 37
+cbfb 8
+cefhfb 41
+he 42
+fbdaeaecdg 26
+fehcaafhg 33
+hehgbh 17
+bdceddgeffb 20
+bgedcbfgdd 29
+eghhfhchggf 20
+adcgbc 8
+gfdabae 44
+afcchca 28
+aehhbcbfgefd 11
+dacbgbbg 20
+gfefd 29
+ecdah 31
+hga 36
+ha 8
+fhdbaaba 9
+hea 13
+ghbhcg 3
+dbgdad 42
+ch 42
+cdfccg 43
+ffbeghhh 43
+ccdahbfbadbh 48
+ga 35
+fcdccbcdhf 37
+ah 9
+edecaaedgcdg 26
+ehgaghhhhg 22
+cfe 38
+fbbaaf 13
+babdd 34
+caehede 41
+fggcdh 6
+bfdbabcbgbdh 4
+ddgghaaece 35
+ghf 20
+hfbcbdahhdf 24
+bg 34
+baaafg 39
+cdgbeaehdd 24
+hecdceecgff 24
+acbgcfdg 6
+hbbefaaeehc 4
+gg 33
+ghfdh 50
+dfcfcaefac 39
+hghfg 27
+hfbde 23
+gehbhdbbfbah 1
+dbhfhedgccba 35
+dcaggbdaaef 36
+ag 40
+achdhebc 14
+fhbggagadh 43
+db 44
+gedaaheehg 17
+addeaach 20
+dafbhhg 5
+he 47
+ehcabaechhc 18
+gge 2
+fa 6
+agaahhe 22
+bgdcdfgb 1
+acbbddgfhahc 14
+fbaa 40
+fchdeaecd 6
+dg 6
+ceaaadd 23
+ecg 27
+ddcabgad 27
+hbbdb 15
+aafacc 23
+hfgf 6
+hfebgbggggh 25
+ffedheadcdg 42
+afcffgcggea 13
+abdffad 50
+ggc 30
+aca 43
+ggeddfhdf 50
+fafbhgaeff 14
+eadbffedg 18
+dhafgea 2
+dcebfgacgafa 6
+dac 31
+dcdeggbha 33
+hdahg 26
+ebaaaeha 39
+ccfafbgg 6
+accg 40
+hhccfhfch 22
+gegagbegfd 14
+hehgfahaf 34
+ggbgd 42
+caeh 50
+affdh 16
+ehgfe 24
+faffhdf 37
+cdcgggagdf 37
+bccfchbhh 35
+ahge 38
+aeghfbfce 31
+cc 4
+ahfaehahdb 17
+ddfba 33
+bffgc 37
+aeahddfgb 50
+ddgfe 11
+bfa 43
+bee 11
+bhggb 20
+aced 33
+hfaaafdfd 45
+gfgedfd 8
+hbfdfdhaad 31
+dbbcbghch 27
+fdfc 12
+agaff 30
+fcc 33
+echfg 48
+cgddfbbfcacc 36
+feaegheaafh 50
+feaecceg 33
+cggaefe 19
+haa 20
+cdgg 14
+agaeheahfabg 2
+bdbbhdac 41
+dacccchcebd 29
+agahae 37
+eddc 34
+egbea 2
+hfcgggdbdahb 46
+cefeaaaf 2
+bedgfd 40
+fcchb 38
+aecgedae 44
+gccbhdbdg 3
+efbcbchade 1
+fcabebhgcfa 19
+hhfgdddbhfd 11
+cebe 40
+dce 24
+cddfd 37
+ebg 35
+ga 4
+ahecg 32
+ecgcgh 25
+abbfbgggffe 24
+dfff 6
+cefeh 32
+dfgddcgedhfg 2
+hgdb 9
+bdfga 34
+fcbfahbggdd 39
+dg 26
+egdeec 50
+ffhdbhedb 2
+bdecdbfd 32
+fg 15
+dad 13
+egddf 36
+fabeh 40
+cdbeegf 36
+dgfb 36
+cddhcgfd 50
+hbdfchgbba 11
+hcfghfgah 6
+hadcfaf 49
+feaafdgh 6
+ggfcdbeaef 9
+dadggdf 40
+cd 35
+hebbe 23
+afhdfd 41
+fdeeccba 11
+gchcg 31
+fhfhchh 45
+dghghddb 6
+ahehh 26
+bcehhffahhhg 12
+bcfcc 34
+aecfbe 18
+ge 27
+de 36
+acahhd 18
+echaecadbacd 40
+dgda 42
+aacdbab 19
+ggbabhacgbeb 8
+ecedegda 48
+hccc 39
+hdgfhgccfhgf 5
+beebdgghagfd 5
+dcefbhbdadhd 2
+bcce 10
+hgecfb 13
+fdccbafcb 15
+bacaaddhf 22
+ef 46
+fgbfdfefh 8
+hbeefcgccddd 23
+hfcha 15
+abfbfdfc 38
+ehcg 38
+gcfgcdcg 31
+dh 47
+eeabbfe 2
+gbcbdbhec 10
+eedh 36
+gegg 46
+chbh 36
+bhdebac 36
+fdf 13
+ecfcaddge 44
+ech 38
+hadfhgdaheh 1
+gaeaaeh 13
+hdgdc 26
+bhfgcegee 11
+ffeh 16
+gehee 16
+cedcfhecb 33
+dahc 48
+cah 47
+fhbeeddc 21
+cb 39
+dgabahbe 14
+ecaaegdbc 47
+baecbcfccddg 36
+ghadhag 27
+hhfac 21
+bgfgabg 4
+cf 6
+fcccgad 32
+hgagdhedhbaf 5
+dcfbceef 25
+cbfch 47
+bdgbga 42
+ddadaabcbbbh 39
+gaf 34
+ahde 45
+fedabhbf 21
+cbcdbgdgdcch 17
+gefchg 24
+baa 20
+hg 18
+ebae 18
+agdeddh 46
+ebfg 9
+adh 16
+ddheecbf 22
+eghgeghdebb 39
+bcggcgcdf 47
+bhacdg 45
+ga 48
+bf 37
+bggfd 16
+hegacea 24
+ghahbdafhg 31
+dchegccffabg 45
+dbhba 11
+baheeddd 37
+hegcggc 42
+gbggdaadfa 13
+abdfb 21
+fh 14
+dcgggh 22
+hcfcabd 16
+cghgef 43
+hdbcggcdfbhb 10
+ah 30
+che 10
+dd 9
+hghad 30
+ahb 27
+fbc 23
+dgdfh 16
+bcg 5
+deag 22
+ecccdagghahc 19
+ehdhbhd 34
+cbdebdghbh 41
+ggfhhc 2
+ffcfedf 20
+fedbddbg 4
+hcbb 15
+hfddhgaaad 9
+cehfhc 4
+ghddcche 1
+cedbdhehggg 45
+gcgfb 42
+ghd 1
+cebg 27
+gdchbe 5
+eagfdcd 27
+achdeeef 46
+hehbchgeh 40
+cdebabdaebcd 30
+gaecbbfgffd 36
+fbdbcgfca 34
+eehbbga 1
+cefbefahdbd 27
+afdbdadgfhg 28
+cbfafeeeebh 9
+hcb 34
+eahfabfgb 11
+cgehdhccb 8
+abccdf 9
+caffggcb 9
+hgcefca 8
+gdddahagegfe 33
+heabgeg 32
+hefagcaafgg 49
+hfhbdcd 15
+cfbf 6
+hdghc 9
+dgbdadc 19
+ce 6
+dacge 2
+ffcacffb 47
+ha 28
+bfh 35
+cgchfhdeee 27
+caegec 43
+eagbbfhacbeb 9
+behf 42
+ebd 8
+ebdheefhcff 28
+ghbaae 21
+cdag 27
+egfbh 28
+eb 6
+hfhhcdch 31
+gfedcbbgecfh 23
+cece 18
+ecc 17
+cbbcachb 18
+fbcdhbgbaehh 39
+cdfccfca 13
+baad 20
+eahdfefhcb 42
+cgcgbagdh 45
+hgcagcg 38
+bhgcehchebba 44
+ehccbc 4
+dhhfbhdgabf 22
+aa 40
+bebffbdfeadh 24
+de 45
+aabe 28
+ccggaagcgah 1
+deh 23
+fcbhh 46
+habhdgee 39
+dch 3
+ddbe 15
+edgahhdh 40
+hbhehhabh 18
+cc 45
+gedddeahgfd 34
+fcdhebhbc 23
+bfcgahaa 46
+cdehggce 33
+hhfagdcafh 15
+aa 35
+gfe 49
+fbe 35
+accgaagfadeb 48
+hdah 20
+abhgcdh 7
+hegcgdgfffed 21
+fbgha 10
+dh 8
+fd 48
+cfdgdhc 25
+becfbeb 4
+af 49
+cecfc 36
+fged 34
+bf 35
+hdah 39
+dffbaafegba 11
+bhhececgc 5
+bcfgga 23
+ggefefd 8
+fdgacgaf 40
+caggefcdfbc 13
+hfeaehhdeabf 15
+gcd 7
+cac 27
+bggfgbdcbcbe 47
+faeacafh 25
+dadebhbebh 26
+ef 50
+bcgfd 17
+dfbcabcfdghb 32
+dbcfbbg 34
+gahdhgfaadh 45
+fcab 23
+bdaagddab 37
+ceabedehcgb 26
+fad 46
+dghe 46
+dhgaggegg 42
+egb 30
+ccaf 40
+deg 25
+eahb 36
+fceeachhfda 6
+chbgdad 4
+daceadaba 12
+dbdbebfb 46
+hcfcdhdg 36
+gbgaefebdb 13
+fhhabcdcc 3
+chbe 44
+gahd 30
+ag 49
+becdbeag 44
+aaaff 50
+ffhhhagd 8
+fdfbf 12
+ff 46
+ghdeacfd 26
+gbcdhdbfb 37
+geahdgb 1
+fcdadfbcehgh 27
+gfhhdgdbda 11
+hacfe 4
+gdehfdbbgaeg 46
+gdch 29
+bdeaefefbd 28
+cdaefbahce 5
+agdgdfdbbfe 26
+dhchfcchb 21
+efghecc 23
+bebggdhchf 26
+eghfgebffecf 17
+dgf 31
+fh 6
+egd 25
+ad 6
+chbe 43
+ffcaf 15
+bcddcdecahd 22
+ffabchggd 40
+dfhaacbb 42
+aeggdh 46
+aabe 14
+hhcdcgdbged 1
+ddg 24
+chdb 16
+hcgbeedehdab 29
+effgfg 27
+fegadbfdheb 30
+aaghhfge 42
+ddbffce 32
+ahdbacce 47
+cagddfhefe 18
+hdbbg 19
+cd 21
+bfgbbaacdag 12
+dffgeaaef 43
+fcdhcad 2
+hfhadhaahaca 23
+aadhccb 45
+cga 22
+deggdc 28
+befbecddc 37
+abah 47
+ca 2
+efggghed 9
+debheeg 44
+bdfaff 1
+dd 18
+eeghhhacadf 19
+aaafhbe 20
+bhe 21
+gagdgaafafe 14
+ffha 25
+dedddgg 9
+edgecgbabd 46
+cacdach 35
+eegbde 10
+edbedagdgcgh 31
+edhgfaecgcah 41
+ababg 15
+dhffdccfa 15
+cegedccf 28
+deehfb 17
+faecbegahghc 29
+ccgabb 1
+ca 9
+eggbgggag 50
+bcdfbag 11
+ghb 30
+hebeffa 7
+agdda 41
+aedcadgcaed 4
+faebcbcfgfb 27
+egafdcd 2
+cbeghch 46
+ghcf 32
+cg 44
+ac 42
+bedhgadbedha 12
+efggebhfeafh 29
+fa 15
+gfb 46
+hadaeba 28
+ffhfhh 17
+abh 26
+chh 25
+be 39
+cgeagahefcf 50
+hbch 6
+cah 15
+cgedeceehh 29
+bgdhaf 32
+ggcbfbcfgb 6
+hdbffadgaeha 9
+cbdcdbgh 34
+gggadaaeg 40
+bae 18
+cd 49
+afefbegdg 30
+ehec 26
+bhf 44
+heh 9
+hahagabebg 32
+beacaeegbgdc 45
+edfdhc 9
+dfabg 22
+hfag 36
+dcggbgd 22
+dabbcceagc 32
+chhheahbeaf 31
+fhh 45
+cfbhfcddh 2
+gcg 7
+dac 27
+ghdchcgbc 42
+dbgdf 33
+bggbdch 3
+fgha 38
+gd 29
+dhhehhga 19
+cgeb 38
+bfdh 2
+bhbfeb 31
+beafgfag 39
+aade 30
+ecchha 19
+ahdbhgdcfcdf 22
+ffcg 47
+dchfefhaccba 48
+ghffabfhhh 42
+achdbdffb 20
+dghebc 48
+ecahfgheabch 28
+bafccdcah 42
+bace 34
+gbee 31
+ae 28
+bhbged 18
+ecgabdfafad 12
+hheddea 18
+fffaheggeb 25
+hdca 10
+aae 6
+bhgfddc 50
+hh 37
+edac 38
+hefhca 49
+eaagc 40
+ddeffdec 12
+gcgcd 10
+adfchhebgfh 12
+ghea 16
+fcghfehgbfce 37
+gdffchg 12
+gachaee 8
+hgheacfdba 12
+aaebb 34
+gcagfehfbhhd 36
+hbgaabhbhc 47
+aagbfcgb 7
+abbcbhdadh 47
+edeadg 36
+cdbafgfgf 47
+hd 6
+ffbhahghcb 31
+gbfhgdc 48
+fafhae 33
+daaacfccahec 39
+bbh 20
+ghdbageecgfg 1
+eabdebfgcedh 23
+eggggdhcbc 36
+dbdhdgh 4
+chcecegagb 3
+fdd 41
+dahhfhheddd 13
+acfdacbdgec 20
+acbgdcf 8
+hhdagdbef 46
+eadbagacfdh 3
+bdf 36
+cdchdef 17
+fhed 29
+aaaabhda 49
+cgbhdaacheha 7
+dg 13
+gcgbgcfe 48
+gcfaaadhachd 15
+ehedh 34
+cdfdafcabcb 28
+hhhdbbafaahg 33
+adaedgdccha 31
+fbhehfhcdbgf 37
+bhcdbcgbhc 24
+bggf 41
+gg 43
+cbbheebebbbc 46
+ehbfhb 32
+dhaedf 15
+eba 17
+aba 50
+cacdb 34
+hgab 2
+efheechce 29
+dac 29
+edefhabecfad 19
+ddb 13
+cahcf 41
+cfbbagacdhc 16
+cde 40
+hg 45
+hafaecaeaafd 5
+cahdefea 41
+abd 31
+aghgdhhda 42
+cffbhdcaadh 48
+aaaab 46
+gacbhdedbbga 35
+gfaedfgafb 23
+beaafaadgeh 23
+aaeafbfgaab 38
+cdffgebdca 47
+dbafabeg 11
+hbfgbbcfcd 26
+hfbhh 27
+hcedaca 3
+gffgbdefde 6
+dachg 49
+dgafbhcbh 29
+gadbeba 32
+fdefcdgcfb 25
+dbbbcdf 46
+gfggga 37
+gfa 40
+aab 8
+gbchcehbeheb 33
+dhddheagf 11
+gecacg 3
+ddgbh 43
+dddcbfgfaege 8
+ede 21
+eh 11
+afffc 48
+agggadeahbf 18
+deegaggbba 29
+cbfaeh 8
+fabbg 42
+geaheb 25
+gfeed 10
+cdbgdcbe 12
+hdfe 5
+acadhdhbch 3
+hd 17
+hffheae 38
+cfbbechbdhe 18
+bebbfd 14
+bgabecdhdegf 12
+fgfhccdd 44
+acghadd 47
+bb 19
+gbgf 48
+efhbhha 44
+cc 20
+dbgcd 41
+hdcehe 47
+eeacaebacded 36
+dcdaggdcf 25
+decgdfbbef 45
+abadgea 44
+abbf 15
+bfcff 44
+cffh 28
+gfaehha 20
+fcffahedf 15
+cadhbafabf 49
+abfeecebaade 7
+ffdbcehdace 11
+egfefgha 19
+fdhcdhdd 15
+fefd 40
+eaehabdfcc 26
+gfaeabcehg 34
+gcbdahbafaeg 48
+hdgh 4
+agbaf 9
+agecfeehhae 2
+gbdgeabedd 35
+dgbebhdhfd 24
+cgeehcg 16
+hfcdhffb 31
+cgg 31
+chfaefaeahhg 12
+ggdgghha 42
+cb 24
+dgcehgbhfffe 26
+bhegfeg 29
+hcgbg 16
+ae 36
+baa 29
+defbcdfhccd 32
+dfdecbaeb 46
+hhhebhg 19
+aghffhfhg 11
+dhg 35
+gc 46
+bcbb 43
+faghddf 1
+bh 4
+hdbcfhf 5
+gaba 31
+dbcdhg 37
+ggafbfg 21
+aefeeggh 50
+eeacdgc 18
+ahcghghd 19
+dhgfghhafhe 29
+cg 4
+eh 8
+bfcbbaheb 49
+adgehdecahd 40
+gfgdda 29
+abdebccahfhd 25
+cdgbdegeacg 39
+babccbc 15
+hfbedhcf 31
+fehcbdfeeeha 10
+hbdhecahghgf 36
+gahhf 12
+gaf 11
+eaa 10
+edcffbbgedc 31
+bedghbeffh 29
+dbg 1
+fdcagg 25
+hgaebf 39
+gdefgehbf 48
+ga 48
+gebfbh 34
+bhfc 45
+cgcgec 3
+eddhedb 6
+cabegbhdfdb 27
+dbbaceg 41
+eabca 2
+baad 18
+bdb 24
+deaahd 19
+dagdgb 31
+fbcafeaegeee 38
+fhdgddfged 30
+fh 44
+egegbb 25
+caag 16
+abfhgh 42
+gcaagebaaaca 8
+bfbgc 34
+hc 19
+bdhg 31
+fd 24
+ggbeefhgc 50
+egeddcad 27
+baehcbeegbgd 26
+ghaggdgchhhg 21
+gfad 19
+dcbebgddgae 39
+eehe 18
+bdfd 39
+aad 48
+hafhhda 7
+gbfaghfhedef 6
+fbbbfhagbdg 22
+fdbccfchae 41
+ddfd 41
+fd 2
+dehcbdfbed 48
+eccgghafc 14
+bbcfceeffdd 32
+ffadbfcbf 33
+cbfee 23
+hefeagb 41
+dbc 32
+dbccfaeefad 46
+hddaa 42
+cfadhegbche 32
+gdbgbhcce 44
+ge 33
+gh 12
+gd 29
+cegffbeh 3
+fcgdg 48
+dfdchbaceaag 6
+gghchbeg 35
+fgadfhd 33
+hgfdgbegddbb 43
+ddcdac 17
+dgbfcggdbd 4
+hfcagfhgfed 17
+fgceabc 41
+gbd 45
+ggabcfcegbdc 32
+ecgbcceaad 14
+adfdbaf 37
+cee 19
+fabehg 41
+eedhed 11
+fbbadh 35
+acf 4
+chabcbgbffcg 5
+chfhb 12
+hcgd 44
+daad 45
+hbaeadgcbfbd 44
+gbedfhddd 7
+ccbd 35
+dfdbh 11
+ggg 32
+ahdchgfh 8
+cbd 44
+ddeb 20
+cchhehebhfab 37
+ghegbga 26
+accb 17
+eddhbdbf 49
+bfgah 21
+hggdbhdhf 42
+efbha 47
+ecfddgfbeg 46
+cgdc 21
+ed 28
+dgfecggh 10
+ageba 8
+cdagaed 30
+bdcdacfdhh 33
+ghhahhf 24
+dggee 5
+chffc 42
+bhhaa 15
+chfhffebhd 29
+dbe 4
+fhd 43
+faabggehcc 18
+dhdegdgd 41
+bfacfg 23
+bhhahgdhbhc 2
+eh 41
+ghcah 20
+eg 5
+gddbebbcfch 39
+fhe 16
+ee 5
+chgchdgcdghh 29
+cfbg 25
+hfdadf 35
+egcaghdfe 20
+dd 42
+egg 41
+efe 47
+eeggcg 39
+ca 34
+fdgeecbacgcb 31
+ggda 33
+da 9
+badcaae 26
+ceeedbddh 37
+baba 35
+fffbfhgc 16
+bddghd 22
+bhbfa 17
+fa 4
+dbada 38
+acffdabgbafh 41
+heaefbge 48
+cfdgafeed 24
+hegdbhdd 5
+becedbgab 32
+gafcgdgeahgd 13
+hacdhfbhefh 40
+gecfacdfbcbg 34
+ghffh 28
+edbf 23
+bchbbf 46
+agea 18
+bbbadgfbehh 24
+bdabcgbf 30
+hgeeeab 44
+fbcgedebg 28
+abgb 29
+geagfgefe 10
+cdaedcddcc 4
+hh 35
+ebbaeaebachh 5
+fdbaeh 16
+ada 22
+cbh 23
+baah 37
+cgffbge 23
+ceceehgfh 22
+cede 13
+eedc 50
+gehbcafd 30
+cddcb 47
+cfdfgbhc 31
+edgch 11
+bfeccah 19
+cdfdfdga 47
+bgccafegac 42
+edhfbg 36
+dcfea 27
+ehabaee 27
+bhcebbce 1
+cehhhfbcbhdb 15
+hf 34
+ghegafhh 15
+ffgh 4
+ggfg 43
+cbaeehecd 15
+caaeebhh 40
+ebge 29
+be 9
+ehd 20
+befdddeh 26
+ggachdheahff 20
+gafeb 41
+bdfcdacdee 17
+feh 9
+hdcdbcgde 19
+gdd 10
+ddcfafchd 41
+hfdcf 45
+afebd 26
+bccg 29
+cbe 11
+edfagehecd 45
+ahdhhebbd 49
+ggecccbe 38
+cgdfa 14
+cfaedagf 17
+aecge 31
+fbdahdfghfge 8
+ad 47
+bcbcghafda 12
+efec 8
+ghd 41
+gf 19
+ebcdgfecgbhc 7
+hhadgdbegfg 19
+acgadbcdaac 2
+cbccf 6
+ebdfd 23
+aedgdd 8
+agehbahdec 27
+abcehbc 18
+ebfahda 5
+beagdd 21
+aehgcfbdc 21
+hgada 28
+gdaaeag 10
+hd 24
+fcdea 41
+fdbhdheff 38
+bahahbbaghh 32
+gbeg 13
+gbbfega 17
+badgbabhdhbe 18
+fbhecahbefd 3
+ehgcahdfhc 14
+aegfh 32
+eacdfdca 10
+abha 4
+fbehhdbada 46
+bhfaeggdcbah 11
+ggb 6
+fdfhfdgffbcd 8
+aghdea 39
+edegdeccdhb 17
+fdhbdb 45
+bgdch 17
+ahgebe 43
+fcbebafdg 32
+dhb 47
+eabgehefbbc 6
+baafcc 32
+ab 41
+gfcadg 47
+abdfdcgfhhcd 21
+efhhg 39
+degaadcahcg 30
+fdbbegh 31
+dfdhfeeda 10
+ehg 6
+hdbcdheb 16
+gfd 32
+df 27
+hdaba 6
+hgdhheeefa 20
+abaf 10
+gbcbcdgegdc 26
+aehg 28
+dagfheccgbb 13
+bffcebdg 47
+hhafbhbhf 46
+cddggagaeddh 11
+hbbaaf 18
+edcb 15
+ggedcgccbb 27
+dfhcbbheef 27
+feagfbhf 39
+egggfhf 32
+gchchdaehe 44
+accbedd 4
+eeedbagbhdea 47
+bebbbebebage 22
+dd 19
+egahb 49
+dahgdaddbc 15
+bhbg 26
+agece 49
+bcdec 34
+edafe 5
+dheeaabeeg 22
+ffhfhah 45
+abehefh 14
+cgbeega 40
+dbafgebgfbdh 12
+adgcgag 20
+dhcgehf 10
+bdcbeg 43
+adabf 46
+cacddcbd 12
+acggcbcafghg 50
+gaeegbafch 20
+bgcagf 11
+fgegcd 6
+fhgbahgcb 20
+cfcd 25
+afbabdddggd 50
+achgffg 22
+fdffh 6
+echfecageedf 12
+accebd 36
+bhaabd 10
+ggfbddcf 16
+dgchc 33
+gacdcchhca 5
+ceee 7
+cafd 5
+eefedddcbg 14
+hhdadcaba 39
+hhdfhgfb 22
+fegggaech 5
+ccfcff 45
+fdbbcdhedga 34
+ffcffddg 30
+bbechafhafd 36
+dababdgheb 32
+abafecgdaheh 23
+gghabafbfh 9
+fehfd 7
+cdbe 18
+gacdbecg 35
+hfaddbg 28
+dfdfcffaehec 6
+eec 41
+dfhfbhcgheae 49
+ggbagha 1
+bgg 34
+eaaghheha 9
+hefe 13
+fe 7
+fdbhhfeff 46
+ffadcfbebfdc 41
+febddcdbgae 49
+hhbh 38
+cgffedeffagg 16
+agdghgbhg 21
+bcedefg 1
+cdeehb 7
+eeghgfhf 10
+cdcgg 24
+fcbafbchcdfd 19
+hcdeefe 25
+abhfggabe 27
+aghaefcghcdh 1
+ccb 33
+acabefbb 21
+gbfbc 4
+gb 42
+bbefacefbfh 12
+hbcfeeeaefb 28
+afa 32
+afhfafchaec 32
+dg 26
+dfeggb 27
+ffhdfgabgcc 13
+bcb 48
+hdegdfhff 7
+fdcf 8
+afe 5
+bdgaa 35
+agdfddcffgf 2
+decefbdge 43
+fbdfff 7
+gbddg 32
+ehbeb 10
+ghccebcgeghb 28
+gdfhg 26
+ddbeh 50
+egdeffdhdb 38
+bbachcahebfg 10
+hdch 5
+ff 1
+bfdfefggfcgd 10
+cfegbfgeb 33
+gbg 43
+aeb 43
+ecgc 28
+ahdhcd 1
+cdccdfbebb 25
+dfgafgcdeff 8
+bfdghccdf 19
+fgedbddb 35
+beeeahebf 25
+ahg 23
+geaabfggce 3
+gae 32
+ggccbaghcg 50
+ggacagecfab 24
+eggbbacgb 30
+hahcabhgehbd 29
+gged 36
+eaaea 20
+bgeff 14
+agdfhbcecb 32
+hhcbfh 1
+bhcfbhdcg 20
+eebgg 24
+deecggg 13
+caae 17
+cgbbb 42
+hefbgaeb 33
+egbhefaagcf 33
+gdacce 23
+ba 28
+fgafged 45
+cabcd 4
+dbfbgac 28
+gefahacggef 48
+behahgg 39
+beagdh 49
+dhgeggghcdh 44
+dggbdchfdc 9
+bhbedcdegccc 46
+fdgfchbca 44
+ahgfdbcdghg 48
+cgcafcf 50
+eeahhfhdah 26
+bbcebfehaaa 16
+dagbfgadag 9
+gaabecahdfb 17
+hfaef 18
+dgchbefebc 37
+eda 25
+gdgbbhgga 8
+aaacgcfage 40
+adgfcffdeheb 19
+dddchhfb 14
+caedhaeageh 39
+ffgfdhc 5
+hdhhbbc 9
+febhhebagbf 26
+hegcagcheb 40
+bafah 30
+dfcfagbafgch 15
+deh 4
+bgbdffafb 20
+habadgbca 41
+cbehg 24
+eab 23
+gefaahdhd 9
+ffd 41
+dhgedf 45
+hcdca 30
+bcabbgceeh 31
+ca 6
+fababbe 2
+hfeae 3
+fddafdeff 28
+dfdefgaebdh 27
+gbgedebbfh 11
+hcddfdadbgab 27
+bc 26
+ffgfheahbgd 29
+acdafa 38
+effbdf 21
+ecah 49
+cdfggafaebg 19
+bebf 9
+cgcaebdc 27
+cbfb 13
+fcafedcbbf 20
+bcgg 5
+fhbbgc 36
+ebgcebhcddg 28
+cdccf 30
+hdfffffhhgc 39
+cbbdhagccdf 13
+bfegfchhghd 9
+hhcadefg 5
+fcdfeafhaddf 20
+cbd 45
+eaghcgdbdah 29
+heggff 28
+cffehchgcheb 46
+bcgfaed 20
+eahchhhfac 10
+abahfadbg 4
+ca 48
+gcbaggdehee 39
+badcg 27
+behgfbade 35
+dc 12
+aebbfhghbbb 26
+cgahgafefgfh 31
+cbbhcaafa 18
+egghggeca 20
+hffddcbadeag 50
+dg 16
+gbcfbdd 34
+aaabadfdea 49
+dedbcechh 25
+fbghbhefff 22
+affh 7
+ecgaaegg 4
+beeddcdb 9
+gffd 30
+ecbbacf 31
+ccgbcbegg 39
+gccebacadbcd 26
+ededgabfgheg 20
+hceeacabag 4
+dfc 44
+hahgefhd 29
+hd 11
+edcae 33
+cdbe 34
+hgdagfbchgab 45
+cbefb 43
+gdbddgc 27
+cfdf 33
+ahgcf 8
+bcgh 47
+afe 13
+acdgb 1
+cdhee 7
+abdcdcfdh 19
+dbaabgdfghb 15
+fcedbddgac 17
+bgggcaedacc 24
+aghcd 31
+dfbaeceede 35
+dfecgg 47
+caghcedcabh 31
+ahbc 34
+achdad 4
+egffc 18
+eg 14
+decfhfghgffg 39
+ecdhf 43
+gfcegbgecggh 24
+bbfaefhbf 1
+egaceehe 44
+bgafcee 19
+cgbadege 47
+agegebg 1
+acehebab 23
+ffdbdbgccb 13
+adhaafhfb 30
+aabhgeghfgbe 1
+hhfbbgeadae 19
+gfgb 48
+gcfaba 29
+fegdehfa 48
+feh 30
+ccdg 34
+bdegfahhbcg 46
+cfeehhggac 49
+fg 26
+hfbgahfhahcd 20
+eafhgfbha 36
+checedeeac 19
+abehfcfch 31
+echg 30
+gfdedabcggbb 22
+gafgbgbeeeae 23
+ed 26
+dffdhdcb 2
+cfddb 1
+bbgc 24
+efgfbc 31
+cacafhgga 10
+cdehbhdeahf 42
+adhcdefhh 46
+gfghefeaeh 44
+agagfhghbffb 40
+gdahcheea 33
+hacdhhbdfa 26
+ccdcdfhceh 9
+fgfeah 11
+cdahbehgechh 42
+ac 44
+ccdhh 49
+ebhcedeea 38
+ghcdgbfde 27
+bfdaeagdacbh 31
+ehgdcbcgfeb 17
+bbheffhgabg 5
+bhb 15
+ga 19
+affhagbec 34
+ca 6
+chggcedh 18
+cf 48
+aabccbcgeff 36
+egbadbeegaab 26
+aceddhh 49
+cafbfhefbehd 16
+gdeh 36
+ccggc 46
+abfhhdbb 3
+dhcgefbag 39
+cfbhhhhc 38
+hddcabfbg 10
+eac 14
+bfffahfhacg 2
+fh 33
+dcafgeffda 22
+aafbehf 26
+ddceeafhgech 45
+ecgfgfdgcfa 7
+bhagahhadd 47
+bdffhe 2
+heefbdagcg 38
+hf 22
+bhdbb 29
+geahfceced 48
+eghcb 11
+cbb 3
+hgahf 6
+hccgccdggbc 48
+bdagghaee 41
+gdg 40
+bcc 30
+cb 25
+aecfhagdfa 11
+gbheabgc 48
+fdhgfheedgbc 18
+fe 35
+dfbgdgg 12
+hbah 33
+fbh 28
+ecf 6
+ffe 29
+dahgcg 49
+gbacf 9
+hecafdde 4
+dgc 19
+hh 33
+eehfhd 33
+ehgfdbafbfdb 17
+ggedff 44
+befcdgdcgbc 36
+hhaeeced 4
+hegedfehddfg 22
+dcd 24
+ffa 8
+dbechgbb 42
+fbaeg 44
+hh 39
+caageahd 38
+deddhda 19
+cd 38
+dbdfdbeaa 10
+efgafdfhf 29
+cgfeg 8
+ddbgheah 29
+df 35
+bgdcebgeabga 39
+fhafba 32
+hfddcbfdffb 24
+ebfhefhf 47
+ab 30
+aahfdhagg 43
+ebag 45
+fgfbcbbgc 5
+bgcbeca 1
+ddhdbhbhdf 5
+eahb 39
+bhddddch 35
+hde 30
+adh 49
+he 27
+dgfba 23
+cfgga 17
+cehaeed 48
+chaafcbbed 12
+gbdghebcbe 42
+efcdeefcbee 8
+bcb 23
+eheeheafbc 45
+accbbhaehh 40
+dgcgb 27
+fcfdf 9
+fh 14
+hca 26
+haaghhf 18
+bfghdc 29
+gadbfhgecc 6
+baggfh 5
+bchcghegcd 40
+eeaddbd 16
+hehdhhb 9
+ahb 48
+gcahbdfccacd 1
+adge 12
+dbeefaehd 20
+fgffaga 23
+bdcfhgcbaga 14
+dbbaeaah 42
+fdffdbabfbha 37
+acgegf 27
+hegg 50
+aeabbaaf 20
+addd 49
+ecdgd 5
+dgachfabb 24
+fgcdec 40
+dhhfafhdfef 8
+gb 26
+gec 21
+dfffcda 10
+dfhadhfechbh 8
+becbb 3
+dcebcf 18
+hhebbf 9
+ccdchhafad 27
+dbcabcf 37
+ghb 41
+fddccdfbggc 5
+bcabh 25
+geg 50
+abcg 24
+fdg 4
+dcgfacc 40
+hfahddghadfb 34
+cecbdhhhgaca 32
+fhchhegdc 35
+ffcaehadcegc 46
+fehbd 27
+ggebcfhhdaaf 29
+fbafbg 27
+adedhfdhbae 27
+ehffbecgfdef 49
+bcahcghde 3
+hcah 31
+ffecaf 12
+cchaaegf 1
+gedggddbgha 10
+cefccbeda 3
+heeaegga 5
+fgaacacdfg 37
+ffbbf 44
+ddbeg 12
+aeedg 38
+fdgad 19
+ccgaag 3
+hadhfhg 16
+dafbahdh 23
+aa 36
+fbgd 38
+cg 43
+hha 50
+dcgcfbeee 3
+ddec 48
+fgbef 28
+beedagah 12
+dffegbegaa 24
+agbdbgfbgeb 2
+dfdabb 2
+gecbfhh 41
+dahfee 46
+ehfa 8
+bbe 8
+cddeehcdhce 22
+eafa 14
+dhegdcbbd 17
+hgcag 41
+hgbaecadba 15
+dag 10
+gfhh 10
+dgggfdfah 21
+fdcgdhdbhb 42
+fcaf 24
+cgchecd 42
+bfg 29
+gdhgdcgh 41
+hg 42
+agg 26
+heb 40
+bdacdb 4
+bdc 20
+bhcchhahh 39
+dfccd 35
+cbeecba 26
+gefehagaga 41
+efehe 45
+gff 42
+hg 6
+habehhcfecdc 7
+ebccbfd 31
+cedbbghehbad 32
+fadhfacecbhf 19
+dhd 26
+ba 30
+be 1
+bf 6
+hfadbgged 3
+hcf 36
+cac 50
+aadddaebhghf 37
+hgg 5
+bbebgeheeddh 44
+cgdbfhhffce 9
+fdhhfc 12
+eggefdcbc 38
+ffabcea 29
+ffeahcaagg 14
+fagcdaba 40
+gfhghchhh 26
+chc 48
+bgadedaedbc 40
+hhgaeeh 18
+fcahcfedce 45
+gcfffhdbdb 50
+dech 4
+ghfdbcc 29
+haehchfabdbe 13
+dbafgc 30
+hafafg 2
+dhe 46
+bgeffhehhhcg 50
+hcg 18
+adh 50
+ddhf 18
+hbgddcfg 26
+aagfhga 42
+ahaefd 39
+egede 15
+gehdffedh 45
+ceebh 17
+cdbbfgehef 50
+fcehbccdcaa 44
+ghebfhe 23
+hdfbd 22
+fhdefcgf 47
+ghbggfged 30
+fgd 24
+ffggadhe 42
+egahfahge 17
+dhfe 34
+aghd 9
+cghahedadafc 30
+cgd 16
+gfadh 27
+agfhbba 1
+cgdh 44
+bgggahcbc 17
+abbabacb 7
+haabdaeafc 18
+dh 17
+ghhbddce 11
+ffccafh 19
+dcdehbdgbc 22
+fegfdhgee 4
+hddbbdfhh 3
+cacbabgcdhfb 41
+aghgf 34
+febfhg 33
+ddhfffbeg 15
+degfhbbge 29
+gdeef 33
+chebcg 44
+feecf 47
+hbhceeaaea 24
+ahhcafbdbdh 32
+feefa 45
+dgffheabdbc 35
+gfhbe 42
+bhacfgbaad 4
+egfbb 40
+ea 8
+edbebahghdbe 14
+cedd 50
+ahaacc 13
+bcbhacgeebcc 46
+hf 42
+geddbceebddd 30
+efgbhbcehd 25
+ecc 14
+hcbd 12
+ffaadgddgdc 46
+cbdbdecafcc 50
+ffbdedg 15
+gebcaahffe 29
+hhf 15
+agfdfebhad 18
+gbefbfhgdhad 20
+bffhgceg 34
+hagdbgdehhe 35
+df 38
+gb 27
+defdf 34
+cdgc 47
+gbahdhb 6
+hcbegbcffg 31
+fdchfbfhfff 5
+cebcc 14
+bgefhaeffcb 2
+dbaecfghebb 41
+chfh 48
+fgeddgahhgad 2
+dceaahfae 43
+acfcdbcddbhg 22
+hecaefebhh 45
+hddh 43
+egcecacef 33
+gaccbfaed 4
+efbhaeedd 24
+ggfegbd 46
+ceecebbhhfdb 26
+gcfababca 44
+dahfc 20
+ffdgeg 25
+ehdcggg 9
+fechgge 31
+ac 48
+fgfaadgfbah 9
+aaaff 38
+hddgf 46
+chdegbgeehd 32
+baehgghfbe 14
+bagh 22
+hbegbeebae 10
+bbh 14
+chdg 19
+dgca 17
+afgffbcfc 1
+ef 21
+hbd 46
+afffhced 38
+fhd 48
+cedh 22
+daahegdah 15
+gcecgcgg 7
+gfhfchchgh 41
+adeae 4
+fdghdgd 47
+badhdegfbhha 24
+adhghhcbc 6
+cag 28
+hcefegafdh 49
+ggge 28
+ebhd 13
+cahgcd 16
+ebbgdfchgad 24
+dacdhc 49
+ddbdbcbda 36
+defaggchcg 29
+egehachahf 42
+bhbabccaf 33
+ghbf 8
+dggefhfa 20
+dbcfc 39
+gbh 11
+dhcd 20
+gh 16
+ecaffccehb 33
+affd 16
+abafeef 44
+def 10
+ahdccagef 2
+deffecgabgdg 5
+eheedcbcedf 27
+ggbfe 19
+bfddddbhgaa 22
+bh 25
+dbdf 33
+abb 35
+dbabccgafcad 23
+dhfgfhchhd 18
+ahdafbh 23
+dhbeaffe 9
+edacedbfccgf 18
+ah 4
+ghfhhecb 31
+fdgbggh 9
+eecgefe 50
+gbaac 42
+dgacefcdbfc 25
+fabf 44
+fahbc 24
+acfecegae 19
+gaca 1
+eaf 31
+hf 13
+facbed 11
+decgh 49
+aaahggggchah 50
+ehhd 47
+haegf 18
+baegebha 38
+ccdgge 41
+heafhbbef 27
+ab 14
+dedbaaeeh 34
+egbgh 11
+gfdcacebag 4
+hefdbhhhbf 2
+beedghafee 1
+bcbe 38
+aadaaca 5
+gbfgh 41
+eabcbab 25
+cfg 42
+hagdfh 3
+gahagbhba 15
+dgbhbf 8
+egahgedebhg 46
+hcfgchab 29
+hehagacbdeec 30
+bdf 41
+gh 34
+edfdf 5
+ffa 44
+adhhhdaecg 23
+bccdehfdfheb 48
+ghfhfbchcd 36
+ah 11
+eefdhdfd 45
+gdacfda 13
+abbggbagc 2
+gcaad 49
+hfaegh 20
+fdbh 25
+gfdhccheghfe 32
+gbbgfga 39
+cacdfcd 23
+gaffc 9
+efegchad 48
+bccfgd 42
+bfecccfhecae 16
+ab 43
+bch 6
+cfabhha 6
+badhfgf 10
+cg 31
+hg 35
+cafe 37
+hcahbb 9
+ahbfabfhhhg 44
+bdgdd 29
+cegagc 37
+fhfeegh 10
+hhheehfc 10
+hdabgbgebdc 25
+dgefdeafhfhg 40
+cdffeeaeea 8
+aageeeahe 1
+ehghcedfh 15
+adh 7
+ghhheae 37
+bfhdafhbh 37
+ghcd 9
+abhhcaech 36
+fccdbgcegagh 31
+dafgfcgd 20
+gc 27
+edfcbafh 1
+bdeab 48
+dggbhf 24
+hhcha 43
+ccbecec 5
+dacbb 28
+gc 42
+fafecbhehgfd 49
+cefffhadga 47
+cdeebb 43
+fgh 30
+efeccggacb 35
+cedcca 36
+bfbghgddfaf 17
+hdcdggh 8
+aadhc 20
+ahgecbg 25
+edghaeaefa 17
+hbdfedaachcg 40
+gdbbfde 26
+fffdabcebbb 44
+facahd 28
+bfedddf 46
+ha 18
+eggbgac 40
+fhfhfegc 35
+hade 38
+cacfdafggcba 14
+bbdebdhcea 40
+hcbhbeddhbd 46
+gdahea 39
+aheceafhbd 20
+ea 2
+cfccf 15
+ghd 11
+hfcebahb 6
+cbgdcec 44
+eha 10
+bccfg 26
+caafha 26
+dbd 14
+dfdhgahdfbg 27
+ahdaaf 21
+hdgegbfb 18
+bhfg 41
+echegcdaggh 11
+dgcadgebadch 13
+cgbe 24
+hdb 8
+dche 19
+bccfh 10
+bgdgfdehg 11
+fhacfaahehd 14
+bhbhfgd 24
+hhagad 13
+fahehhfgah 35
+eggbbaaccbfe 17
+ehdabah 19
+geeeaaeeceae 14
+bafdfddcgd 33
+affhefh 38
+dgcffbccebf 17
+dggbdec 5
+aghggechd 23
+hdbeagchf 19
+ghgc 46
+cfbahcdffgff 18
+ehadcfe 24
+ggaghbfag 35
+ebf 50
+heefcbdfehd 27
+he 21
+aheh 29
+cehd 37
+dcc 43
+adbae 36
+abceagabd 21
+bgecbae 9
+baeabgbhfda 35
+efaefaf 42
+fcgafccgccfa 22
+hfdhd 43
+bgdhaad 19
+aahfghagghf 8
+dhcgf 47
+dgfbg 9
+cbdhaecg 34
+ecgabdbcec 24
+cafcadbaaae 25
+dchbfedgede 44
+ff 40
+ehdahgh 20
+eacdfhg 6
+hfebgcec 44
+ggfece 12
+ab 11
+faccb 19
+ffgbdgbdcgg 33
+ecbhhef 10
+agdefeaf 40
+ahbfbhgagbg 40
+cfgbfcbf 39
+dfaheacadc 42
+fhabchdccg 37
+egecbbaebf 42
+ad 2
+gcf 40
+gg 3
+fbgaceb 2
+ha 42
+egdbahfdeg 33
+dc 49
+bhghaechcef 21
+eff 32
+bfgdgebhe 37
+bd 15
+be 5
+acffhddbabd 43
+degbb 50
+cfebb 15
+dgghhagbgbf 38
+heabhgca 28
+fhcebdbgegba 45
+hbebddbah 7
+geggaagbbgc 42
+bfcghgdhfeg 14
+dcf 8
+gebddfh 4
+ececaeb 48
+abhbbfegahd 27
+hegg 47
+ga 13
+dfefehhdah 24
+adhdhgah 16
+dgeafhagcce 1
+ech 31
+edacfbe 5
+hcchdhdbc 49
+echbdhf 26
+cbgh 23
+gaachfegaba 31
+baadahefd 19
+hceeh 34
+aa 49
+ch 31
+fccf 33
+hcbefdedafg 40
+debdeedchg 37
+fhch 39
+hdbhb 23
+ebbgdabbbge 3
+fghcfedag 50
+hg 45
+ehfdfghbaf 50
+faebg 17
+faceahgcf 40
+fehghgadchdh 19
+eha 44
+ed 18
+fefgh 1
+aff 10
+adaeheegf 15
+cdaecebfec 3
+gccbaahbabh 20
+fge 26
+hgabeadbh 4
+hac 17
+dbebccfaegda 3
+gehg 21
+chgcb 36
+cfehffedef 42
+cffbbc 37
+efffc 19
+eaggcfg 41
+dbdgbhdfehcf 46
+agfhhhgebgb 46
+bc 39
+ceedd 2
+gggaegcfbhb 7
+ahfh 47
+bgefdgchbd 39
+cfea 49
+eag 43
+begbc 39
+dcfeeccabb 46
+hagcg 43
+bgceffcac 26
+eehfdabe 30
+gaabacab 7
+hdc 34
+dbfgbca 18
+bbbeeecdhbhd 2
+fdebf 44
+acefffb 33
+cd 36
+de 48
+becacfda 16
+gadddefhbf 30
+ebaad 50
+fagadcbbf 24
+baf 49
+gchbgbgfchdd 39
+cafabbfhcf 47
+acgbec 5
+fged 13
+fdhfdhhdbcf 10
+dgcchhfeh 9
+gbhagfagbg 34
+ghgeeghde 42
+afgged 18
+faefcafcgebg 7
+bchahcggfgea 28
+gahcebfdab 23
+hbefdaahcgcg 1
+ffccgbgdac 18
+fccdbcdae 21
+hbbecc 3
+cdcfefefbfh 4
+egb 6
+fabfhced 41
+hgedfgbaefh 31
+abfcfehhf 21
+bcccdaffba 32
+eabc 39
+fadbfbdab 38
+efeacefeecc 28
+fc 47
+cbcgfg 12
+dcb 18
+efcgfdh 17
+dhdaaddd 18
+aheheed 26
+cdhc 8
+hbhedbade 36
+ccadhbdfd 10
+hgfbfgbge 46
+efdbdcd 5
+hfhbaaae 11
+fbcbgffee 44
+hdha 32
+bgc 48
+bccgbbeabaff 13
+gddgaeab 43
+gbcccecchg 39
+gebge 10
+edehb 4
+cbbgfcddf 16
+da 9
+beeg 17
+edbacggbf 38
+hg 21
+echcc 30
+fcafdhe 24
+bcfeebg 23
+cghccabgdbh 22
+ehc 33
+dehcgfehgahe 40
+hdbe 38
+dcgg 38
+cafb 27
+gdbgag 11
+acgeaadc 11
+fdcghfed 10
+eb 46
+fdcaf 9
+cdfdcggffhge 27
+gachbbbebegg 35
+bcg 27
+ad 34
+gagahehhhe 18
+babh 10
+adcaefgbgdah 17
+cbhfbddhb 46
+ffcfebcebbda 35
+aggacaedbebb 27
+cefgdeehbehc 10
+eadcfedgacdb 48
+bcfghcbhcdd 49
+dbfggbghhahc 29
+cdbbdfhhdcfe 38
+ffbcdcfbbg 44
+egcc 8
+dfeadbf 50
+gabcdd 18
+eaf 14
+acghgcfcef 26
+hbgacdbdc 47
+hfhfae 18
+dbahchaf 36
+ghab 26
+dfgdhdb 1
+fdhggfh 6
+ffhhhga 34
+bbe 24
+hhgchafhdhce 20
+cdgchdbd 35
+efbc 38
+ebdgghdfdha 49
+gchfhbhge 33
+dhhbcda 35
+ddhceeaf 37
+hgad 38
+cafhhghcdhga 22
+hbegdecbabc 50
+bahehccfa 43
+cda 33
+fdfbhd 34
+bghghccf 45
+eghdbdgabh 15
+fgh 39
+adgdhegfbfba 50
+hebhhhgc 4
+gec 25
+hhcbaf 26
+bedhdeeggff 1
+he 14
+ae 35
+aaagehhegd 41
+dh 3
+aahffc 28
+daghgdacghb 50
+ffecfhd 36
+def 39
+chahfcfgda 28
+fbagcae 46
+ahdgbaha 48
+gaeaaffhcdba 6
+hddfaafge 20
+dhabfffc 27
+dgadafg 38
+gfcghh 14
+ahhabcdhce 1
+fa 36
+afhcc 42
+daehd 18
+cdecadbebade 30
+gacahhh 34
+dfcgf 47
+hcghh 31
+cc 24
+aehaceac 37
+abhhfebedhf 5
+fedfgfd 31
+gabfgeb 14
+dcbfcbde 15
+acgfgabbe 2
+cd 16
+ghac 19
+hgeddagh 17
+gcffd 50
+eebeb 8
+ggdgbdb 18
+beb 30
+gbddeefdgc 25
+affdcebaegdd 36
+dcehdgebadf 26
+fgebahcbaee 15
+dfdaagcaa 44
+ae 32
+gcafedacdbf 8
+eagcahdccbd 30
+fahfbeedbb 14
+ghgcchb 41
+cggcecfd 18
+fbabgfaa 35
+afc 44
+fheafhefadhd 42
+fh 19
+hcbhdg 42
+gbgec 41
+hfb 32
+haehfdfc 47
+hdhc 11
+fhd 4
+abcgfhb 26
+beaehehfccae 44
+ddfhd 16
+hefh 16
+cbccgbbbcfff 6
+bfdffe 40
+fafdccgfa 2
+dhcbh 32
+cf 30
+aa 13
+bheg 15
+chfgg 32
+cddahafbf 7
+bfh 32
+gfe 6
+egefb 45
+dccbdeafa 12
+gchchahdaaeg 44
+fdb 30
+ehbbeceaegb 16
+dddehe 37
+fee 30
+dahac 44
+gg 42
+hbahceh 4
+eghffaeefha 8
+gdhfdghb 31
+fchfacc 42
+hgahfhadd 14
+afefca 5
+fadbh 35
+edecbhbhb 24
+bdhhgfe 18
+efag 8
+bbagedgdgf 32
+ehccdfc 23
+achegcfgefh 43
+cbhahceba 11
+hdchca 39
+hegcbaabb 13
+cbhcbegaddff 5
+fcdfddhhdfhd 24
+hedc 32
+hfb 35
+adhcabaf 1
+acb 5
+eafhdc 9
+fdbege 20
+hfafbcdchhbg 33
+ffcgbgha 6
+ff 20
+fgd 8
+dedf 11
+fbceahdag 42
+dgcbefd 50
+cbca 14
+hbefge 36
+bhhfa 3
+afga 15
+egbgedeh 29
+hbd 31
+cdedcc 34
+dcdch 3
+fadhcaec 29
+gfhcacebc 3
+fcbfhbcdea 13
+hbdhhdag 3
+cageacfg 23
+dghda 17
+gddbhdaeha 12
+hhhbeah 40
+fhddaebceebd 20
+fdd 25
+edchecddaghd 25
+gbcdbffbc 18
+acahbdgabdd 22
+cg 4
+fegeb 30
+agahchdee 4
+hggecf 32
+hgge 19
+bcechdbg 36
+gaed 4
+hbhadefhede 20
+cdcahbbcfehd 23
+gbdde 26
+heggd 44
+gdgg 16
+adafdbhdd 14
+ggefhehhfgc 49
+bgfbaahhcfcf 9
+bdhebhe 44
+ghbdfhged 24
+aechbaagg 43
+eeahffgggegd 46
+gebedbgd 43
+afghchch 21
+agccccgfghff 34
+ge 42
+haea 38
+aecce 34
+ebgh 37
+eagehec 22
+hafhcbege 39
+ehbgd 7
+hdh 20
+gcd 12
+cebcgffah 6
+eg 8
+ffhacddafged 42
+aged 24
+ddcdfcc 2
+ee 47
+gghd 20
+bhbd 19
+dcaeahehghca 40
+bdcfhcececge 13
+egebhgch 14
+ffadaegbddc 43
+egebb 26
+bdd 45
+ffggadbc 33
+aabe 32
+ggad 34
+bbedhed 35
+fhfah 23
+fdacddc 6
+bdcahfcdhdbd 25
+cacbdggg 42
+bhfccabacb 19
+bhddhcd 44
+gaf 27
+fdffbbheefcg 42
+aebageh 21
+ggchfg 30
+bdbfeggddh 31
+cdbf 11
+edfe 20
+gdagcbhbcbb 13
+ha 29
+hd 41
+fchcghhheg 44
+chafaaad 34
+dcfgcaghccgf 18
+caaahbddfdfd 41
+bfafdebfgfh 20
+cgedaghbcc 15
+gfghfe 24
+fgbfgfaad 28
+hgggbdc 25
+hcffahb 14
+db 29
+cdffg 42
+hdeeadffaffc 41
+acgbdhf 21
+bhdbgfd 29
+ehaa 14
+da 24
+ea 11
+affe 11
+bgche 19
+ggbgcffeafed 27
+ebddhdbb 16
+degffdgdf 50
+bhh 48
+ecgdffhg 9
+eheaahe 2
+hgchfdgfedbc 11
+ff 11
+bhhcdahega 14
+eefdfd 22
+fbead 39
+hfeh 30
+eghca 35
+eeffgbadeb 36
+ffbfhdggahec 41
+bcc 33
+ebhcfedgf 41
+eagh 38
+bhhdbhbbdfa 15
+bbdahcb 47
+dfebhfbfbc 47
+agehdfaaaece 35
+bhfhbfdhgdha 25
+eghefbbdfbbh 46
+ehcdhh 47
+ccghcccggece 29
+cgbg 19
+cgcbggbffcbb 30
+cegcbeed 10
+deedcca 31
+geedbcgee 25
+caaddab 6
+ehhddhecafg 50
+feaecgh 11
+caec 24
+aeedbdh 4
+cahceg 10
+chdeagdfhh 9
+cfdecdaaefac 40
+dfagedfchfdc 47
+fdhaeegfhbh 1
+dffdgec 5
+gb 25
+gfffa 38
+cc 6
+ddeghgebb 1
+fhheefefd 42
+gcaahgdefe 33
+dfgfgdcbecca 1
+ecbc 44
+bfebgcbh 5
+ff 47
+ecfhfhgebf 11
+ebe 15
+heghgfb 13
+cggbg 16
+acbcggfce 37
+fggb 49
+cbdhgdf 10
+fchdbf 5
+afdedcha 6
+gge 16
+hccghfdaahbf 18
+bfdecdfeb 16
+chffac 29
+ceedacfe 35
+hacehh 50
+acafbfcgbag 41
+cafecdca 23
+gechcebhgad 12
+fdaehgg 40
+cegbaa 44
+ehhhfed 37
+bbhchhfd 47
+cbdffagfaa 32
+ffcedddbbcea 34
+cegbdgbbgeeb 2
+heddaeadeecd 47
+cbbdb 33
+chcfbdhbecd 4
+cdgdgcdddf 13
+dhbeedcadhh 37
+acchbhbgaf 36
+eddaddgbdd 39
+cb 30
+ggg 26
+afee 28
+hhedaef 19
+hf 30
+gdebcfa 3
+adedaeghba 24
+hhc 39
+bbbeehcfc 8
+bcgbg 46
+ge 18
+fd 9
+efe 32
+eagfeghghcdd 33
+dae 27
+fh 14
+fdfeebeca 15
+afbabacg 19
+aga 22
+aegcfba 36
+cfaeccdfdd 16
+ddadddegcb 34
+fcgchd 46
+becg 18
+bgadf 35
+gcacfbbdag 42
+ehdgfc 36
+ffdh 21
+gggbecf 42
+hafcaedfhag 31
+fabdahdhahbd 26
+dedbgdbbg 50
+dgfcg 3
+bd 45
+abfddecbh 31
+ac 30
+hhaahagca 28
+gadfceagfb 26
+gg 41
+bcbebacdfe 33
+degafheg 11
+cffcgg 47
+ghgbcbggcb 16
+beheee 17
+baaggh 49
+cbbgfecdhgaf 34
+bdbhda 22
+fggbd 31
+dd 33
+aacgbbbhchaf 35
+gbhccbgfcdc 7
+fabbeeh 28
+hbdahb 3
+adfc 41
+dahgdgchcgfa 8
+hehdced 39
+hcfh 26
+aaffhgbefee 5
+eehdfb 24
+gbcdc 36
+cadfgdebfae 42
+ceagafh 34
+dbg 13
+agbdfd 19
+chfc 13
+dadagff 15
+fgheageghh 50
+cdcggdagegf 4
+dage 31
+hcdahg 35
+fdage 9
+hgcefh 15
+bfechbfhac 40
+fhfaabhg 31
+deegbcgehgah 41
+fhhadfdhffh 27
+bhceg 44
+fg 48
+caahc 43
+efdb 33
+feffebff 6
+ebfhae 44
+fah 44
+gcghafedeg 1
+aaeeccbadb 13
+ecbf 50
+cfehegcbheb 20
+abhfeedadhbe 14
+dehhede 22
+acbeha 27
+hhhchcdgfhb 29
+eabfcfcahgc 3
+dd 6
+db 48
+eahehgec 1
+geddbhedc 31
+bgdadgbcbah 22
+ed 44
+gbbchgga 7
+dfdgdfd 43
+dgccceg 39
+hhgeedcd 2
+bg 41
+dhgcbbg 11
+bafhhedg 44
+fccgbc 41
+bchdfdcdg 50
+dfa 9
+hedg 2
+eabebbaechb 39
+agah 23
+fhefhegea 17
+dgfffddacah 26
+aaechhf 35
+fcg 15
+agahafgafh 6
+ee 25
+fhc 40
+fgd 7
+fcggbd 30
+cgfehecafde 32
+egffcc 42
+hfbagadfcbef 6
+befafacbeh 39
+hfheabe 14
+gbfdbbh 39
+deedhfbce 41
+fbb 13
+dgeccdabeecg 23
+accbdhdggbd 38
+bhhegfgaed 36
+bdeeafgh 49
+faghcfface 33
+ea 11
+hfhfcdbcdgf 12
+cedgebhhd 36
+fdadcfaa 35
+gbf 21
+beddafbbacdc 2
+cfegehdhbfed 19
+dbgcgahdhggc 29
+dgcf 32
+hf 28
+def 24
+dfcecb 26
+gbh 5
+dfdda 45
+ccdaaahh 38
+becaache 2
+ddgfhhch 23
+cdbb 46
+ebehdha 23
+cabhefhhbhc 17
+fdc 46
+afbdbfegfg 34
+edaecfbf 25
+cfeggeegda 40
+fedccehbh 31
+egehbcgge 14
+bgfdabh 13
+aeacbcd 18
+chg 22
+bhbab 39
+hdd 2
+fcf 11
+cfbc 9
+agbda 15
+bdaheehgbdb 40
+ee 42
+cdeahd 47
+gchcagchcga 28
+accbbggbcgf 37
+fgdffbb 42
+eccac 16
+affcbdhdabfd 7
+eebecafc 50
+afhdgfgc 12
+chac 40
+adefaa 39
+dgghggagghf 31
+dh 13
+bgc 23
+dedgeaaehh 46
+hfacbd 31
+hdcf 38
+febgeh 30
+hh 36
+ga 35
+edgfdgedebdc 14
+fgahf 43
+dgaefh 28
+eahbabca 3
+eeaaaeca 34
+egbdbcb 25
+effeafghhbb 25
+abfcdeaea 18
+cdhh 28
+hffdfdgc 32
+beghhhghgdad 32
+ehac 29
+ae 38
+caaabdhedebb 6
+bafe 46
+cebhefdbchb 34
+cagbg 8
+cahhfbfbbdgg 37
+dcdhbdg 19
+chdcafhc 20
+dd 6
+aefded 9
+hedhhggedefd 30
+ceabcddcdhdd 15
+agbafffgcfe 16
+daf 33
+hea 29
+caeabaahadhc 21
+bccgfdebg 48
+hhhhcgabhh 15
+ebdhgbhff 16
+dhhfe 7
+afedcachhcce 23
+bfaggdceafeg 23
+debaf 24
+adgagea 28
+abahfebghah 14
+ebhcbcccca 42
+ahbbgchhhbfh 32
+egecddae 31
+gdbefe 47
+gefcddchece 2
+eddda 10
+hcccbfdgdb 50
+bcgfddg 9
+bgfgbb 4
+edfbchecfegf 1
+abf 13
+egdhhbeahggd 45
+ehgdfe 11
+dec 36
+ghaebbecd 27
+bedceeece 26
+edf 40
+gabfcfhg 46
+gfgchdb 17
+ad 48
+egegfaea 16
+cba 44
+ahfhbce 19
+cecg 2
+acgbehe 13
+bc 28
+hdecfehfhb 46
+eabagbde 9
+gbgdhceegbha 48
+fb 37
+abhheb 44
+dggag 30
+fbehfabbchhe 16
+dcbbeadh 19
+faaacfg 35
+fhcbhfbgfcdd 36
+bgahafbfhb 4
+gcaec 14
+hdacchdbcd 32
+ccc 37
+edhe 29
+dfadaacgeg 48
+gbecch 9
+eabhhhaeba 46
+cedbabcchga 45
+eefbahhf 40
+cf 18
+cffdgefbf 35
+dffcbabahfd 20
+fafe 29
+cbffhgagaabd 8
+bgdfaca 29
+fdcbbbbdbbe 5
+ffeacdbc 37
+baafbhdeaa 43
+eh 26
+gddgefbd 12
+df 47
+debfbgbgg 49
+fbbe 23
+dacdabhgbhef 46
+bbgeceddfefh 15
+fbabdbbegecb 13
+gdfffbbbeddd 8
+dffbcfeahgbe 21
+bgdgbafggh 10
+bgbb 39
+fbfh 10
+fh 2
+bdhbdefcce 27
+dfed 6
+dgdeccg 46
+badbbadg 37
+eca 8
+adaffcgf 25
+gdcfcb 25
+bdcehdfecfgh 45
+cacggdahebgg 21
+ecgecgb 28
+aedee 34
+ahebgbhg 5
+eedgfdhga 11
+agag 9
+acbbbhhahahd 16
+hbagaebggg 26
+feag 12
+echhchgggagc 18
+eg 28
+fghhdahfh 12
+badabdhhaea 37
+bbghedhd 18
+egbdhcabgaec 3
+he 23
+edbh 43
+deeeheg 15
+ehcgdea 15
+bfgadceghfa 34
+ceddcbehbag 43
+cgffbchhe 31
+hbcegaachh 14
+bebbhg 13
+edebdafcfaa 36
+afeacee 13
+feebcaachade 48
+gfbbcbhcde 49
+eaadefheeg 40
+dgdagbhcghh 3
+gbdf 2
+bacffhefea 46
+ccfcg 27
+fcaebgafhdc 2
+daa 38
+beaa 18
+bhbddhgfb 20
+hdbedh 18
+dfeefeeehh 22
+gbddgfcacfh 24
+edahdbeee 26
+decaaabfgc 6
+dbcefbc 3
+dbdgg 45
+gggccfghee 50
+dhaef 44
+ba 12
+egagff 44
+abchgbfcfhe 17
+hb 47
+hgcbdahbe 49
+fhfaf 28
+babdg 8
+ha 20
+fgehb 19
+daa 11
+ageaag 15
+fdga 15
+gfge 6
+bege 2
+hgbg 42
+feaehdgcbhdb 15
+hcgafdfgdf 2
+fbb 50
+gddheccefgb 36
+agedcdc 45
+bbcbc 36
+fc 6
+ef 19
+ccfbeh 30
+dg 17
+fagga 37
+dfegag 15
+aebabehdgc 25
+aefahce 8
+hecfdfbc 27
+habaebdghge 36
+agdcacdh 47
+adf 24
+ghegc 14
+cfffgh 41
+gfeaa 45
+begdcgebbfgb 46
+dfdbfec 43
+dah 26
+ahf 24
+gaa 42
+chdegbbcf 27
+gefcce 11
+bbcebacfd 43
+fbc 16
+fee 40
+edgcgdbce 46
+edhaehfha 4
+cb 32
+hbc 15
+fbch 1
+bfaa 30
+hgbedhcacgae 12
+bd 28
+dhahabc 17
+hdcggfbab 28
+dhacaha 2
+fhdghdhg 48
+cfhdce 49
+dbhdadeadc 22
+hd 5
+gc 26
+hfchf 29
+hdbdf 22
+eaddbbgeggeb 13
+dac 19
+cgdehabe 45
+aaahh 8
+bdchef 21
+fbddgahaagab 46
+hhbcg 2
+adhcacbhebbc 25
+hefbecb 43
+cebhfcdbeh 19
+efgcae 12
+fcdeecgeabd 22
+hagfgbg 10
+gafa 44
+bchd 39
+hgaaeeedh 38
+dcfadbbeag 35
+fffgaha 46
+aafec 14
+ga 31
+cdbgf 43
+dhchdfgfd 2
+dffhea 22
+begc 22
+bfcbbc 38
+bgbhhg 44
+ddhhegchfg 19
+cbhfhbdb 46
+ddb 40
+dhbfdc 32
+eff 33
+ahacgb 44
+dabgffadddh 46
+aedbedhcggd 11
+ccfahdhfe 21
+echdacdbe 5
+eegffhadhf 19
+fbfheabhhaab 3
+gaehhdhc 39
+dcgdcdgg 47
+agdfgcgabdfe 45
+ghdfbhchgaf 40
+daheehhcegdg 38
+edbafebh 5
+hb 50
+fhbagb 43
+acde 47
+ha 33
+beddgcedbce 45
+ehhhdbhbf 25
+ccfebgh 42
+hgb 43
+cedbgcgegaha 26
+adb 49
+cg 46
+bdfagffb 37
+efbdach 47
+fegfhhbfhf 21
+gchf 7
+hhfgc 46
+hbgdcchgb 47
+bcba 1
+gedgcgehab 3
+fbahbaac 1
+ab 25
+fegcgcceacb 44
+hdabdfgbb 34
+ccdhaeggbe 16
+dhfadebcceh 20
+cefga 7
+cge 19
+bdbbgcegabd 6
+hhga 23
+bfdehcgefg 15
+ehccf 28
+ae 43
+hdhhdgdd 47
+hgfgbbabhg 41
+bfh 39
+cc 49
+bb 49
+eegdbgaeebce 12
+hdheag 3
+eaafh 3
+eeagfdcfbbbh 15
+chb 1
+fgdcacdafecd 35
+gddcdaab 44
+affbehadcbf 2
+fddfddg 30
+hbdfd 1
+cgd 37
+bhfadaa 17
+fafgcg 32
+gaagfgddff 23
+adgcfhchdf 7
+hfabeceffcea 32
+gbbfg 7
+fgd 50
+ggdgegcbabbh 20
+dga 29
+eeafge 21
+gdbcfag 40
+gfechb 19
+bbgffhddedfe 15
+da 41
+ahcgg 6
+dgeh 19
+eaceaf 9
+hhcgf 30
+gggfdfegbf 21
+dbhhcebhhdfb 18
+efacbeb 2
+efdbbe 24
+fcagdcea 17
+fefaffgbgea 23
+beedehhefcgg 20
+ebfefhg 9
+fe 6
+dhhabehh 41
+dgee 21
+gbeghfh 10
+ca 47
+bagfdfcdg 17
+ae 34
+agfegcgaf 24
+ghgcaf 21
+acdb 35
+bhcd 44
+cghcfhbgcedf 28
+hhacbegaah 30
+cegahfdha 48
+chaedgg 3
+dfeeh 48
+acbaecfhae 41
+ggffae 9
+fcedhebdgbb 29
+abed 44
+edchhhcdfh 42
+gfgcb 12
+da 32
+ddbfgagafhd 11
+hggaebdaebea 27
+dcefdgg 9
+hdbbgab 5
+agehc 11
+bfccddfdfdh 20
+feab 48
+ebgheed 22
+fdha 8
+ehgffgegbgc 40
+dcehadhaacb 37
+ebc 50
+abbcebffgab 21
+cbbfgcche 46
+ecafdadda 15
+gda 49
+cfehhcgah 19
+gbag 38
+ceh 37
+edaaeefgdb 11
+feg 38
+egbecb 27
+ecfbcgg 47
+ccd 31
+fbhege 39
+cacafdhbbbh 43
+egh 15
+bheb 41
+hheddeacb 38
+cgbgdfcbeh 44
+gebehcghhebd 23
+cecechfcf 15
+dcbbhg 32
+edfcadc 20
+facgabbdh 33
+bgebcfeaheba 16
+dccgdbcccehb 41
+cfbb 36
+fchhdc 5
+cfeecefdha 7
+hc 49
+hbafc 2
+ac 38
+faehaa 49
+bdacg 2
+cefaaafcbbff 7
+eg 24
+cdda 20
+edcgcdfdd 30
+eadgge 25
+dba 34
+bfg 14
+gfafggcd 28
+ahafee 40
+hddaagcaehb 39
+fegbabfggd 18
+ehcafg 17
+egcdhdfhg 36
+dceacb 8
+badfdbf 46
+gcdcc 26
+abefdbcgaga 9
+dacc 47
+adgafbegfcfc 46
+hdgcg 9
+aabdgaeae 12
+hfafbhgd 43
+fhgcaffhf 7
+ebbacadeb 15
+cfgagda 20
+ehg 17
+gfbhacehbdda 49
+cbfbhcaad 1
+gdhcha 10
+gf 24
+gdh 37
+cg 39
+chfdfd 33
+hcabdca 30
+fbgbe 50
+fch 21
+gdedg 50
+cedfaeedf 1
+ecafgf 50
+fcecebccegah 41
+fgfeech 44
+aggffhb 38
+gghfhbfebd 11
+bfa 4
+eefceeaaeb 45
+edbafcca 10
+dbcdahhd 23
+caegfghb 34
+eebdbbegfg 16
+cfgfc 46
+dgeggffedfa 22
+gb 21
+ebaeh 33
+gdfhfcbghbeh 5
+fadbaff 6
+afcebhfa 24
+cedcbfdbgf 47
+gc 32
+bb 50
+fhdc 29
+dedahhfdgfc 11
+bad 18
+bbd 7
+dhgabcgdde 42
+fbb 19
+abd 33
+fd 27
+gh 46
+gdg 1
+hbbeab 18
+cgbceeffb 14
+aehahdcegagf 28
+hfgg 42
+bddagaegc 43
+fagehafccbg 38
+ad 14
+dh 8
+ecggeahbf 23
+faaecaedgheh 40
+dgcfdaaebgfe 33
+cfdhaaghd 41
+aabeh 39
+babdccbca 31
+dbec 20
+badaef 3
+de 35
+cdabchbhdhd 4
+dhgadhhgfac 25
+ffcbhccgb 2
+ahafebgc 38
+bhfgaccccfd 38
+eeffbgh 4
+gbdfagdcgb 28
+acdabgda 20
+fecfh 12
+ccgdg 28
+fabc 39
+df 43
+gad 16
+gcfcfe 45
+fgfabh 26
+gddcdddca 31
+cccgegbfbcfe 20
+dhcfbbbh 50
+dcgeaggfc 18
+aecc 25
+dff 33
+fb 24
+dhae 17
+ag 6
+faegdfhd 8
+achdhcedbe 17
+gfacded 42
+afcbdhdf 25
+fbfabgbheh 30
+babgd 41
+achgdfgdd 38
+bcddh 33
+cgbcb 26
+ffbfba 17
+faehhfgedd 14
+bfgdeee 44
+dfcecggf 23
+ge 8
+ccgbdghfa 23
+gabe 31
+aceaae 26
+ddgcacbf 38
+bgeg 37
+ehadacbbha 26
+bfhh 43
+ce 16
+haaa 7
+fcda 7
+hdbagfbgfcde 25
+cfddda 13
+bffceedhc 16
+gcaagbd 48
+eefagag 25
+babdfhgechd 18
+fgg 28
+hegehbdd 38
+ahcdheb 32
+fb 49
+defdeggdfgb 40
+acaffa 49
+cghfaec 31
+gf 15
+bfec 28
+dheaebebbhb 20
+caabdh 41
+ech 27
+adcfahc 15
+gggaaeb 10
+bfcddec 1
+gafd 48
+afaa 41
+bafacgdhf 11
+fffeeadebef 42
+gch 31
+bhdfhdh 40
+ad 35
+gfgeadbghaac 4
+cghdff 17
+fbcdgbd 40
+dcbbfhhcedg 34
+ghffbh 22
+ebggffeacffb 21
+adaghecdgah 9
+haadcah 34
+eaechbccfbfc 10
+feahdffhhafd 10
+aadgccedbeb 45
+cccbbb 25
+cebgdha 12
+ahc 39
+eebgehgg 13
+defdahefgfd 13
+agecabfhea 10
+hcacfhahgfa 8
+bfgbchcbeh 42
+fahegfbeaabd 42
+fdhhdgedbg 18
+dchccdd 23
+geadgd 19
+bfhbde 35
+ecbccdcdf 21
+aeadggaahhbd 9
+eecabd 24
+hdd 11
+cfebbadc 10
+becbddg 47
+hhcgabhdedbh 36
+dahecbedccc 13
+fabffcdb 11
+fhadebae 18
+afd 44
+efea 14
+ggbagcaacghd 37
+fhdfe 29
+eaahchdagbfc 13
+ccedg 37
+dfbcgha 31
+fgfggh 38
+ffddea 14
+cgccffhhfae 1
+fefaead 38
+hfgdbdfcdec 32
+hggdgdegcgg 9
+gbeg 9
+dbga 41
+hadfgagbgdeg 23
+bdbcabf 26
+hgdd 12
+egdefcaeegcc 2
+fgfcbaaffa 24
+acgghgd 37
+hgeceggfffhb 22
+ceahea 36
+haegbefeefg 49
+cfccffebheh 39
+gedfeaafecf 34
+ecfgeb 4
+hb 30
+dbff 35
+cfhheafbdb 14
+cbcfhaghca 21
+fcfdaaffehhb 26
+hdh 14
+cedefbheeeac 14
+fhafbeg 28
+gabebgbaeab 40
+hddbgcafdf 35
+hhaabcada 19
+fehcbcddfggf 3
+he 18
+ffdde 47
+hbaedcg 19
+eaaecf 24
+de 50
+bhcdee 39
+behedfbfh 25
+aabd 11
+ah 50
+feggdaggfceg 47
+hacbfgdegdc 32
+cceg 21
+cgcbdedddcf 24
+bgfccabeab 49
+fhfbbedcge 43
+addhge 10
+cdeegbehecff 37
+gedgaggbegeg 13
+dhdegbcg 32
+behfaa 22
+fbdfddehccef 39
+edafacefcha 4
+bg 47
+ebf 25
+hdf 25
+bdecgda 15
+eg 46
+hdc 31
+geadfgccfa 49
+egffcgce 6
+ca 46
+bdgg 43
+ebcdfggad 32
+cdcfebfae 22
+cdcachghfeg 7
+dafbhd 29
+ebdaddedgba 49
+dfdhef 23
+ehfg 24
+cgc 38
+cabbeehchd 49
+cfedededdcda 2
+hfcbdbbe 31
+ghchcdbcgdcd 43
+cfh 23
+ffhbfbbfche 23
+afgeeceaeh 13
+eba 40
+bhcecceh 17
+ag 1
+ach 31
+fgagccbgaah 24
+hddaaaefghh 17
+chg 13
+ccbdhffaaef 9
+cdgfecd 37
+fhgabfabf 45
+cbgdccaf 20
+abec 34
+aadgcbbhf 29
+ebfgddcgbad 41
+feggbfadfaf 3
+fcgab 33
+ebecdeeggde 39
+bceaeddbgdhf 35
+ahdgdfcd 25
+ffafhdfcdbcc 37
+fggdhaad 8
+hgbdaa 17
+haebedcgg 11
+ehaf 16
+effhfdchd 50
+cbgefheahd 12
+egddgfe 50
+gbbdc 21
+hfdffbcaeacb 16
+febcebfg 16
+cba 26
+bdad 13
+hgccadbcc 19
+dbeagb 20
+eeb 31
+gedhecf 37
+fchebfbbeg 49
+dbbaehbbf 41
+adhgaabcdhb 22
+bg 24
+ffabbbbddhg 50
+dbaahhehcha 37
+dhhebgabgh 25
+cbeag 32
+cbgfdhb 43
+hdcceehd 17
+hdeh 26
+ecfgedg 30
+bdae 45
+bgbhafcecb 38
+ddadhcaaacd 17
+cgcbdgdhgc 14
+ehbf 5
+cbfhaa 23
+dhfbcbcafed 23
+ccbffedaac 42
+hhh 47
+gbehf 8
+dbbcb 40
+acgcege 27
+hgcagehgfdec 11
+ghbhffg 14
+gggceaf 25
+cgbhhccdbah 23
+gffd 32
+acechfadcdcg 39
+da 8
+fd 46
+fbhfecf 38
+hfbf 7
+ggechccbdab 3
+ab 31
+dh 44
+cbdhfe 40
+dafabc 37
+hec 11
+deaafbga 50
+dehhfgccah 39
+egbbghgcfd 34
+acd 40
+fehghhgcd 16
+bddhggee 3
+ffdbafaabfaf 13
+gabbbgffdg 43
+cdeefbgbcdc 23
+fgagaebf 1
+dhfcfhhdgd 18
+gfbfedebeafd 31
+fg 48
+baheeahggea 17
+heedhafddd 34
+abgbccfee 42
+gdbacge 50
+hfbdgefdcca 14
+fbbbebdgdah 32
+ggeg 18
+fbbafdhcf 17
+gfegeae 14
+bhebdgfaca 43
+bgbhagdaae 47
+bgge 3
+eheedgb 4
+gehabagafhcf 1
+bchcbcb 5
+ag 46
+gccccggecca 34
+bebahh 6
+acbghcbd 22
+dgaa 41
+fge 3
+dbbbfgdae 24
+ddhdabcdfbc 21
+cdhddcgdggg 24
+ahbcdgdee 40
+eaeggacbhf 39
+beahadacgfcg 47
+gae 23
+ebfehef 33
+ccfacafdhgg 33
+ebfeheba 17
+hfggd 45
+hcgfge 34
+cgehcbcffgg 47
+fhfdhdba 10
+ccec 48
+cdhehcdbgeea 38
+fhdf 41
+ehgbhhccbbh 6
+befeahef 42
+ega 2
+edd 46
+eeha 31
+addcccfaahb 25
+dhdefcccgcaa 11
+gfahgbb 29
+gfbd 6
+dgfbbgffe 2
+eagefhggbbad 18
+agbgcge 45
+cgdfbbfhebab 36
+ehgbddbbc 23
+hd 47
+bfbcbcfhh 41
+adfgceh 36
+cbee 23
+aachfeffbdf 43
+egbehaedg 25
+fadbhdcec 9
+daebahhhe 50
+gefacegd 50
+faegg 5
+dcfba 38
+bee 28
+fcheddfb 43
+acgdgdbhcf 17
+chabch 42
+gadgccah 30
+hbgbchbedcbg 8
+def 3
+babggcachegf 16
+fgdabeg 18
+cdaccef 9
+dbgggcbhdcb 28
+fcdbadhddfc 37
+becdhca 22
+aggbg 19
+ccgcc 48
+fbdf 40
+bebedc 9
+gccgcgbbf 20
+ageha 46
+ddbd 42
+hhded 5
+eebfgbgc 4
+adahfhdbggf 46
+gbcdfhaebc 29
+gafbe 18
+geb 17
+fah 35
+bhahabdgba 21
+gehfeeh 23
+adghfhge 27
+dhehdhfacd 22
+cfhhbffh 9
+eabdh 29
+accfcde 14
+bceehdeddhah 25
+db 46
+he 30
+gchhe 30
+ddeaaadcbgd 19
+bhafbbfcfgc 50
+fdedg 42
+afd 9
+fegafca 21
+hc 43
+aghfacgeb 12
+dhfgbag 27
+gagagafbad 39
+ffehfffhhc 16
+hfabg 35
+haghgah 2
+ggd 7
+af 2
+bahdcfdehda 47
+cchhgahhfahf 16
+bag 35
+baeb 2
+hfdbfahhdhfh 42
+bbeea 47
+ebfafheeeb 48
+bg 35
+bgbcb 40
+fhdacefccfb 16
+efacba 44
+bagcdg 31
+gdhccgeaaa 15
+hbedgdg 49
+agbbbfhbhhg 8
+cceb 19
+fdde 50
+ffbdbhgd 33
+fabefaaeacdc 50
+db 9
+fgccbh 44
+eb 18
+fffbahghaga 30
+dd 2
+ahcacaegh 38
+ceh 1
+gehdfbhdec 18
+baeh 41
+bhhdhce 4
+edggb 33
+hde 28
+ehaefgdb 20
+gcaabgehhe 3
+agaee 14
+fbf 3
+cgdgbadha 42
+fbd 41
+bacfghe 24
+heg 42
+aedbfhfefhg 16
+egbgaec 35
+gchgdfebgef 23
+chfhafggg 49
+dbeaeh 43
+bh 10
+hahcdafcd 33
+fffeeeegahdb 37
+agdbdaeadc 23
+gcbhdb 20
+affgfhaddb 29
+fechbdhcfdc 42
+hhadfg 2
+aea 27
+ahdahaffcfec 6
+baccgcgfg 49
+aceedfh 7
+bghhceafehe 2
+acagef 3
+cgcbabbha 28
+hgcgff 34
+hgdeef 46
+fdaebadh 12
+fhdadgaa 5
+afeabd 14
+gcfd 36
+hcedgfgfd 18
+gfcbeefc 26
+dcheehcec 47
+gaafdfbe 33
+adfgaaa 22
+acfeedgbdfg 8
+acfg 4
+cadchedg 21
+gfeeachbefa 29
+agcggaea 16
+bdbf 50
+ebahbeeg 37
+ececcfbg 42
+bdadbhfag 44
+gffgbagb 1
+hhhbgbf 12
+hhhhhcgc 47
+aaffghcfee 24
+ffgccdea 24
+ehegab 11
+hegaafe 39
+eedhhahhdce 22
+egaea 21
+efhbhbc 50
+egbdhbaca 22
+hhdbeheab 43
+feeb 23
+ccaeee 16
+bhfcbgf 3
+hhcff 20
+bhfhcde 38
+gfhc 47
+bgac 42
+dhfefeccfghe 7
+cabfehcbehb 12
+ehehabhdb 4
+agahbdfeae 10
+aahabgabhhhh 11
+ccedgfhfdd 12
+cdf 44
+ddffbegddgh 3
+aechcgefh 24
+ah 11
+cbecc 1
+dde 21
+bcbhhg 18
+bgfhfadbhhc 1
+fbcgdhfgabdh 21
+dcecghbfad 13
+hgcfaf 22
+cef 48
+eaagee 31
+hdhcfhbc 16
+cbhecccc 30
+eb 18
+be 2
+hddaehc 27
+da 14
+ffghfbdhccbh 17
+heegcbecdcgc 21
+efd 21
+edahefbbbb 12
+geea 9
+caec 7
+fa 15
+bbfhabcagde 29
+hgcbbee 7
+behaf 40
+bdefdecedd 14
+aagbbcbgfcef 6
+ddchh 29
+fbhbgee 29
+egddgecebaa 1
+bhbb 43
+chchgceedagd 33
+becabde 30
+eafadgagddc 31
+fhhega 1
+gabdbba 49
+bfabfcdagcfh 45
+eed 11
+edbf 20
+hfcbdfed 18
+hadggheh 29
+cbehchcbach 18
+habbhe 36
+defgdeggbab 3
+cd 26
+ghhfdbf 3
+facaeececbe 3
+agehed 23
+eedbffhdfdga 49
+abhgcdb 41
+caeeebffcgdg 7
+cffchhbhh 42
+cacfhahab 49
+hfhahcbf 48
+ebfcdefa 32
+gbffeag 32
+dfbcc 36
+fgbfhdhf 26
+accabfh 21
+gge 12
+eaedddgfabeh 27
+ffffaheh 29
+hggfaeceffab 20
+fcdgdbhcd 24
+eedadgfbegb 36
+gbcbdhechgf 31
+eecegafag 3
+ghhcdfg 13
+ccgd 13
+echfhbeafach 34
+ahhfahdh 30
+gaeh 20
+hbaacchefd 29
+bbebe 6
+eeddhebhh 49
+dfdbaeghh 33
+debdebcb 34
+chaedh 39
+fedgdegbbf 43
+fceeaeba 2
+dfde 6
+haeecbggfga 10
+afaghbfffh 50
+hffcbhcb 9
+fcccbf 39
+gh 22
+ebheggdfhe 29
+geaehfcbea 23
+cacfhe 24
+hcdd 22
+fchec 35
+ffcdbhfghef 16
+ebb 42
+dff 10
+db 45
+beagda 25
+ccagebecbch 30
+dge 10
+hhef 3
+eacbbec 37
+dabbgdac 11
+aed 21
+hhdbcccdf 18
+gegaa 41
+bbhcbb 16
+agcgabgedeff 18
+TICK 1 308 6
+WF 679638886 0 3000 10 2
+100000002 4 8 6 92 15 16 0 0
+100000046 8 4 2 89 8 32 0 1 100000002
+WF 653658384 16 3000 19 1
+100000093 8 1 3 27 6 16 1 0
+WF 314118430 16 500 23 8
+100000153 8 2 4 102 27 32 16 0
+100000168 8 2 2 115 8 0 16 1 100000153
+100000248 8 2 5 112 5 8 4 1 100000168
+100000268 2 2 2 80 20 0 4 0
+100000283 2 8 6 9 27 32 16 2 100000168 100000248
+100000300 2 2 3 116 13 32 0 0
+100000357 4 4 2 112 1 8 0 1 100000248
+100000360 8 2 6 0 24 32 16 2 100000248 100000300
+WF 466033944 95 1000 20 8
+100000426 8 16 2 87 7 8 4 0
+100000438 1 2 6 55 2 32 1 0
+100000520 4 8 2 39 16 32 16 1 100000426
+100000543 1 8 3 47 6 8 16 1 100000520
+100000563 8 4 2 101 25 16 1 1 100000438
+100000638 4 16 5 96 29 8 16 2 100000438 100000543
+100000669 2 2 6 21 -1 0 4 2 100000543 100000638
+100000715 4 8 6 49 28 32 9 2 100000563 100000638
+WF 524641429 30 1000 19 8
+100000742 8 4 5 33 12 32 1 0
+100000760 8 1 6 5 8 8 4 0
+100000835 4 2 5 64 1 0 9 2 100000742 100000760
+100000836 2 1 2 30 25 0 1 1 100000835
+100000923 4 8 3 54 29 16 16 1 100000836
+100000959 1 8 5 2 27 32 1 1 100000760
+100001001 2 1 5 96 23 16 0 2 100000760 100000836
+100001027 8 4 6 107 3 8 4 1 100000923
+WF 123569771 109 1000 29 4
+100001046 4 2 6 79 11 16 4 0
+100001084 4 4 5 5 7 8 9 1 100001046
+100001092 8 16 6 33 0 32 16 2 100001084 100001046
+100001137 2 1 5 39 16 16 1 2 100001084 100001092
+WF 368454159 176 500 30 7
+100001162 2 1 2 112 24 0 16 0
+100001246 2 8 6 15 25 8 16 1 100001162
+100001298 8 8 6 109 22 0 1 0
+100001394 8 2 6 97 4 16 4 2 100001246 100001162
+100001474 1 16 2 22 20 16 9 2 100001162 100001298
+100001480 2 16 3 116 18 16 4 2 100001394 100001298
+100001523 4 16 4 26 12 0 16 1 100001298
+WF 254421694 70 500 25 3
+100001552 4 8 5 85 29 16 1 0
+100001556 4 8 2 119 16 32 0 1 100001552
+100001637 2 4 6 3 27 16 1 1 100001552
+WF 887499402 173 500 17 7
+100001653 1 4 5 40 16 0 0 0
+100001696 1 2 5 96 23 8 4 1 100001653
+100001713 1 1 5 86 7 16 0 2 100001696 100001653
+100001774 2 2 3 40 12 16 16 2 100001653 100001696
+100001802 8 4 4 37 1 8 1 0
+100001857 4 4 3 55 28 32 16 0
+100001929 8 4 3 85 -1 0 4 1 100001774
+WF 164122497 40 3000 13 8
+100001946 8 1 2 93 1 8 9 0
+100002035 8 2 4 25 5 0 4 1 100001946
+100002086 8 4 2 87 17 32 1 2 100001946 100002035
+100002100 8 16 3 31 15 0 4 0
+100002149 2 1 3 60 25 0 9 2 100002086 100002035
+100002190 8 1 6 26 16 32 0 1 100002086
+100002228 8 16 4 103 16 16 0 1 100001946
+100002234 4 16 3 57 17 0 1 2 100001946 100002100
+WF 714110238 139 3000 21 6
+100002299 2 1 5 80 5 0 16 0
+100002384 4 16 3 30 10 8 16 1 100002299
+100002457 4 1 2 1 15 16 16 1 100002299
+100002490 8 4 6 115 -1 0 9 2 100002299 100002457
+100002570 2 8 4 32 17 32 1 0
+100002639 1 16 3 18 25 16 9 2 100002299 100002384
+WF 392357549 42 500 19 8
+100002684 2 16 5 2 6 8 1 0
+100002777 1 16 4 54 0 8 9 1 100002684
+100002869 1 2 5 83 0 0 0 2 100002684 100002777
+100002930 2 1 6 32 14 32 16 2 100002684 100002777
+100002998 4 16 2 113 5 16 16 1 100002869
+100003014 2 8 3 74 12 8 1 1 100002777
+100003042 2 1 2 101 13 8 0 0
+100003136 2 4 2 47 3 8 0 2 100002684 100003042
+LOG 0 23 88e77e
+LOG 1 49 f1de1cb111528
+LOG 3 73 6648eedabdef72db6a8
+LOG 4 22 6ebd18
+LOG 5 158 ceba6e99489188822b6b6a6aeeb3fc893d8c4c94
+LOG 6 92 aa341eab445f1b6992f6b54
+LOG 7 171 ba223d61fd4e91b76a9ebdf20e0c54cbd99fbd9456a
+LOG 8 51 41716e6419a68
+LOG 9 63 a579917244895338
+LOG 10 154 471da3d5b6676a34464e2754561dfb25b6feb90
+LOG 11 109 cd70f60ef11af64771d91d12ba38
+LOG 12 168 5a77af1adfcd5511ee4b2aa3448d88cab21b4d2ab6
+LOG 14 53 47d160dbf5f638
+LOG 16 179 f6c057115d158f559e2c78d047bdac5d539ddac66518e
+LOG 17 199 4cd63d1444cdd9ed69b43235b555da905cecf766bb7616d7aa
+LOG 18 109 5b23dec2624d2e91b162c6a4c320
+LOG 20 136 62e325dede88923c8296f466644b5d2bae
+LOG 21 87 ae91c68cb4b55152ad775e
+LOG 22 160 b8d5ccae5bf4e8be2255626bcdd35ceb59e74b6c
+LOG 23 140 beabd1119ee45a44ab2a6b4f66af5345465
+LOG 24 148 80d01e36d69ebbb775ef6e758be264706f7a5
+LOG 25 117 c3dd708df340d95f2f66abac6796b0
+LOG 26 143 af86713dbbf95acde445d2c6b773a677bfda
+LOG 27 197 bb3545346f22d55477ea11d5957f692aaaa2b35f7c643d4968
+LOG 28 171 454ad2935e30d50cc0a8bbac6544cbed1ea3375fad8
+LOG 29 38 b7e7cac950
+LOG 30 126 eb55af56aeaaeec240667199c54f1158
+LOG 31 114 5753b72adbe274738a8af92bbd9d4
+LOG 32 9 580
+LOG 33 182 f62eca349e6dd6c55c376f0c56449efed595fc8e3d3f90
+LOG 34 150 bd2aa4d2a33da8db499c6aaf29adf38966155c
+LOG 35 91 12e765ed2ba68c4b12d70ca
+LOG 36 35 6582354e0
+LOG 37 127 8c9e433a2f65b3caaafdd071f6f1fb38
+LOG 38 121 1136ad13af7f6230ae9eac0b165e9b0
+LOG 39 100 fb5a8eb6b962dc955b2bcf135
+LOG 40 102 451519563c15ed64b6ead99010
+LOG 41 11 76a
+LOG 42 116 f7ecbc6e669a332b3991d5d74ba47
+LOG 43 124 bcc9ad20b70ba6c348e9f25c5f25b67
+LOG 44 177 19d0b59cd6a263e95679b47f25684d08865a8eedd4160
+LOG 45 29 74b1e2a0
+LOG 47 168 d111e2ab3d0a99274d34040fd8f24aaff26c2332e5
+LOG 49 123 5cab3a454d9d6648dd92baf0ec91eea
+LOG 50 165 a644bbf51ad474a80af90a644aa9edf07ca2bfdeb8
+LOG 52 121 6ae2945a84cb2a257afa55f95326538
+LOG 53 145 cb92d6a88b6a6b76df97a3a86f7e6757f9d60
+LOG 55 61 53bbc9923eb62bb0
+LOG 56 158 65a9415ecd0f33e4651e371f2a8d7a2f44476d94
+LOG 57 187 a88337ce94a44ceb74a8ce94bf76bfc7789d9a92b5677a8
+LOG 59 199 9bf47fc45774195ea66e2a37eadfa1a8b65755be25679acace
+LOG 61 17 8e928
+LOG 62 74 3ee845fae703f6778d8
+LOG 63 160 7216d188cf57da8947257f1f46498ccc3d8a07b4
+LOG 64 166 5d56aa675475b5bae6c89186ff8e89540eef90ccdc
+LOG 66 46 66add992bcb0
+LOG 67 110 d0b5b744c9709dd9eb3f7b3b5918
+LOG 68 119 d9d6bb0fa76d4b49c41c4ddb32ac7a
+LOG 69 169 5ec4868e1951c7aa4f178c77755f55626d72953a2b0
+LOG 70 66 4b2ef86577f233798
+LOG 71 66 2d23f2cbe3aaaeab8
+LOG 72 164 9af15bfebab7bc5b937f72b3f6de348ceacb4cb76
+LOG 73 54 5ee92756598cf8
+LOG 74 43 4aad5efa088
+LOG 75 167 9192bbb2067f408fbf4d6b6130988feed7278e3bf8
+LOG 76 186 544659b7f2b7d5ff8ed14b5a3fc75209745f7577d7ff99c
+LOG 78 133 602b3ce8f1634623ec88e0a3665fe88bb8
+LOG 79 123 5b5f8c5667b8c3d57eef1ca858fefce
+LOG 80 80 654cfd077559f66b163f
+LOG 81 125 5647ffd833cea84d665a9580d0fdaa38
+LOG 82 129 f4b6e2e656944b9d6c717c656346afa38
+LOG 83 91 7ace8c5f6a656c8bf1e564c
+LOG 85 157 453249b2bd6ab6295c8f7d526a2baaa9e359faa0
+LOG 87 183 5ecf2d72f33c29c77a9af7dd396aff16b4cbb762d558ea
+LOG 88 183 afcadc3fdb0d1e5ffbff84d9c41fd5bef666abdbfa946c
+LOG 89 63 cbd51d14462a666c
+LOG 90 134 ad0cd9b2c54a8994faa33a2ba08c519dd8
+LOG 92 78 fdeef4991cc2744537d4
+LOG 93 26 d8ea9c0
+LOG 94 139 4eaff1d2999c6650b0bd24eae2f8e3da8ce
+LOG 95 66 28a3d6c83ef91515c
+LOG 96 24 79aa54
+LOG 97 98 7eaab5ddd2c115d99ea22aef0
+LOG 98 50 4e3955eeee610
+LOG 99 60 b9992b26688dee4
+LOG 101 137 658ff16d7c2acf975f7e6b16ae1dac69f28
+LOG 102 180 94ab079ea3a85cb9bf61ebada5120ab5dcb334ef532bd
+LOG 103 81 616ca479d623af213fb78
+LOG 104 149 4665a91abde89034d60831525cda3dde324628
+LOG 107 75 74447619a091077ecac
+LOG 108 181 ea8a0f1d64b493acaecb23c57d2e5c9d8475224af6b2b0
+LOG 109 162 a4752cb0357bb5d1926766446952a3e64b3c66060
+LOG 110 117 43cd20e4d51a2cedd0cdf5af91ade0
+LOG 111 35 5b2995188
+LOG 112 127 aebaa3af411c6af5132add515df8410c
+LOG 113 162 aceee9e2b9593a44648afebe4a5f205f1e4bd3890
+LOG 115 80 2ea5ab599ba9995113c7
+LOG 116 133 5f7dc335ed19295d0777b654b7a33a91e8
+LOG 118 187 4b019074c478bd6a667b30e9d3d8ec5fb1a3ae7e93f655a
+LOG 120 12 1b5
+LOG 121 172 2d19b03baabf45753d71544b9a1ba68eb516f36ddfd
+LOG 122 130 441257558bd86be8fd5f3a3d4496a6700
+LOG 123 150 7dbb68b738e9d7632db0d3d246193399675770
+LOG 124 85 fe39cc28d6f6bbad1069b0
+LOG 126 131 bbe6156122b7456afd1eab45675765acc
+LOG 127 71 554bdbaba0ed588d30
+LOG 128 67 8f5d1b28cb1ab8a4c
+LOG 129 23 466aca
+LOG 130 21 7f8db8
+LOG 131 55 b77b41c5ae8eea
+LOG 132 88 b9a35a82e3d5550aafc546
+LOG 134 144 5afaa768799478035b73757dd13c911f6464
+LOG 135 10 140
+LOG 136 189 c3f74b2eab2b7bac695008d5666576b514cfba786457ad28
+LOG 137 11 648
+LOG 138 35 cdfe47c8c
+LOG 140 113 74a5115d95e2e656a49753e6b8528
+LOG 141 132 7f72b2c755e9b5cbd9d947ecdf7488d04
+LOG 142 189 7bb8f7bb3364775fba23a5f6de88447671f4daeeaf22cdb0
+LOG 143 36 1d2a915ed
+LOG 144 173 82a645a7f560b5bbbc5747832d1fba4a8fea2c54beb8
+LOG 145 49 1196729e30fe8
+LOG 146 108 d5658e222907416adc2ba4a919c
+LOG 149 155 ecb90ba4b5eeb559d974aacc8a7d17c72c596ea
+LOG 151 124 5ae9481db98a23a4825bd585fc3e976
+LOG 152 77 6cb58f868eba22676a28
+LOG 153 80 5149551e2c48d12719af
+LOG 154 132 7792af5d5d5577dd7b520ab995cb956ae
+LOG 155 13 2b20
+LOG 157 174 7c67cddb9599dab106d4952e1bb2aa53fb5ef9888bd0
+LOG 158 57 bb44faa321f7330
+LOG 159 164 5821119d064d237d555733b5ad5dfd9bbbcdeb1b5
+LOG 160 195 4e595af65bb35d1919172dcf52c4745bd1517a9a313a6ba5c
+LOG 161 103 40f758f955934adcb5db6f2af8
+LOG 163 26 97c9ec0
+LOG 164 40 67bde7ed74
+LOG 165 27 551fc4a
+LOG 166 108 f325bc67678ebb3a44665fb22b4
+LOG 167 156 d6e8cab75ccf6b30f0a25fc8fd1ae4c8c88b6f7
+LOG 168 111 16714bdee4223c93d7adbaab0d20
+LOG 169 162 67dfe513fad6d55edd2bfd6d67e955667cb6d5c9c
+LOG 171 46 4b50dd120ad4
+LOG 172 22 65191c
+LOG 173 70 651598474e3b2f2a10
+LOG 174 14 9c94
+LOG 175 138 92b1daaa33ba547f91e76f5ab5753b1c958
+LOG 176 176 b1a8a3abcac9e7b13d9fdef9aeea89d2ae4ae3da96bf
+LOG 177 98 4ab2eb85f689aab0c32a8c7b4
+LOG 178 201 f25b9d691eb35b227efbaa2ac8ecb20ffb32a6ecd7d7ea911a8
+LOG 179 40 5676577546
+LOG 181 185 9456fa24891d232fbf3a2bef99aaa537eefeaa64760e338
+LOG 182 59 4dbea8564af6d30
+LOG 183 55 8b1d2a6c3a5578
+LOG 184 35 ad0be3e8e
+LOG 185 185 1357438347d9e30f56aa1975bba2d88c9ac4e8d7f549578
+LOG 186 44 97ddb6f63e4
+LOG 188 94 84aa91abcce97daed674d55c
+LOG 189 177 aecd20b3d8ac6464fee7a81cbed1eeb83e474a267cfa8
+LOG 190 133 dab6aae24f8d1decb62c719d9d85aabaa8
+LOG 191 119 eeb9f3d649da0881d59c2feb6d6b78
+LOG 194 173 742df51de3bd469d10edd19252cab6f7e12fbeaab220
+LOG 195 37 e92a271130
+LOG 196 66 9257d1e28bb8b2dd0
+LOG 197 166 42a6669eaaadce129adbaa3ac4b88f999dfac44f98
+LOG 198 26 e9ee91c
+LOG 199 156 bdf2776bd7347c84507dd2568d348e3b5da203c
+LOG 200 18 16714
+LOG 201 63 45791a3e44a55ace
+LOG 202 213 5f3ba2e476671e2ada8755af9e664c889ddea3b556664b6e758d70
+LOG 204 79 9f66aaccad608fb4504c
+LOG 205 68 21be4aaed2744f2ad
+LOG 206 29 6ceaed60
+LOG 207 74 43676aca2b456bb6518
+LOG 209 91 4a35938cf559dbc65eca8ce
+LOG 210 59 c88c34b9633256e
+LOG 211 62 57bdd351172ab618
+LOG 216 158 7a223294ff23f7c4c5648affda69555e251f4bdc
+LOG 217 65 7cbddba0d7cddd7a8
+LOG 218 14 5514
+LOG 219 64 4e8cc45b9fbcfc2d
+LOG 220 130 b932ed7b500b15a4c22a9eb32c451ded0
+LOG 221 38 4835767b94
+LOG 223 180 1a2edad475eefbf40743a3f3dacb7d9525f602276fe34
+LOG 225 73 aac9f0d9510664f6230
+LOG 226 132 7ebbe8d9dd2f1dabac77a8ec911ef8adc
+LOG 227 138 2d89ca99e33a33667444ed135976e3a51d8
+LOG 229 80 1a533d7009817f6cf545
+LOG 230 180 b5dd48e76ccd1b3a4575b7767b9f4547451d5453ab1af
+LOG 231 51 51e4a671e606a
+LOG 232 85 d993157b0992d5bd86aff8
+LOG 234 170 d57c64d7c5b7b95961d2be8eebbe749b5d513e1d99c
+LOG 235 60 75ddbc65a95d637
+LOG 236 23 c2aa6a
+LOG 237 75 5759a3bdcade88f4ace
+LOG 239 45 e233889ecd68
+LOG 240 166 e5e56c76aed4fd066754b8ea994fc8ea8889c48dd0
+LOG 241 124 474c6ce883b1f4d7bf3b54f040e9725
+LOG 242 38 7593d43394
+LOG 243 145 767b8ad7696d5957e10f332247c92a0c89020
+LOG 244 103 54fdd569d1c7d598bdae67470e
+LOG 245 62 51342b63bbcb91d0
+LOG 246 165 acf6daccbd56bb4a23ce5c856b06d0f5eec88a8df8
+LOG 247 83 f27d1fe1eecd52241274c
+LOG 248 144 ca356f396c4812b27b9f0826658bd9a1e355
+LOG 249 120 daa9ac644c76478b52544aede2aab5
+LOG 250 151 70fb2b0af5ba24cae2c8af9dbad4f911e15c58
+LOG 251 74 1fdba2abf558eefe798
+LOG 253 51 73bb28bee77ce
+LOG 254 34 5744ee114
+LOG 255 71 ac995ad495ef48230e
+LOG 257 142 da47d56e5a96d18270ebe3a4f1288b0ea2f0
+LOG 258 143 56b6c39aa5a996ae55a5acaf1496a5ca8e8c
+LOG 259 116 5685a973af7e968faa8bc8dd58745
+LOG 260 36 b51d46627
+LOG 261 189 c2d2a3b54aeed23bdee9f1da1ab332deed2af992c5555d20
+LOG 262 33 66b90b6a8
+LOG 263 143 9196c3bd58892237afcd0f4e7f93548646c8
+LOG 264 169 56bf8f82b0923225b697a5483e100e954e359cb11f0
+LOG 265 181 4f93abb4f51fbef232b6574ab9dfd64ce8e83b667e8978
+LOG 266 133 74998b0ef10be3f5646b75404b44d63a80
+LOG 267 41 ac891d59d28
+LOG 268 91 eb2b7b5b4fad455d1b3ae8c
+LOG 269 153 88a8d937eeafd64e94ee8b65bfb5b32e787b5f8
+LOG 270 30 b2db6ad0
+LOG 271 89 9e5e4744a897b68ebd491b0
+LOG 272 161 bfabe557779f657a89864f7d4495aa323e56ab5f8
+LOG 273 30 ee0ba0d4
+LOG 274 176 b85611976b33191eadce3aea9eb64562d83a233b5526
+LOG 275 184 d1fa2b1a4ee22745aeda38bd1b5a454911335fcb2d6474
+LOG 276 24 d113d4
+LOG 277 41 c323e6c92a8
+LOG 278 139 48ceccb7abb64bddfb09df32e5af62de88c
+LOG 279 163 576107e96bab8953a7f159d7baae488613ee65e5a
+LOG 280 207 7c3ba3e546cb19ba23d5ad990796bd71510d91d5d1ae69bb22ca
+LOG 283 99 d017ce7eb8fe8aefea2a558a8
+LOG 284 24 64c958
+LOG 285 69 4bddaa3c5755b15520
+LOG 286 96 d1550683dcd1085317e9b644
+LOG 287 26 67301dc
+LOG 288 19 d5d0a
+LOG 289 23 94f87a
+LOG 290 128 5adaef5ba74f54827444ee03e99dc674
+LOG 291 50 dab3bdcc577dc
+LOG 293 111 58ef793a3c457fd91d1d599dc5c8
+LOG 294 176 d2fccb19f556bfd447788c6a8ef5a12aeabef8ed2557
+LOG 295 203 278c2e6cb639d96a2224d4ebddd78ccaeb5d0e7515b5477777a
+LOG 296 11 56c
+LOG 297 71 43b6af51a45deb267a
+LOG 298 23 56f25c
+LOG 299 29 af599aa0
+LOG 301 128 e3f4caae9160ca532d65287fdfcee977
+LOG 302 86 b43f923b7e9aaa9af4b6f0
+LOG 303 10 b58
+LOG 305 188 57b663a23b26add302232bc63be892a55aaa8f59be85794
+LOG 306 28 887d505
+LOG 307 48 ecfb6719b3d6
+LOG 308 13 fd60
+LOG 309 97 87edeb6b26f162c4c2b2bb330
+LOG 310 40 f7a5477d58
+LOG 311 153 677576b2ccdd9de57e08ad5112f98951555d5f8
+LOG 312 35 9966653f8
+LOG 313 166 4d057dbd71688891f3a38911d59808bcb19328e8bc
+LOG 314 120 bb3fb5596b2d896269f8d6b5ee9fb7
+LOG 315 172 cbdbc7fd235863febe368f6c557b5b2f654a4d95b57
+LOG 316 16 ef44
+LOG 317 137 701ad1d756f1a27aca9a3acf4b59d118e28
+LOG 318 153 99638cdedb9aa0cc97ad7489adfc67b62de33a8
+LOG 319 177 58ef2df5ac55cd62f6677de2d67689526645067909638
+LOG 320 145 8fbe56448dd1011d9c2cf9dbabd85aa83bab8
+LOG 321 28 ec92bbe
+LOG 322 83 320ff8ef9bd6730f9177e
+LOG 324 81 464f3bb7a9150feaf1a38
+LOG 325 177 675c5467510f75f393f3e5751532eeea8c80ee36a8228
+LOG 326 56 d1738e767dd7f6
+LOG 327 38 bd722669d8
+LOG 328 25 70fa978
+LOG 329 158 6d41aa32f5af92ede277477413fa4648f9ac6c9c
+LOG 330 63 8d0d75ac95f57eca
+LOG 331 135 6856951abe35cbd999f52f3cbf579f2338
+LOG 332 134 e9c719ad7591bdaeca32f656cdb6fbaf14
+LOG 334 22 fea0b8
+LOG 336 149 68d653bb4ae8aa23e567c8b1bdec908cd96b00
+LOG 338 152 7e84632d4e95f6f19d65ab1cf7125a846a9f64
+LOG 339 72 475ad44888dabd7a65
+LOG 340 57 f0467acc3bb4538
+LOG 341 169 bba8eb5febd92fad11d87baddb2887b6a54aac962b0
+LOG 342 140 f56eada8a66a16d68eed6116bd89e38dfd6
+LOG 343 185 8d75d595dd37aaef0741848cecc22f567244446a89623a0
+LOG 344 99 43bb25a3ac34951238aac8aca
+LOG 348 104 aaa8ab99e8d5915fdaffef5447
+LOG 349 133 928ef51871eb4407acaee2283be760d1a0
+LOG 350 111 1d58e9995e8f1af3aa3a8c2ad67e
+LOG 352 152 44a9baefe3baa5776f528ce98776d12b2f5f07
+LOG 353 168 a1591e42af4530dd092295b5efbd6523bfcc8e6655
+LOG 355 125 7194316f4c841148f1e32ceb3458e3a0
+LOG 356 77 78ee33f884a90a52ee80
+SLACK 100000760
+CACHE 339
+RCACHE 0
+RCACHE 22
+BILL 61
+RCACHE 16
+TICK 2 291 6
+WF 298704159 169 500 26 8
+100003227 8 16 2 78 23 16 1 0
+100003244 4 1 5 0 17 16 4 0
+100003245 4 1 6 35 16 0 4 1 100003227
+100003312 2 2 4 0 28 8 16 1 100003244
+100003339 4 1 6 41 20 16 1 1 100003312
+100003355 1 2 5 107 10 32 9 0
+100003414 4 1 2 86 28 0 0 1 100003244
+100003419 1 16 6 52 14 32 9 0
+WF 718940622 178 1000 24 2
+100003451 2 1 3 20 17 16 9 0
+100003507 2 2 2 63 22 8 0 1 100003451
+WF 868979558 196 1500 20 7
+100003544 4 4 3 63 28 0 4 0
+100003620 8 4 2 117 14 16 16 1 100003544
+100003661 4 8 3 62 13 8 0 1 100003620
+100003681 1 1 2 52 11 16 16 0
+100003752 4 16 2 87 10 32 9 0
+100003780 2 2 6 4 29 32 16 2 100003620 100003544
+100003840 4 16 6 84 18 0 0 2 100003544 100003780
+WF 805585780 142 2000 22 2
+100003898 2 2 4 22 5 32 1 0
+100003980 1 4 4 72 21 32 4 1 100003898
+WF 755270388 158 1000 19 6
+100004067 2 1 2 86 23 32 16 0
+100004164 4 16 2 89 0 8 1 1 100004067
+100004232 8 4 4 13 8 16 4 0
+100004278 8 8 4 30 21 16 9 2 100004067 100004164
+100004342 4 4 5 100 24 8 9 0
+100004363 1 2 5 9 25 8 1 2 100004232 100004067
+WF 896798195 69 3000 10 7
+100004431 8 1 4 26 24 0 4 0
+100004495 1 4 3 69 26 0 9 1 100004431
+100004550 8 2 6 94 16 0 16 2 100004495 100004431
+100004597 2 4 5 4 2 32 1 2 100004431 100004550
+100004651 2 16 3 40 7 8 9 1 100004597
+100004727 4 2 2 51 19 0 4 2 100004651 100004431
+100004761 2 16 2 50 19 32 0 2 100004727 100004651
+WF 555497517 88 500 10 4
+100004829 8 16 3 6 27 0 16 0
+100004900 4 4 3 28 6 32 0 1 100004829
+100004923 4 8 4 56 29 32 1 2 100004900 100004829
+100004962 2 8 2 79 21 0 4 0
+WF 525401659 141 2000 24 3
+100004976 1 8 5 18 27 16 0 0
+100005036 4 8 6 57 22 16 9 1 100004976
+100005088 4 1 5 32 10 8 9 2 100004976 100005036
+WF 482684563 130 2000 22 2
+100005107 2 1 5 44 -1 0 0 0
+100005163 4 8 6 25 27 0 1 0
+WF 782277865 117 3000 28 1
+100005249 1 4 6 5 14 32 0 0
+WF 498441567 186 1000 13 7
+100005326 1 16 2 2 15 32 1 0
+100005383 1 8 5 90 -1 0 16 1 100005326
+100005450 4 2 5 29 1 8 0 0
+100005500 2 4 6 83 19 0 4 1 100005450
+100005596 1 4 3 110 23 32 9 2 100005450 100005383
+100005691 8 1 5 27 2 8 1 2 100005383 100005450
+100005753 2 1 5 63 24 32 16 2 100005500 100005326
+WF 526668450 192 3000 29 8
+100005757 1 2 5 10 23 32 16 0
+100005793 1 1 3 38 28 32 9 0
+100005808 4 2 6 8 24 32 4 1 100005757
+100005854 1 4 2 95 29 8 4 1 100005757
+100005928 4 2 6 45 6 32 4 2 100005757 100005854
+100006022 1 16 4 40 19 32 0 2 100005793 100005928
+100006089 2 2 6 17 5 0 4 1 100005854
+100006094 1 8 2 25 10 32 16 2 100005793 100006089
+LDOWN 511
+LOG 0 204 3bab33fb9fbaef88af96a7654bba676a5744f5599d95bba4585
+LOG 1 103 412eeeca89e50ef796bb774228
+LOG 2 146 d588b356490790c1cf66de2097ba65e99d1d4
+LOG 3 165 eb047b5b67bdaf6666bfaa677e3b3bbfaa9fff1970
+LOG 4 204 92bb2ff5d3255caaf3bbd75a8d1932ed2ceda28a2d6c96aa2f5
+LOG 5 53 32bdcfff271d38
+LOG 9 79 464711042b2fdf7df6ac
+LOG 10 34 7b45f7df4
+LOG 11 45 4448c53ecf68
+LOG 12 40 d5d552ae56
+LOG 13 112 015505c8ec7ae3d5beba319aa92f
+LOG 14 18 f661c
+LOG 15 16 8475
+LOG 16 138 cf6d1a45173f116d27b9fb2e465874fb790
+LOG 17 162 58d2e88423457411347dd3269919fd664615466b4
+LOG 18 53 767d6bede29928
+LOG 19 36 bb333aaae
+LOG 20 106 41d0688ce9877ad8d5a994cd1d8
+LOG 21 114 64644113f8235ea22a17a3d5664fc
+LOG 22 170 b85444e4f5bb64e931ecb4eeaf79f8b3a220efa5cb0
+LOG 24 81 ca86ac6719abb3e961230
+LOG 25 185 fba232c97a91ee1907559911dc4d5ea25dbab74afbf9fb0
+LOG 28 200 b56c199a7a2a2b3a08a68cf6c683e44fa7597ea8ab1c541e67
+LOG 31 22 705d94
+LOG 32 69 a8af16aa7fbc17e120
+LOG 33 137 ac74ce82faaaaa2d54465ab9fd9365ff3a0
+LOG 34 119 cb2b32a4b52ebe9644456f5bb58838
+LOG 36 42 8ceaaa88af4
+LOG 37 102 67b91d6256fe7ad249733b7d58
+LOG 38 67 c46a7857b52caa58e
+LOG 39 152 7a5ac8e8bdbcbeadceb9af4cbc8b6e1ad2696e
+LOG 40 76 0aa8a0d5dcf19442a70
+LOG 42 201 657a32bd7bd13f578ac8ed905cca8b53faab15e096a5fdd9d20
+LOG 44 53 e924449b9b69a8
+LOG 45 25 64cdde8
+LOG 46 25 3d7eb70
+LOG 47 197 7e95e54ab764a2e771d67d3cced15d6bd566d75888fe3fbf20
+LOG 48 53 12adb2efa2cd30
+LOG 49 196 debade215dfeb96b6d1d2cb7f8ecf6aa2aac5fd1f5474d145
+LOG 50 114 2126364bf2ac7f15abd5deb28ac94
+LOG 51 43 b5ecd45eaec
+LOG 52 41 d5b2aac99a8
+LOG 54 133 5567e8d995d991cd029d7c888ee8caf2a0
+LOG 55 10 abc
+LOG 56 102 49290d44666ef19a746a82ceb4
+LOG 57 135 d224cb1e52de83d5919dedd1d7dad92a88
+LOG 58 96 29e4fde26eb5bd7ab97a45c4
+LOG 59 188 cd4b91fdca95ac1ae965bd33a3a3f7fb58809dd7c942c56
+LOG 60 188 dc5b3fd0f9323acef2ae9f62332358b72d57ec2dc3cd63c
+LOG 62 183 de645478aeff2f1dd16dd38ab38c9eaeb3c4b9df387458
+LOG 63 29 8b1aa2b0
+LOG 66 180 d9632764829ee71bd767cc25197762be5ed774ae8cf67
+LOG 67 24 72f775
+LOG 68 183 4895eb0cd333bd5ca894b51988d38a09591af4b19845a8
+LOG 69 94 6ccdf8f846469937bad27cf0
+LOG 70 87 66165ddec1196f972e6a8a
+LOG 72 77 17398a6ac96a77edddf8
+LOG 73 105 d65a9fd72dd935bfdfbacdf2a38
+LOG 74 72 efc962c45cd5ebab2f
+LOG 75 76 8eeb5a7a980aadc695c
+LOG 76 53 a5efd7f7dcaa38
+LOG 78 64 a3af22f66a50562f
+LOG 81 174 05af5d8780c9bbe13be645792adcab4d11958a32fad0
+LOG 82 156 476144eaed94447e8cecea77aeecc93ed5b8e84
+LOG 83 16 f1ac
+LOG 84 73 fef3a47d5111107d328
+LOG 86 66 4b226ad6aa46ae8f4
+LOG 90 20 ac3ac
+LOG 91 93 5ba974953a3a245541816bb8
+LOG 93 143 466d3d46e8d5656abdd6bdb59dd565a257cc
+LOG 94 157 bc463aa2e493d5646bba786b91a65e574bda9b38
+LOG 96 195 4891411d1afbb94d5541d2cce8fd525d5a564f92dcfff764c
+LOG 97 9 430
+LOG 98 200 6ef1a37f1dbabab3af9a765be65545ceaee058b364e98abb35
+LOG 99 17 d9d30
+LOG 100 118 4deabd3fd5dff6a3ad71f2c185b598
+LOG 101 87 466766775229ee4955de7e
+LOG 102 189 64e32a2321dde33222f9255d945687a4c488a8ac951b1da8
+LOG 103 53 71f8cb85cad1a0
+LOG 104 127 115be324675eea365cdb8eaef62e6eec
+LOG 105 44 6747e8aeee6
+LOG 106 172 6645b364ce6e64e8ef6b2511d5bb2f6baa846451a57
+LOG 107 172 54595b1ec96cc4afd19a46d2a379dc7a55a5485c8a5
+LOG 108 39 646d375228
+LOG 109 99 8fb56a9e56276a9eab93d52de
+LOG 110 153 4915124548bd556e5568ddac11b756d09724d30
+LOG 111 174 49d0591ac4c97a2b767aef20ccf5096b6ab995f32cb8
+LOG 112 194 aac95d75f9acf466a3b8c82c7b1b48ed634447462574eacf0
+LOG 113 121 4bfc95b371c3a5cacada264ed689170
+LOG 114 92 aa72fa75b5ba5f3cf97ba55
+LOG 115 26 ef6b240
+LOG 117 68 78ded746662d57747
+LOG 119 97 eaec9b5bddfb08aa8fb62bde0
+LOG 120 24 8f7c27
+LOG 121 131 af86a8c8bd7eaf09ff4187ab2cf5bbf5a
+LOG 122 18 792d0
+LOG 123 106 4228fea696ab6c8092a3b3bc640
+LOG 124 59 73de8862d9c4a08
+LOG 128 89 f2f56467575474f5bccb970
+LOG 129 163 8dd53f1b3b355c545fed8b91af4656d9ae468c6ae
+LOG 130 93 43a995958ee349a116b45fb0
+LOG 131 40 7c9ea2af67
+LOG 132 83 74a258a3e4244c2b3b568
+LOG 133 191 4d7f564abfd4777b32d6d8b3ad7cbc9c73efdd5d8454dd70
+LOG 134 63 16e589e0b1be64ae
+LOG 135 124 44590d906b9e95455a995d3571157a7
+LOG 136 130 2ac6176a39dacfb233efaec969edaccd8
+LOG 138 177 4b3167b8a55b56fcceb7dec5c9c54056aa23fb16f5f20
+LOG 140 172 545e924775efe775b271659b77191d523dddcd52d67
+LOG 141 47 4b63a5572da8
+LOG 142 92 9d9b25bad86a9124a5aefc6
+LOG 143 82 75efd2b7c547bb1b76e10
+LOG 144 37 d5aa3a9320
+LOG 145 182 bba8ac8a8d1d7571e0a58c3ebf68e99c8ae9d4727ad598
+LOG 146 111 4ffb797aed117e7ed5bb2b35555e
+LOG 147 12 aa6
+LOG 148 175 6dd91d16a6f34598889ee5644bababb32d48fe220a08
+LOG 149 133 e6746f9acb75c8aa32beafb6572a057a20
+LOG 150 38 766ccd231c
+LOG 151 150 b63ac6756c61d6bfab4650c8f73be6e92b55bc
+LOG 152 134 9aa3aaa55988795eb64407288ea3ad1558
+LOG 154 114 33fbb6672fe8c77eca8dce9c9a4b8
+LOG 155 176 e8b6d57a9a469198d5cc8a59ae7cc4b6aaf97bceda56
+LOG 156 110 9d1bec9dc6b2f6bfbbdecb4f8ab4
+LOG 157 130 6fd6a4e2551ad40cad4ad987f78856dd8
+LOG 158 155 6ba6732559fc5ca8945cda4a89aa44bdbbf66ec
+LOG 159 65 15d8b07f4ea23b320
+LOG 160 168 cf85762c4541163adc2ccaed2c69d23f5cebd33bc5
+LOG 162 144 64469f7ff2b55cb9917bd91a32ac5de2ba36
+LOG 163 78 cbe2fb9e34eadee46400
+LOG 164 138 f33bb6457582957a5c9db12af56b4548f54
+LOG 165 122 67222b1d5935d6a348c9fb5c956e698
+LOG 166 127 f60a6a8288b33a371e5cdd22433b4a8c
+LOG 167 182 ac95173689d59322df872f53551c89ad6d12f6f1e96954
+LOG 168 91 1c3ad86b51262a3730aebcc
+LOG 169 149 7475f3bd45ce7fbbe7575867ad1da2ab35a8c0
+LOG 170 87 68d6f494d9d276e8aa238c
+LOG 172 11 ece
+LOG 173 25 775aaa0
+LOG 174 47 52a7ac8f078a
+LOG 175 25 777aac0
+LOG 176 14 e39c
+LOG 177 201 330c88ccab1e464ab1f64430ad5747caf6660af2bb334562330
+LOG 178 83 b1154b46cf246b6d4936a
+LOG 179 60 4ea99daf2bf9905
+LOG 180 178 4caacbddd595d599b61ad5cdabd8bea2e68ea95d11114
+LOG 182 9 b60
+LOG 183 115 53a38d1bcbe2b2ba6a9629f22054c
+LOG 185 142 15ed38b728def666ab3f64467b15fddd3a50
+LOG 186 157 e2648a944aaeb140d15235b13647d6b919f89968
+LOG 189 85 f5151fc57662b6e254dd38
+LOG 191 167 88f534447ac9756b8fdc56b37335779a7411a89a7e
+LOG 194 174 6547c83b44ed5aabfd971f2db63a5d53aaecbd591194
+LOG 195 56 497456eeb2a3e4
+LOG 196 140 7ac3a7a319bc74e57a963b574d5bb6688d4
+LOG 197 59 77478b5e3f4cec8
+LOG 200 90 9623f0c92a6f452de767710
+LOG 201 122 d15b769e33eb16c9d5690cf11d2d590
+LOG 202 14 5690
+LOG 204 164 fbd95cce4589d0a54cf590a95e752f5da5674b7a5
+LOG 205 103 97d77b915b2545bb227975647a
+LOG 207 32 8d14a235
+LOG 208 64 577ad57765b2ae45
+LOG 209 188 97645aba309bf8ab3658b7adce909956ece1b323fc999c7
+LOG 211 90 4eb082ad032bb4e8ad72340
+LOG 212 152 48341911bd4cb1985d9d5d9fac76a9f268fabf
+LOG 213 54 bdf3b2361111dc
+LOG 215 153 ca8e8cb47fef66cffbad5ddeb61d77eb1ea3830
+LOG 216 180 492d3abcf52a3bcf68d2b4b192fda56a9da4e68e84e40
+LOG 217 180 5a3a7450bffaa83b3cada799795c5e8b68b2cdf26feb5
+LOG 218 131 eee95e32a0ed72e88cb90a2bf72f674ce
+LOG 219 177 de22f74ff76973327ad54b595b355719d2b2f526cfd38
+LOG 220 48 1deb445aadd8
+LOG 221 21 8bd330
+LOG 222 14 6ad0
+LOG 223 190 af9d39622d5b0eb17375ab3be6adc369136b7aea8db76f5c
+LOG 225 96 d85ba448ce2ae2ccb3bab354
+LOG 228 11 e88
+LOG 229 157 4d63a448d1553477b5e5f5dd67f4b199595e9e20
+LOG 230 44 74b95590145
+LOG 231 186 77f95f4a2e0b97e5cdb97cb6f8f38edd5b6bebcf2adacd0
+LOG 232 56 6dc64b14ec8354
+LOG 233 80 76ddd2a3ba60f96ad8b4
+LOG 235 197 7777f51917466766a8ed1b501d6365bd6c11fcd42ef1e5d2b0
+LOG 238 82 77eea972b9774654d0494
+LOG 239 187 85568bef6ed2a22f477f523df9b999956a56acf59e4b930
+LOG 241 97 558ab53332aa2b6677883b9b0
+LOG 242 157 4c2f268a515ddd355ebb2221dd22fe83c71d5ab0
+LOG 244 133 42abdce3b64551a2333ce97f752bb49a30
+LOG 245 195 48dedaac222f6d9221e884e8cca65abf34fdfad6ebbd7aaec
+LOG 246 55 5815a84a89a55c
+LOG 247 68 566411e65e869d5bd
+LOG 248 44 45ccd919514
+LOG 250 154 2bf2c8dbcd9452c492c8d5faba1c8b35537b69c
+LOG 251 153 512a675eb699e3952ea65de49de91c328af6a30
+LOG 252 113 669d174995389723f4770e87a8f28
+LOG 253 68 177dbcceabf655bb5
+LOG 254 69 ea76b2277551d5f228
+LOG 255 25 54cb1a0
+LOG 256 120 baac552f4ecb55d78f959d855dba56
+LOG 257 46 f59a223519d4
+LOG 258 77 12dac5778844adaedda0
+LOG 259 25 5ad6b30
+LOG 260 184 54accd539d27c9c576c0acd9732296d77465facf7ab3f4
+LOG 261 19 5990c
+LOG 262 170 788be935cb9b6e478c96e4ebd995479bc2bb09e6498
+LOG 263 101 47fc76657d7d963fac11d16ab0
+LOG 264 80 4daa37abdc16d7b1fae7
+LOG 265 76 993a19e32d77447cba5
+LOG 266 133 5e87465456ed336c77478af11fdb1f4d30
+LOG 267 143 676cead478616cecdf30322f6619dac7257c
+LOG 268 18 55b1c
+LOG 270 104 5b1b7f3e88ceb5199791635b24
+LOG 271 99 b76cdfa4bc4fdd92a6d5c6778
+LOG 272 179 8eb99084f72b215d95e6748915defaab53ecbf8b48888
+LOG 274 80 eccc276b19633a67422f
+LOG 277 53 6afd98895157b0
+LOG 278 64 f50ba49d99ea117c
+LOG 279 178 a8eaac8eded2375aca66c3ab0ce2a0febb721592f791c
+LOG 280 57 d859598af7c65c0
+LOG 282 40 f6db6d62e5
+LOG 284 156 ad9efec8af52d57b758b3e8b394cf0741c9eb64
+LOG 285 86 465e2ad45ecf1bd3b3fab4
+LOG 287 147 4e631d137715bfb51d7ca3a448d7abbaf554a
+LOG 288 130 8be571d70be1504498108acaea8b97af0
+LOG 289 164 4add759187990e9b92e91dd1bc5ac9e32675cd245
+LOG 290 166 d9b323bf48b23a22d678eab5c89854dad4e9fa3a90
+LOG 292 181 cf9592a33dd186416a7953c9175ceae83fc6488fd33b00
+LOG 294 86 7ac8cf5cac91d9d3245d5c
+LOG 295 134 9bc379e6ba9232b689b5ca8ad2a8bfb350
+LOG 296 107 7f338c91b79930d62a3bbd2f76a
+LOG 297 133 8e45ea9b2d1cd255cff89dfa33c51d9ab8
+LOG 299 45 ac791f75b6a8
+LOG 301 199 187a88ddece26678d1d98483db55dd5f204f173a0b55977a5c
+LOG 302 192 66d19f1d3e9858de564d188ed543a8b2a33ffd17abd193c4
+LOG 303 74 26b75757579f889f550
+LOG 304 56 ba2a2d767fcded
+LOG 305 138 666c28e9ac545733d4e4417baf5fb0f1dd0
+LOG 306 52 d6d7474cd9aa5
+LOG 309 160 fc49dda8949bd45c519b767952bb2895e9ddebac
+LOG 310 42 fbbc8999010
+LOG 311 53 de2d7cb6caad70
+LOG 312 164 347f51f0f81153ac3a667f767f9de97ab1edf29dc
+LOG 314 57 46a76dd5d190930
+LOG 315 85 76564c8888eaa2ba88d128
+LOG 317 134 823ef2f776ecaf7b20acbae9335cb25494
+LOG 318 145 e957d5ea97882e46e8b56b54edd52cd2f9f28
+LOG 319 196 0a8bb32388ad2db1d7b31657d06aebd16224cb55530f0fc46
+LOG 320 26 dfc75b8
+LOG 322 130 f4606ecc9aa228cfd183ddd152b95dd14
+LOG 323 120 3c4cce3a8ee257765699dab7322b1c
+LOG 324 159 105672cd59de3de83b3d4591faa27d5a4751678c
+LOG 325 169 05964a931d51556223da54c8fdf2a55e0ff2be5d9a0
+LOG 326 103 06446b2ceea4c6aaef6d5c57ec
+LOG 327 10 998
+LOG 328 153 b9d7c574bdd2e46d91911ab776952fa8aa396a8
+LOG 329 23 4f4c5c
+LOG 330 184 75efcabea2d99d9d70ef77478b0cc27af6d74254771ed5
+LOG 331 198 b6a15e5eb59234775a8bba2158881fe477ef871115bc8ed954
+LOG 332 135 671f7accffaba71a882d3d576ad581876c
+LOG 334 106 8aaf1bab7c88d5a90b9e1b434dc
+LOG 335 190 3578e323d8e876bcd32f4eaf591d6cfea3f7d5ba472d57d0
+LOG 336 176 f66ad8424f5751d3ad5ce75a688f65496c3557a32e84
+LOG 337 179 b91d9735f965d2a55541fb9efbf77a6afd955d2d4deb0
+LOG 338 14 acbc
+LOG 339 86 aaa83cfdd5ddaa326d9d10
+LOG 340 56 441113ba1416e7
+LOG 344 47 aa17322f65ca
+LOG 345 83 bac70ccd52c057bf4546a
+LOG 347 72 ee9ec4662f577aa646
+LOG 348 137 7b34e795e4fa3bf74f963ea964a8c8e3238
+LOG 349 13 8a30
+LOG 350 91 f57a58cccef6960cbec4eec
+LOG 352 67 447c51d1944b2bab8
+LOG 353 181 eef95570b9f8f1114f22576a8d2ebaebe2aaa124e211b8
+LOG 354 39 78b539736a
+LOG 355 174 456b1bbd19761bb3d7666445b93fc2f5448e92aed590
+LOG 356 24 e9b237
+ALARM 206
+BILL 5
+RCACHE 10
+RCACHE 19
+CACHE 111
+RCACHE 9

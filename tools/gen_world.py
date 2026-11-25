@@ -41,6 +41,10 @@ def main():
     ap.add_argument("--link-events", type=int, default=6)
     ap.add_argument("--quota-events", type=int, default=4)
     ap.add_argument("--log-rate", type=float, default=0.2)
+    ap.add_argument("--wfs-max", type=int, default=6, help="每 tick 最多到达的工作流数")
+    ap.add_argument("--jobs-max", type=int, default=6, help="每个工作流最多作业数")
+    ap.add_argument("--pat-len", type=int, default=6, help="模式串最大长度")
+    ap.add_argument("--log-len", type=int, default=30, help="单行日志最大符号数")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
@@ -72,19 +76,38 @@ def main():
         rack_node.append(dc * per_dc + rnd.randrange(per_dc))
         rack_cap.append(rnd.choice([400, 800, 1600]))
 
-    # 网络：随机生成连通图（先环形保证连通，再加边）
+    # 网络：每个机房内部近邻稠密，机房之间用少量骨干链路相连
     edges = []
-    for v in range(N - 1):
-        edges.append((v, v + 1, rnd.randint(1, 20)))
-    edges.append((N - 1, 0, rnd.randint(1, 20)))
-    extra = max(0, min(N * 2, N + 2 * D))
-    seen = {tuple(sorted((u, v))) for u, v, _ in edges}
-    while len(edges) < extra:
-        u, v = rnd.randrange(N), rnd.randrange(N)
-        if u == v or tuple(sorted((u, v))) in seen:
-            continue
-        seen.add(tuple(sorted((u, v))))
-        edges.append((u, v, rnd.randint(1, 20)))
+    seen = set()
+
+    def add_edge(u, v, w):
+        if u == v:
+            return
+        key = (min(u, v), max(u, v))
+        if key in seen:
+            return
+        seen.add(key)
+        edges.append((u, v, w))
+
+    for d in range(D):
+        base = d * per_dc
+        for i in range(per_dc - 1):
+            add_edge(base + i, base + i + 1, rnd.randint(1, 4))
+        add_edge(base + per_dc - 1, base, rnd.randint(1, 4))
+        extra_local = max(par_dc := per_dc // 2, 2)
+        tries = 0
+        while extra_local > 0 and tries < per_dc * 4:
+            u = base + rnd.randrange(per_dc)
+            v = base + rnd.randrange(per_dc)
+            tries += 1
+            if u != v and (min(u, v), max(u, v)) not in seen:
+                add_edge(u, v, rnd.randint(1, 6))
+                extra_local -= 1
+    for d in range(D - 1):
+        add_edge(d * per_dc + rnd.randrange(per_dc), (d + 1) * per_dc + rnd.randrange(per_dc),
+                 rnd.randint(5, 15))
+    if D > 2:
+        add_edge(rnd.randrange(per_dc), (D - 1) * per_dc + rnd.randrange(per_dc), rnd.randint(8, 20))
     E = len(edges)
 
     # 租户树
@@ -103,7 +126,7 @@ def main():
     huff = Huffman(freq)
     patterns = []
     for _ in range(P):
-        ln = rnd.randint(2, 6)
+        ln = rnd.randint(2, args.pat_len)
         s = "".join(rnd.choice("abcdefgh") for _ in range(ln))
         patterns.append((s, rnd.randint(1, 50)))
 
@@ -121,14 +144,15 @@ def main():
 
     for t in range(1, T + 1):
         cnt = 0
-        while rnd.random() < args.load and cnt < 6:
+        while rnd.random() < args.load and cnt < args.wfs_max:
             cnt += 1
         for _ in range(cnt):
             wid = 10 ** 8 + rnd.randint(0, 8 * 10 ** 8)
             o = rnd.randrange(K)
             v = rnd.choice([500, 1000, 1500, 2000, 3000])
-            dl = t + rnd.randint(8, 30)
-            n = rnd.randint(1, 6)
+            # 先建 DAG 再按关键路径给截止时间
+            dl = 0
+            n = rnd.randint(1, args.jobs_max)
             e_scale = rnd.uniform(0.7, 1.8)
             jl = []
             ids = []
@@ -150,6 +174,20 @@ def main():
                 jl.append(line)
                 ids.append(jid)
                 durs[jid] = max(1, int(round(e * e_scale * rnd.uniform(0.6, 1.6))))
+            # 估计关键路径（e 之和）
+            es = {}
+            cp = 0
+            for row in jl:
+                jid, _, _, e, _, _, _, _, k = row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8]
+                best = 0
+                for pid in row[9:9 + k]:
+                    pj = es[pid]
+                    if pj[0] + pj[1] > best:
+                        best = pj[0] + pj[1]
+                es[jid] = (best, e)
+                if best + e > cp:
+                    cp = best + e
+            dl = t + int(cp * rnd.uniform(0.9, 1.6)) + rnd.randint(5, 15)
             events[t].append(("WF %d %d %d %d %d" % (wid, o, v, dl, n), jl))
             wf_jobs_range.append((t, wid, ids))
 
@@ -187,7 +225,7 @@ def main():
     for t in range(1, T + 1):
         for x in range(M):
             if rnd.random() < args.log_rate:
-                ln = rnd.randint(3, 30)
+                ln = rnd.randint(3, args.log_len)
                 syms = []
                 for _ in range(ln):
                     syms.append(8 if rnd.random() < 0.15 else rnd.randrange(8))

@@ -268,6 +268,10 @@ class Sim:
 
         self.wfs = []
         self.wf_by_id = {}
+        self.wf_fee = []            # 每个工作流已花费用（用于诊断）
+        self.fee_run = 0
+        self.fee_pull = 0
+        self.fee_trans = 0
         self.jobs = []
         self.job_by_id = {}
 
@@ -330,6 +334,8 @@ class Sim:
         x = job.machine
         p = w.price[w.rack_dc[w.mach_rack[x]]]
         fee = job.c * p * (r - job.start)
+        self.wf_fee[job.wf] += fee
+        self.fee_run += fee
         for a in self.ancestors(self.wfs[job.wf].tenant):
             self.settled[a] += fee
             self.rate[a] -= job.c * p
@@ -358,6 +364,8 @@ class Sim:
         if kind == "DONE":
             j = self.job_by_id[int(toks[1])]
             job = self.jobs[j]
+            if job.state != Job.RUNNING:
+                return
             x = job.machine
             self._release(job, self.t, to_pending=False)
             job.done_rack = self.w.mach_rack[x] if x >= 0 else -1
@@ -422,6 +430,7 @@ class Sim:
         wf.arrive = self.t
         wf.total = n
         self.wfs.append(wf)
+        self.wf_fee.append(0)
         self.wf_by_id[wid] = wf.idx
         for line in job_lines:
             jid, c, mem, e, img, s, z_in, z_out, k = line[:9]
@@ -588,6 +597,9 @@ class Sim:
         t_pull = ceil_div(q_reg, w.B_reg) + ceil_div(q_rack, w.B_rack)
         fee = cost_tr + q_reg * w.U_reg
         wf = self.wfs[job.wf]
+        self.wf_fee[job.wf] += fee
+        self.fee_trans += cost_tr
+        self.fee_pull += q_reg * w.U_reg
         for a in self.ancestors(wf.tenant):
             self.settled[a] += fee
         d = w.rack_dc[r]
@@ -633,13 +645,8 @@ class Sim:
         """按第 T 轮结束后仍在运行的作业以 r=T+1 结算，返回 (利润, 明细)。"""
         w = self.w
         t = end_tick if end_tick is not None else w.T
-        total_fee = 0
-        for k in range(w.K):
-            total_fee += self.settled[k]
-        for job in self.jobs:
-            if job.state == Job.RUNNING:
-                d = w.rack_dc[w.mach_rack[job.machine]]
-                total_fee += job.c * w.price[d] * (t + 1 - job.start)
+        # 全平台总费用 = 根租户在 t+1 时刻的账单（含仍运行作业按 r=t+1 结算）
+        total_fee = self.settled[0] + self.rate[0] * (t + 1) + self.inter[0]
         revenue = 0
         for wf in self.wfs:
             if wf.finish != -1:
@@ -880,6 +887,8 @@ def run_world(world_path, solver_exe, timeout=30.0, verbose=False):
             ev_by_tick.setdefault(t, []).append((body, jl))
 
     due = {}                    # tick → [job_idx]
+    util_sum = 0.0
+    util_n = 0
 
     proc = subprocess.Popen([solver_exe], stdin=subprocess.PIPE,
                             stdout=subprocess.PIPE, bufsize=0)
@@ -892,14 +901,19 @@ def run_world(world_path, solver_exe, timeout=30.0, verbose=False):
     first_bad = None
     illegal = None
     instr_count = 0
+    prep_sum = 0
+    prep_n = 0
+    prep_max = 0
 
     for t in range(1, world.T + 1):
         sim.begin_tick(t)
         # 组装本 tick 事件：DONE 在前，其余按类别顺序
         units = []
+        seen_done = set()
         for ji in due.get(t, []):
             job = sim.jobs[ji]
-            if job.state == Job.RUNNING and job.fin_tick == t:
+            if job.state == Job.RUNNING and job.fin_tick == t and ji not in seen_done:
+                seen_done.add(ji)
                 units.append((CAT["DONE"], ["DONE", job.jid], None))
         for (body, jl) in ev_by_tick.get(t, []):
             units.append((CAT.get(body[0], 99), body, jl))
@@ -954,6 +968,9 @@ def run_world(world_path, solver_exe, timeout=30.0, verbose=False):
                     print(f"  [t={t}] {' '.join(str(x) for x in queries[i])}: "
                           f"期望 {expect[i]} 得到 {got[i]}")
 
+        util_sum += sum(sim.used_cpu) / max(1, sum(world.mach_cpu))
+        util_n += 1
+
         # 指令
         while True:
             line = _read_line(proc, timeout)
@@ -974,12 +991,20 @@ def run_world(world_path, solver_exe, timeout=30.0, verbose=False):
                         jid, x = int(toks[1]), int(toks[2])
                         ok, msg, info = sim.check_run(jid, x)
                         if not ok:
+                            if verbose:
+                                jj = sim.jobs[sim.job_by_id[jid]]
+                                print("  诊断: 作业", jj.jid, "state", jj.state, "rem", jj.rem,
+                                      "前驱", [(sim.jobs[p].jid, sim.jobs[p].state)
+                                              for p in jj.preds])
                             raise RuntimeError(msg)
                         s_prep, _ = sim.apply_run(jid, x, info)
                         ji = sim.job_by_id[jid]
                         d = durs.get(jid, sim.jobs[ji].e)
                         sim.jobs[ji].dur = d
                         sim.jobs[ji].fin_tick = t + s_prep + d
+                        prep_sum += s_prep
+                        prep_n += 1
+                        prep_max = max(prep_max, s_prep)
                         due.setdefault(sim.jobs[ji].fin_tick, []).append(ji)
                     elif toks[0] == "KILL":
                         sim.apply_kill(int(toks[1]))
@@ -996,6 +1021,8 @@ def run_world(world_path, solver_exe, timeout=30.0, verbose=False):
 
     profit, revenue, fee = sim.final_profit()
     done_wf = sum(1 for wf in sim.wfs if wf.finish != -1)
+    waste = sum(sim.wf_fee[i] for i, wf in enumerate(sim.wfs) if wf.finish == -1)
+    ok_fee = sum(sim.wf_fee[i] for i, wf in enumerate(sim.wfs) if wf.finish != -1)
 
     print(f"[judge] {world_path} vs {solver_exe}")
     print(f"  对账 {n_q} 道，错 {bad_q}" + ("" if not first_bad else
@@ -1003,6 +1030,12 @@ def run_world(world_path, solver_exe, timeout=30.0, verbose=False):
     print(f"  指令 {instr_count} 条，" + ("全部合法" if illegal is None else
           f"首次非法 t={illegal[0]} {illegal[1]}（{illegal[2]}）"))
     print(f"  完成工作流 {done_wf}/{len(sim.wfs)}，收益 {revenue}，费用 {fee}，利润 {profit}")
+    print(f"  费用构成：完成的工作流 {ok_fee}，未完成（浪费）{waste}")
+    print(f"  费用明细：运行 {sim.fee_run}，拉取 {sim.fee_pull}，传输 {sim.fee_trans}")
+    n_running = sum(1 for j in sim.jobs if j.state == Job.RUNNING)
+    print(f"  结束仍运行作业 {n_running} 个")
+    print(f"  平均准备时间 {prep_sum / max(1, prep_n):.1f} tick（最大 {prep_max}）")
+    print(f"  平均 CPU 占用率 {util_sum / max(1, util_n):.2%}，指令 {instr_count} 条")
     try:
         proc.wait(timeout=5)
     except Exception:                                  # noqa: BLE001
