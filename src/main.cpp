@@ -28,9 +28,42 @@ typedef long long ll;
 #include <ctime>
 static long long dbg_quota_fail = 0, dbg_nofit = 0, dbg_ok = 0;
 static long long dbg_dead_deadline = 0, dbg_dead_cost = 0, dbg_dead_late = 0;
+static long long dbg_core_prep = 0, dbg_core_run = 0, dbg_util_sum = 0, dbg_util_n = 0;
+static long long dbg_price_num = 0, dbg_price_den = 0;
+static long long dbg_prep_tr = 0, dbg_prep_pull = 0;
 #endif
 
 // ---- 可调参数（默认值即最终策略；-D 可覆盖用于实验）
+#ifndef PULL_MISS_PCT
+#define PULL_MISS_PCT 50   // 准入估成本时，假设镜像"没缓存"的概率（%）
+#endif
+#ifndef TRANS_MISS_PCT
+#define TRANS_MISS_PCT 50  // 假设输入要跨机架的概率（%）
+#endif
+#ifndef KILL_MODE
+#define KILL_MODE 1   // 1=按乐观估计止损 0=不止损
+#endif
+#ifndef MACHINE_OBJ
+#define MACHINE_OBJ 0   // 0=先比完成时间再省钱 1=直接最大化 收益-成本-占用代价
+#endif
+#ifndef WAIT_WARM
+#define WAIT_WARM 0   // 1=要拉冷镜像时，若时间宽裕就先等等（等缓存热了再跑）
+#endif
+#ifndef HOME_MODE
+#define HOME_MODE 0   // 0=用首个作业的最佳放置定主场 1=按整条链的传输+拉取总量定主场
+#endif
+#ifndef RACK_HOT_BONUS
+#define RACK_HOT_BONUS 0   // 偏好"已经在忙"的机架（缓存更热）：cost -= 该机架在用核数 × BONUS
+#endif
+#ifndef PREP_CAP_PCT
+#define PREP_CAP_PCT 0   // 单个工作流的"传输+拉取"预算占价值的百分比（0=不限制）
+#endif
+#ifndef SPILL_MODE
+#define SPILL_MODE 0   // 0=主场满了且时间紧才溢出到别的机架 1=永不溢出（宁可等）
+#endif
+#ifndef ORDER_MODE
+#define ORDER_MODE 0      // 就绪作业排序：0 松弛 1 价值 2 密度 3 进度
+#endif
 #ifndef MARGIN_PCT
 #define MARGIN_PCT 150    // 准入要求 收益 ≥ 成本 × MARGIN_PCT%（用官方评测器扫出的最优）
 #endif
@@ -332,6 +365,7 @@ struct Wf {
     ll cp_pess = 0;            // 悲观关键路径：Σ (e*F + PREP)
     int home_rack = -1;        // 主场机架：整个工作流尽量放同一机架，省传输/拉取
     ll fee = 0;                // 该工作流已产生的费用（含运行/拉取/传输）
+    ll prep_fee = 0;           // 其中"传输 + 拉取"的部分
     int peak_cores = 1;        // 同一"层"上并发作业的 CPU 之和（准入时看配额是否够）
     bool dead = false;         // 已确定无收益，不再投入
     int running_cnt = 0;
@@ -439,16 +473,28 @@ static std::vector<ll> alarm_win;      // M
 // 每机器运行中作业
 static std::vector<std::vector<int>> mach_running;
 static std::vector<std::vector<int>> rack_machines;   // 机架 → 机器列表
+static std::vector<ll> rack_used;                     // 机架在用核数（缓存热度代理）
 
 // 就绪队列
 static std::vector<int> ready_list;
 static std::vector<int> active_wfs;
+static std::vector<int> wf_running;        // 有运行中作业的工作流（止损只关心这些）
 static std::vector<int> wf_queue;          // 待准入队列
 static ll cap_cores = 0;                   // 全平台核数
 static double avg_rack_dist = 3.0;         // 机架间平均距离（开局统计，用于成本预估）
 
 // 自适应准入门槛：按"实际收益/实际费用"的反馈调整，避免在贵网络里乱花钱、
 // 也避免在便宜网络里过度保守
+// 实测成本（EWMA）：让准入的成本估计跟真实花销对齐，而不是靠拍脑袋的公式
+static double ew_transfer = -1.0;   // 每个作业的平均传输费
+static double ew_pull = -1.0;       // 每个作业的平均拉取费
+static double ew_run_tick = -1.0;   // 每核·tick 的运行费
+
+static inline void ew_update(double& slot, double v) {
+    if (slot < 0) slot = v;
+    else slot = slot * 0.9 + v * 0.1;
+}
+
 static int adm_margin_pct = MARGIN_PCT;
 static double realized_margin = 1.5;
 static int margin_samples = 0;
@@ -522,6 +568,7 @@ static void init_dynamic() {
 
     cap_cores = 0;
     rack_machines.assign(R_, std::vector<int>());
+    rack_used.assign(R_, 0);
     for (int x = 0; x < M_; ++x) {
         cap_cores += mach_cpu[x];
         rack_machines[mach_rack[x]].push_back(x);
@@ -579,6 +626,7 @@ static void settle_job(int ji, int r) {
     int d = rack_dc[mach_rack[x]];
     ll p = price[d];
     ll fee = (ll)j.c * p * (ll)(r - j.start);
+    if (r > j.start && j.c > 0) ew_update(ew_run_tick, (double)price[d]);
     int tenant = wfs[j.wf].tenant;
     wfs[j.wf].fee += fee;
     for (int a = tenant; a != -1; a = parent_[a]) {
@@ -587,8 +635,15 @@ static void settle_job(int ji, int r) {
         inter_[a] += (ll)j.c * p * (ll)j.start;
         tused[a] -= j.c;
     }
+#ifdef DEBUG_STATS
+    dbg_core_run += (long long)j.c * (r - j.start);
+    dbg_core_prep += (long long)j.c * j.prep;
+    dbg_price_num += (long long)j.c * (r - j.start) * price[d];
+    dbg_price_den += (long long)j.c * (r - j.start);
+#endif
     used_cpu[x] -= j.c;
     used_mem[x] -= j.m;
+    rack_used[mach_rack[x]] -= j.c;
     Wf& wfj = wfs[j.wf];
     if (wfj.running_cnt > 0) wfj.running_cnt--;
     j.mach = -1;
@@ -681,6 +736,8 @@ static int cur_tick = 0;
 
 // 自适应估计：真实时长/估计时长 的比值，以及平均准备时间
 static double dur_ratio = 1.5;
+static double ten_ratio[256];      // 每个租户的 真实时长/估计时长（题面说偏差与租户有关）
+static bool ten_ratio_init = false;
 static double prep_ewma = 2.0;
 
 static void release_demand(int wi);
@@ -702,6 +759,12 @@ static void on_done(int jid) {
         if (ratio < 0.3) ratio = 0.3;
         if (ratio > 5.0) ratio = 5.0;
         dur_ratio = dur_ratio * 0.85 + ratio * 0.15;
+        if (!ten_ratio_init) {
+            for (int i = 0; i < 256; ++i) ten_ratio[i] = -1.0;
+            ten_ratio_init = true;
+        }
+        int ten = wfs[j.wf].tenant;
+        if (ten >= 0 && ten < 256) ew_update(ten_ratio[ten], ratio);
     }
     settle_job(ji, cur_tick);
     j.state = 2;
@@ -867,9 +930,11 @@ static void on_wf(int wid, int tenant, ll value, int dl, int n) {
             std::vector<ll> esv2(n, 0);
             ll cp2 = 0;
             std::vector<ll> jd(n, 0);
+            double tr = (tenant >= 0 && tenant < 256 && ten_ratio_init && ten_ratio[tenant] > 0)
+                        ? ten_ratio[tenant] : dur_ratio;
             for (int i = 0; i < n; ++i) {
                 Job& j = jobs[base + i];
-                jd[i] = (ll)((double)j.e * dur_ratio + 0.5) + (ll)est_best_prep(j);
+                jd[i] = (ll)((double)j.e * tr + 0.5) + (ll)est_best_prep(j);
             }
             for (int i = 0; i < n; ++i) {
                 ll best = 0;
@@ -905,21 +970,21 @@ static void on_wf(int wid, int tenant, ll value, int dl, int n) {
         }
         ll minp = price[0];
         for (int d = 1; d < D_; ++d) if (price[d] < minp) minp = price[d];
-        ll cost = demand * minp;
+        ll cost;
         {
-            // 传输：每份外部输入有较大概率要跨机架；前驱输出同理
+            cost = demand * minp;
             double ad = avg_rack_dist;
             for (int i = 0; i < n; ++i) {
                 Job& j = jobs[base + i];
-                if (j.src_rack >= 0) cost += (ll)((double)j.z_in * ad * 0.5 * (double)U_net);
-                cost += (ll)((double)j.z_out * ad * 0.5 * (double)U_net);
+                double tf = (double)TRANS_MISS_PCT / 100.0;
+                if (j.src_rack >= 0) cost += (ll)((double)j.z_in * ad * tf * (double)U_net);
+                cost += (ll)((double)j.z_out * ad * tf * (double)U_net);
             }
-            // 拉取：镜像字节按一半命中缓存估计
             for (int i = 0; i < n; ++i) {
                 Job& j = jobs[base + i];
                 ll bytes = 0;
                 for (int l : image_layers[j.img]) bytes += layer_size[l];
-                cost += bytes * U_reg / 2;
+                cost += bytes * U_reg * (ll)PULL_MISS_PCT / 100;
             }
         }
         ll finish = (ll)cur_tick + wf.cp_pess * EST_SCALE / 100;
@@ -1032,22 +1097,30 @@ static void do_run(int ji, int x) {
     ll fee = rp.cost_tr + qreg * U_reg;
     int tenant = wfs[j.wf].tenant;
     wfs[j.wf].fee += fee;
+    wfs[j.wf].prep_fee += fee;
     add_fee(tenant, fee);
     ll p = price[rack_dc[r]];
     used_cpu[x] += j.c;
     used_mem[x] += j.m;
+    rack_used[r] += j.c;
     for (int a = tenant; a != -1; a = parent_[a]) {
         tused[a] += j.c;
         rate_[a] += (ll)j.c * p;
         inter_[a] -= (ll)j.c * p * (ll)cur_tick;
     }
+#ifdef DEBUG_STATS
+    dbg_prep_tr += (long long)j.c * rp.t_tr;
+    dbg_prep_pull += (long long)j.c * (long long)pull_time;
+#endif
     j.prep = (int)std::max<ll>(rp.t_tr, pull_time);
     j.state = 1;
     j.mach = x;
     j.start = cur_tick;
     mach_running[x].push_back(ji);
-    wfs[j.wf].running_cnt++;
+    if (wfs[j.wf].running_cnt++ == 0) wf_running.push_back(j.wf);
     prep_ewma = prep_ewma * 0.9 + (double)j.prep * 0.1;
+    ew_update(ew_transfer, (double)rp.cost_tr);
+    ew_update(ew_pull, (double)(qreg * U_reg));
     (void)pull_time;
     (void)rp;
 }
@@ -1056,6 +1129,13 @@ static void do_run(int ji, int x) {
 
 static const int TRY_PER_TICK = 600;
 
+
+static inline ll revenue_at_finish(ll finish, const Wf& wf) {
+    ll g = std::max<ll>(5, (wf.dl - wf.arrive) / 3);
+    if (finish <= (ll)wf.dl) return wf.value;
+    if (finish < (ll)wf.dl + g) return wf.value * ((ll)wf.dl + g - finish) / g;
+    return 0;
+}
 
 // 评估某台机器：返回 false 表示不可行；否则给出预计完成 tick 与总成本
 struct Placement {
@@ -1076,6 +1156,19 @@ static inline bool eval_machine(int ji, int x, Placement& out) {
     int prep = std::max(rp.t_tr, tp);
     out.finish = (ll)cur_tick + prep + j.e;
     out.cost = rp.cost_tr + pull_cost + price[rack_dc[r]] * (ll)j.c * (ll)j.e;
+#if WAIT_WARM == 1
+    if (pull_cost > 0) {
+        const Wf& wf2 = wfs[j.wf];
+        if ((ll)cur_tick + wf2.cp_pess + 4 < (ll)wf2.dl) return false;   // 时间还够，等热的
+    }
+#endif
+#if PREP_CAP_PCT > 0
+    {
+        const Wf& wf2 = wfs[j.wf];
+        ll budget = wf2.value * PREP_CAP_PCT / 100;
+        if (wf2.prep_fee + rp.cost_tr + pull_cost > budget) return false;
+    }
+#endif
     return true;
 }
 
@@ -1095,6 +1188,22 @@ static int pick_in_racks(int ji, const int* racks, int nracks, ll allowed_delay)
         }
     }
     if (cands.empty()) return -1;
+#if MACHINE_OBJ == 1
+    {
+        Job& jj = jobs[ji];
+        Wf& wf2 = wfs[jj.wf];
+        ll minp = price[0];
+        for (int d = 1; d < D_; ++d) if (price[d] < minp) minp = price[d];
+        ll best_score = LLONG_MIN;
+        int best_x2 = -1;
+        for (auto& c : cands) {
+            ll score = revenue_at_finish(c.first, wf2) - c.second.first
+                       - minp * (ll)jj.c * c.first;
+            if (score > best_score) { best_score = score; best_x2 = c.second.second; }
+        }
+        return best_x2;
+    }
+#else
     ll allowed = best_finish + allowed_delay;
     ll best_cost = LLONG_MAX;
     int best_x = -1;
@@ -1104,7 +1213,47 @@ static int pick_in_racks(int ji, const int* racks, int nracks, ll allowed_delay)
         (void)best;
     }
     return best_x;
+#endif
 }
+
+#if HOME_MODE >= 1
+// 给工作流挑主场机架：把整条链的传输 + 拉取 + 运行费一起算（HOME_MODE=2 时计入运行费）
+static int choose_home_rack(int wi) {
+    Wf& wf = wfs[wi];
+    ll best_cost = LLONG_MAX;
+    int best_r = -1;
+    for (int r = 0; r < R_; ++r) {
+        int free_m = 0;
+        for (int x : rack_machines[r]) {
+            if (healthy[x] && used_cpu[x] < mach_cpu[x]) ++free_m;
+        }
+        if (free_m == 0) continue;
+        ll cost = 0;
+        bool ok = true;
+        for (int ji = wf.job_begin; ji < wf.job_end; ++ji) {
+            Job& j = jobs[ji];
+            if (j.src_rack >= 0 && j.src_rack != r) {
+                ll d = rack_dist(r, j.src_rack);
+                if (d < 0) { ok = false; break; }
+                cost += j.z_in * d * U_net;
+            }
+            if (!image_warm(r, j.img)) {
+                ll bytes = 0;
+                for (int l : image_layers[j.img]) bytes += layer_size[l];
+                cost += bytes * U_reg;
+            }
+#if HOME_MODE == 2
+            cost += (ll)j.c * (ll)j.e * price[rack_dc[r]];   // 整条链的运行费
+#endif
+        }
+        if (!ok) continue;
+        if (free_m < 2) cost += 100000;   // 只有 1 台空闲机架的链会串行，重罚
+        cost -= free_m * 20;      // 同等花费下优先空闲多的机架
+        if (cost < best_cost) { best_cost = cost; best_r = r; }
+    }
+    return best_r;
+}
+#endif
 
 // 为一个就绪作业选机器：先钉主场机架，放不下再放开
 static int choose_machine(int ji) {
@@ -1126,12 +1275,19 @@ static int choose_machine(int ji) {
         if (allowed_delay > DELAY_MAX) allowed_delay = DELAY_MAX;
     }
 
+#if HOME_MODE >= 1
+    if (wf.home_rack < 0) wf.home_rack = choose_home_rack(j.wf);
+#endif
     if (wf.home_rack >= 0) {
         int racks[1] = {wf.home_rack};
         int x = pick_in_racks(ji, racks, 1, allowed_delay);
         if (x >= 0) return x;
         // 主场暂时放不下：时间还宽裕就等（保住局部性），否则才去别的机架
+#if SPILL_MODE == 1
+        return -1;
+#else
         if ((ll)cur_tick + wf.cp_pess + 2 < (ll)wf.dl) return -1;
+#endif
     }
 
     // 主场放不下（或还没定）：全平台挑，选中后把这个机架定为主场
@@ -1151,9 +1307,12 @@ static inline bool wf_runnable(const Wf& wf) {
 
 // 已确定无收益的工作流：杀掉其运行中作业，腾出资源
 static void drop_hopeless() {
-    if ((cur_tick % 3) != 0) return;
+#if KILL_MODE == 0
+    return;
+#endif
     for (int wi : active_wfs) {
         Wf& wf = wfs[wi];
+        if (wf.running_cnt <= 0) continue;
         if (wf.dead || wf.finish != -1) continue;
         if ((ll)cur_tick - wf.arrive > PATIENCE) { wf.dead = true; continue; }
         ensure_slack(wi);
@@ -1182,8 +1341,8 @@ static void drop_hopeless() {
 }
 
 struct Cand {
-    ll slack;
-    ll neg_value;
+    ll k1;      // 主键（越小越先）
+    ll k2;      // 次键
     int ji;
 };
 
@@ -1279,14 +1438,25 @@ static void schedule_tick() {
         // 尚未准入的工作流：保留在就绪表里，等它被准入后立刻能跑
         if (!wf.admitted) { keep.push_back(ji); continue; }
         int tl = tl_of(ji);
-        cand_buf.push_back({(ll)cur_tick + tl - (ll)wf.dl, -wf.value, ji});
+        ll slack = (ll)cur_tick + tl - (ll)wf.dl;
+        ll k1 = 0, k2 = 0;
+#if ORDER_MODE == 0
+        k1 = slack; k2 = -wf.value;
+#elif ORDER_MODE == 1
+        k1 = -wf.value; k2 = slack;
+#elif ORDER_MODE == 2
+        k1 = -(ll)(wf.dens * 1000.0); k2 = slack;
+#else
+        k1 = -(ll)(1000LL * wf.done_cnt / std::max(1, wf.total)); k2 = slack;
+#endif
+        cand_buf.push_back({k1, k2, ji});
     }
     ready_list.swap(keep);
     if (cand_buf.empty()) return;
 
     std::sort(cand_buf.begin(), cand_buf.end(), [](const Cand& a, const Cand& b) {
-        if (a.slack != b.slack) return a.slack < b.slack;
-        if (a.neg_value != b.neg_value) return a.neg_value < b.neg_value;
+        if (a.k1 != b.k1) return a.k1 < b.k1;
+        if (a.k2 != b.k2) return a.k2 < b.k2;
         return a.ji < b.ji;
     });
 
@@ -1477,6 +1647,12 @@ int main() {
 
         out_buf += "END\n";
 #ifdef DEBUG_STATS
+        {
+            long long u = 0;
+            for (int x = 0; x < M_; ++x) u += used_cpu[x];
+            dbg_util_sum += u;
+            dbg_util_n += cap_cores;
+        }
         if (t == T_) {
             int n_dead = 0, n_adm = 0, n_fin = 0;
             for (auto& wf : wfs) {
@@ -1488,6 +1664,17 @@ int main() {
                     "dead_dl=%lld dead_cost=%lld dead_late=%lld\n",
                     wfs.size(), n_dead, n_adm, n_fin, dur_ratio, prep_ewma, adm_margin_pct, realized_margin, margin_samples,
                     dbg_dead_deadline, dbg_dead_cost, dbg_dead_late);
+            {
+                ll minp = price[0];
+                for (int d2 = 1; d2 < D_; ++d2) if (price[d2] < minp) minp = price[d2];
+                fprintf(stderr, "均价 %.2f（最低 %lld）/核tick\n",
+                        dbg_price_den ? (double)dbg_price_num / (double)dbg_price_den : 0.0, minp);
+            }
+            fprintf(stderr, "准备拆分：传输 %lld / 拉取 %lld（核·tick）\n", dbg_prep_tr, dbg_prep_pull);
+            fprintf(stderr, "util=%.1f%% core_run=%lld core_prep=%lld (prep 占 %.1f%%)\n",
+                    100.0 * (double)dbg_util_sum / (double)std::max<ll>(1, dbg_util_n),
+                    dbg_core_run, dbg_core_prep,
+                    100.0 * (double)dbg_core_prep / (double)std::max<ll>(1, dbg_core_run));
             fprintf(stderr, "CPU %.3f s\n", (double)std::clock() / (double)CLOCKS_PER_SEC);
         }
 #endif

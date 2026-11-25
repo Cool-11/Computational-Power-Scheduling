@@ -40,8 +40,8 @@ python tools/bench.py --tag 我的版本 --seeds 1-16 --T 60
 
 | 项目 | 结果 |
 |---|---|
-| 官方评测程序 `tpj_win.exe`（题面参数，T=500、182 机器、30612 作业） | 对账 0/1767 错、0 非法，**利润 4718943**（上界 17427102） |
-| 官方评测程序另两个 seed | 1267652 / 4969211，均 0 错 0 非法 |
+| 官方评测程序 `tpj_win.exe`（题面参数，T=500、182 机器、30612 作业） | 对账 0/1767 错、0 非法，**利润 4772148**（上界 17427102） |
+| 官方评测程序另三个 seed | 1351018 / 5004109 / 2010610，均 0 错 0 非法（四组合计 13137885） |
 | 官方评测程序满规模（T=600、356 机、83026 作业、3567 道对账） | 0 错 0 非法，利润 5809724，求解器 **0.65 s / <40 MB** |
 | 自建参考实现 vs 官方样例 | 100/100 道对账一致（样例 1+2） |
 | 自建随机世界（含 big1/huge/edge） | 对账 0 错、0 非法指令 |
@@ -68,16 +68,23 @@ python tools/bench.py --tag 我的版本 --seeds 1-16 --T 60
 策略只有一个旋钮，改编译宏即可（默认 300）：
 
 ```bash
-# 默认（推荐先交这个）
+# 默认（官方评测器上最优）
 g++ -std=c++17 -O2 -o build/solver.exe src/main.cpp
-# 更激进：假设正式数据成本更低、平台容量是瓶颈
-g++ -std=c++17 -O2 -DMARGIN_PCT=200 -o build/solver_aggr.exe src/main.cpp
-# 更保守：如果 OJ 反馈利润为负
-g++ -std=c++17 -O2 -DMARGIN_PCT=400 -o build/solver_safe.exe src/main.cpp
+# 更激进（如果正式数据比本地生成器更"便宜"）
+g++ -std=c++17 -O2 -DMARGIN_PCT=120 -o build/solver_aggr.exe src/main.cpp
+# 更保守（如果利润为负）
+g++ -std=c++17 -O2 -DMARGIN_PCT=200 -o build/solver_safe.exe src/main.cpp
 ```
 
 三个版本的对账与指令合法性完全相同（只影响"跑哪些工作流"），
 可以安全地用掉几次提交机会做对比。
+
+### 用官方评测程序批量对比
+
+```bash
+python tools/eval_oj.py --solver build/solver.exe          # 4 个 seed 并行，输出利润/完成数/上界
+python tools/eval_oj.py --solver build/solver_aggr.exe --tag 激进版
+```
 
 ## 验收顺序
 
