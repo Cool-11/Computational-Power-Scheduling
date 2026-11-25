@@ -34,6 +34,9 @@ static long long dbg_prep_tr = 0, dbg_prep_pull = 0;
 #endif
 
 // ---- 可调参数（默认值即最终策略；-D 可覆盖用于实验）
+#ifndef HOME_BONUS
+#define HOME_BONUS 0      // 主场机架在比价时的优惠（0=不优惠；-1=完全不用主场机制）
+#endif
 #ifndef PULL_MISS_PCT
 #define PULL_MISS_PCT 50   // 准入估成本时，假设镜像"没缓存"的概率（%）
 #endif
@@ -1173,6 +1176,8 @@ static inline bool eval_machine(int ji, int x, Placement& out) {
 }
 
 // 在若干机架里挑：min(cost) 且 finish <= best_finish + allowed_delay
+static ll home_bonus_active = 0;
+
 static int pick_in_racks(int ji, const int* racks, int nracks, ll allowed_delay) {
     Placement best{0, 0};
     ll best_finish = LLONG_MAX;
@@ -1184,7 +1189,7 @@ static int pick_in_racks(int ji, const int* racks, int nracks, ll allowed_delay)
             Placement pl;
             if (!eval_machine(ji, x, pl)) continue;
             if (pl.finish < best_finish) best_finish = pl.finish;
-            cands.push_back({pl.finish, {pl.cost, x}});
+            cands.push_back({pl.finish, {pl.cost - home_bonus_active, x}});
         }
     }
     if (cands.empty()) return -1;
@@ -1278,9 +1283,14 @@ static int choose_machine(int ji) {
 #if HOME_MODE >= 1
     if (wf.home_rack < 0) wf.home_rack = choose_home_rack(j.wf);
 #endif
+#if HOME_BONUS >= 0
     if (wf.home_rack >= 0) {
         int racks[1] = {wf.home_rack};
+#if HOME_BONUS > 0
+        home_bonus_active = HOME_BONUS;   // pick_in_racks 内部用它给主场让价
+#endif
         int x = pick_in_racks(ji, racks, 1, allowed_delay);
+        home_bonus_active = 0;
         if (x >= 0) return x;
         // 主场暂时放不下：时间还宽裕就等（保住局部性），否则才去别的机架
 #if SPILL_MODE == 1
@@ -1289,6 +1299,7 @@ static int choose_machine(int ji) {
         if ((ll)cur_tick + wf.cp_pess + 2 < (ll)wf.dl) return -1;
 #endif
     }
+#endif
 
     // 主场放不下（或还没定）：全平台挑，选中后把这个机架定为主场
     static std::vector<int> all_racks;
