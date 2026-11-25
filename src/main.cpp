@@ -24,9 +24,15 @@
 
 typedef long long ll;
 
+#ifdef DEBUG_STATS
+#include <ctime>
+static long long dbg_quota_fail = 0, dbg_nofit = 0, dbg_ok = 0;
+static long long dbg_dead_deadline = 0, dbg_dead_cost = 0, dbg_dead_late = 0;
+#endif
+
 // ---- 可调参数（默认值即最终策略；-D 可覆盖用于实验）
 #ifndef MARGIN_PCT
-#define MARGIN_PCT 300    // 准入要求 收益 ≥ 成本 × MARGIN_PCT%（越大约保守）
+#define MARGIN_PCT 150    // 准入要求 收益 ≥ 成本 × MARGIN_PCT%（用官方评测器扫出的最优）
 #endif
 #ifndef DELAY_MAX
 #define DELAY_MAX 1      // 为了省钱最多容忍晚几个 tick 完成
@@ -322,6 +328,7 @@ struct Wf {
     bool admitted = false;     // 是否已获准投入资源
     bool demand_released = false;
     ll demand = 0;             // Σ c*e（未完成作业的工作量）
+    double dens = 0.0;         // 价值密度 = value / demand（准入排序用）
     ll cp_pess = 0;            // 悲观关键路径：Σ (e*F + PREP)
     int home_rack = -1;        // 主场机架：整个工作流尽量放同一机架，省传输/拉取
     ll fee = 0;                // 该工作流已产生的费用（含运行/拉取/传输）
@@ -470,7 +477,8 @@ static ll inflight_demand = 0;             // 已准入未释放的工作量
 #define EST_SCALE 100     // 准入时对悲观完成时间的折算（%）
 #endif
 #ifndef ADMIT_HORIZON
-#define ADMIT_HORIZON 2   // 在飞工作量预算 = 全平台核数 × ADMIT_HORIZON（实测基本不 binding）
+#define ADMIT_HORIZON 100 // 在飞工作量预算 = 全平台核数 × ADMIT_HORIZON（≈不设上限：
+                          // 官方数据上 2→4.75M、50→4.37M、100→4.75M，平台是能跑满的）
 #endif
 #ifndef DUR_NUM
 #define DUR_NUM 2      // 真实时长相对估计时长的放大系数（用于完成时间预估）
@@ -484,9 +492,9 @@ static std::string out_buf;
 // ---------------------------------------------------------------- 初始化
 
 static void init_dynamic() {
-    jobs.reserve(70000);
+    jobs.reserve(130000);
     jobs.resize(0);
-    wfs.reserve(20000);
+    wfs.reserve(12000);
     wfs.resize(0);
 
     quota.assign(quota0.begin(), quota0.end());
@@ -854,6 +862,7 @@ static void on_wf(int wid, int tenant, ll value, int dl, int n) {
             demand += (ll)j.c * j.e;
         }
         wf.demand = demand;
+        wf.dens = (double)value / (double)std::max<ll>(1, demand);
         {
             std::vector<ll> esv2(n, 0);
             ll cp2 = 0;
@@ -920,7 +929,13 @@ static void on_wf(int wid, int tenant, ll value, int dl, int n) {
         if (finish <= wf.dl) rev = wf.value;
         else if (finish < (ll)wf.dl + G) rev = wf.value * ((ll)wf.dl + G - finish) / G;
         wf.admitted = false;
-        wf.dead = !((rev * 100 > cost * (ll)adm_margin_pct) && (finish < (ll)wf.dl + G));
+        bool ok_cost = (rev * 100 > cost * (ll)adm_margin_pct);
+        bool ok_time = (finish < (ll)wf.dl + G);
+        wf.dead = !(ok_cost && ok_time);
+#ifdef DEBUG_STATS
+        if (!ok_time) ++dbg_dead_deadline;
+        else if (!ok_cost) ++dbg_dead_cost;
+#endif
         wf.slack_ver = -1;
         if (!wf.dead) wf_queue.push_back(wi);
         active_wfs.push_back(wi);
@@ -1040,9 +1055,7 @@ static void do_run(int ji, int x) {
 // ---------------------------------------------------------------- 调度
 
 static const int TRY_PER_TICK = 600;
-#ifdef DEBUG_STATS
-static long long dbg_quota_fail = 0, dbg_nofit = 0, dbg_ok = 0;
-#endif
+
 
 // 评估某台机器：返回 false 表示不可行；否则给出预计完成 tick 与总成本
 struct Placement {
@@ -1138,6 +1151,7 @@ static inline bool wf_runnable(const Wf& wf) {
 
 // 已确定无收益的工作流：杀掉其运行中作业，腾出资源
 static void drop_hopeless() {
+    if ((cur_tick % 3) != 0) return;
     for (int wi : active_wfs) {
         Wf& wf = wfs[wi];
         if (wf.dead || wf.finish != -1) continue;
@@ -1184,17 +1198,21 @@ static void release_demand(int wi) {
     }
 }
 
+static std::vector<std::pair<double, int>> admit_order;   // 复用的排序结果
+
 static void admit_wfs() {
     if (wf_queue.empty()) return;
-    std::vector<std::pair<double, int>> order;
-    order.reserve(wf_queue.size());
-    for (int wi : wf_queue) {
-        Wf& wf = wfs[wi];
-        if (wf.finish != -1 || wf.dead || wf.admitted) continue;
-        double dens = (double)wf.value / (double)std::max<ll>(1, wf.demand);
-        order.push_back({-dens, wi});
+    {
+        admit_order.clear();
+        admit_order.reserve(wf_queue.size());
+        for (int wi : wf_queue) {
+            Wf& wf = wfs[wi];
+            if (wf.finish != -1 || wf.dead || wf.admitted) continue;
+            admit_order.push_back({-wf.dens, wi});
+        }
+        std::sort(admit_order.begin(), admit_order.end());
     }
-    std::sort(order.begin(), order.end());
+    std::vector<std::pair<double, int>>& order = admit_order;
 
     ll used_now = 0;
     for (int x = 0; x < M_; ++x) used_now += used_cpu[x];
@@ -1214,6 +1232,9 @@ static void admit_wfs() {
         if (limit > (ll)T_) limit = (ll)T_;
         if ((ll)cur_tick + wf.cp_pess * EST_SCALE / 100 > limit) {     // 已来不及
             wf.dead = true;
+#ifdef DEBUG_STATS
+            ++dbg_dead_late;
+#endif
             continue;
         }
         ll need = wf.demand / std::max<ll>(1, wf.cp);       // 平均需要多少核
@@ -1463,8 +1484,11 @@ int main() {
                 if (wf.admitted) ++n_adm;
                 if (wf.finish != -1) ++n_fin;
             }
-            fprintf(stderr, "SUMMARY wf=%zu dead=%d adm=%d fin=%d dur_ratio=%.2f prep_ewma=%.2f margin=%d realized=%.2f nsamp=%d\n",
-                    wfs.size(), n_dead, n_adm, n_fin, dur_ratio, prep_ewma, adm_margin_pct, realized_margin, margin_samples);
+            fprintf(stderr, "SUMMARY wf=%zu dead=%d adm=%d fin=%d dur_ratio=%.2f prep_ewma=%.2f margin=%d realized=%.2f nsamp=%d "
+                    "dead_dl=%lld dead_cost=%lld dead_late=%lld\n",
+                    wfs.size(), n_dead, n_adm, n_fin, dur_ratio, prep_ewma, adm_margin_pct, realized_margin, margin_samples,
+                    dbg_dead_deadline, dbg_dead_cost, dbg_dead_late);
+            fprintf(stderr, "CPU %.3f s\n", (double)std::clock() / (double)CLOCKS_PER_SEC);
         }
 #endif
         fwrite(out_buf.data(), 1, out_buf.size(), stdout);
