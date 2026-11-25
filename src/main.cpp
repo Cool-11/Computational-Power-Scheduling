@@ -22,6 +22,12 @@
 #include <unistd.h>
 #endif
 
+// OJ 的编译开关未知；显式要求 GCC 优化，避免"未加 -O2"时在满规模数据上超时。
+// （只影响速度，不改变任何计算结果；clang/调试构建不受影响）
+#if defined(__GNUC__) && !defined(__clang__) && !defined(DEBUG_STATS)
+#pragma GCC optimize("O2")
+#endif
+
 typedef long long ll;
 
 #ifdef DEBUG_STATS

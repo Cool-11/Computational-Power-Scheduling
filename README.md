@@ -74,8 +74,13 @@ g++ -std=c++17 -O2 -o build/solver.exe src/main.cpp
 # 更激进（如果正式数据比本地生成器更"便宜"）
 g++ -std=c++17 -O2 -DMARGIN_PCT=120 -o build/solver_aggr.exe src/main.cpp
 # 更保守（如果利润为负）
-g++ -std=c++17 -O2 -DMARGIN_PCT=200 -o build/solver_safe.exe src/main.cpp
+g++ -std=c++17 -O2 -DMARGIN_PCT=180 -o build/solver_safe.exe src/main.cpp
 ```
+
+> **提交物就是 `src/main.cpp` 一个文件**，不需要任何 `-D`；默认值即最优配置
+> （`MARGIN_PCT=140`、`ADMIT_HORIZON=100`、`HOME_MODE=3`）。
+> 文件顶部已加 `#pragma GCC optimize("O2")` 兜底：OJ 若未加 -O2，满规模耗时从
+> 1.43 s 降到 1.28 s（仍偏紧），因此**推荐用 -O2 编译**。
 
 三个版本的对账与指令合法性完全相同（只影响"跑哪些工作流"），
 可以安全地用掉几次提交机会做对比。
