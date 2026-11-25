@@ -53,7 +53,7 @@ static long long dbg_prep_tr = 0, dbg_prep_pull = 0;
 #define WAIT_WARM 0   // 1=要拉冷镜像时，若时间宽裕就先等等（等缓存热了再跑）
 #endif
 #ifndef HOME_MODE
-#define HOME_MODE 0   // 0=用首个作业的最佳放置定主场 1=按整条链的传输+拉取总量定主场
+#define HOME_MODE 3   // 0=首个作业的最佳放置 1=整链传输+拉取 3=整链传输距离（官方数据最优）
 #endif
 #ifndef RACK_HOT_BONUS
 #define RACK_HOT_BONUS 0   // 偏好"已经在忙"的机架（缓存更热）：cost -= 该机架在用核数 × BONUS
@@ -68,7 +68,7 @@ static long long dbg_prep_tr = 0, dbg_prep_pull = 0;
 #define ORDER_MODE 0      // 就绪作业排序：0 松弛 1 价值 2 密度 3 进度
 #endif
 #ifndef MARGIN_PCT
-#define MARGIN_PCT 150    // 准入要求 收益 ≥ 成本 × MARGIN_PCT%（用官方评测器扫出的最优）
+#define MARGIN_PCT 140    // 准入要求 收益 ≥ 成本 × MARGIN_PCT%（官方评测器 4 seed 扫出的最优）
 #endif
 #ifndef DELAY_MAX
 #define DELAY_MAX 1      // 为了省钱最多容忍晚几个 tick 完成
@@ -1221,8 +1221,8 @@ static int pick_in_racks(int ji, const int* racks, int nracks, ll allowed_delay)
 #endif
 }
 
-#if HOME_MODE >= 1
-// 给工作流挑主场机架：把整条链的传输 + 拉取 + 运行费一起算（HOME_MODE=2 时计入运行费）
+#if HOME_MODE == 1
+// 给工作流挑主场机架：把整条链的传输 + 拉取 + 运行费一起算（保留作对照，未启用）
 static int choose_home_rack(int wi) {
     Wf& wf = wfs[wi];
     ll best_cost = LLONG_MAX;
@@ -1260,6 +1260,36 @@ static int choose_home_rack(int wi) {
 }
 #endif
 
+#if HOME_MODE >= 3
+// 主场机架 = 让整条链"外部输入要搬的距离"最短的机架（同时避开只剩 1 台空闲机的机架）
+static int choose_home_rack2(int wi) {
+    Wf& wf = wfs[wi];
+    ll best = LLONG_MAX;
+    int best_r = -1;
+    for (int r = 0; r < R_; ++r) {
+        int free_m = 0;
+        for (int x : rack_machines[r]) {
+            if (healthy[x] && used_cpu[x] < mach_cpu[x]) ++free_m;
+        }
+        ll cost = 0;
+        bool ok = true;
+        for (int ji = wf.job_begin; ji < wf.job_end; ++ji) {
+            Job& j = jobs[ji];
+            if (j.src_rack >= 0 && j.src_rack != r) {
+                ll d = rack_dist(r, j.src_rack);
+                if (d < 0) { ok = false; break; }
+                cost += j.z_in * d * U_net;
+            }
+        }
+        if (!ok) continue;
+        if (free_m < 2) cost += 10000;
+        else cost -= free_m * 30;
+        if (cost < best) { best = cost; best_r = r; }
+    }
+    return best_r;
+}
+#endif
+
 // 为一个就绪作业选机器：先钉主场机架，放不下再放开
 static int choose_machine(int ji) {
     Job& j = jobs[ji];
@@ -1280,8 +1310,10 @@ static int choose_machine(int ji) {
         if (allowed_delay > DELAY_MAX) allowed_delay = DELAY_MAX;
     }
 
-#if HOME_MODE >= 1
+#if HOME_MODE == 1
     if (wf.home_rack < 0) wf.home_rack = choose_home_rack(j.wf);
+#elif HOME_MODE >= 3
+    if (wf.home_rack < 0) wf.home_rack = choose_home_rack2(j.wf);
 #endif
 #if HOME_BONUS >= 0
     if (wf.home_rack >= 0) {
